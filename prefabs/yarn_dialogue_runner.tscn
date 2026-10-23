@@ -4,6 +4,7 @@
 [ext_resource type="Resource" uid="uid://bv7k2fgfi3ca1" path="res://yarn/boo.yarnproject" id="2_en4qt"]
 [ext_resource type="Script" uid="uid://cph55j8gti5le" path="res://addons/yarn_spinner/ui/dialogue_view.gd" id="3_ne4wp"]
 [ext_resource type="Script" uid="uid://bp60on4gqx4kj" path="res://addons/yarn_spinner/core/variable_storage.gd" id="4_1k4wg"]
+[ext_resource type="Script" uid="uid://d23fbixt5yo3d" path="res://addons/yarn_spinner/ui/voice_over_presenter.gd" id="5_en4qt"]
 
 [node name="YarnDialogueRunner" type="Node" unique_id=132473946 node_paths=PackedStringArray("variable_storage")]
 script = ExtResource("1_nfgcd")
@@ -19,3 +20,11 @@ metadata/_custom_type_script = "uid://cph55j8gti5le"
 [node name="YarnVariableStorage" type="Node" parent="." unique_id=1715854679]
 script = ExtResource("4_1k4wg")
 metadata/_custom_type_script = "uid://bp60on4gqx4kj"
+
+[node name="YarnVoiceOverPresenter" type="Node" parent="." unique_id=1988659875 node_paths=PackedStringArray("audio_player")]
+script = ExtResource("5_en4qt")
+audio_player = NodePath("AudioStreamPlayer")
+audio_extension = ".wav"
+metadata/_custom_type_script = "uid://d23fbixt5yo3d"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="YarnVoiceOverPresenter" unique_id=1866203799]
