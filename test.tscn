@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://xrs0qqicpldt" path="res://prefabs/npc.tscn" id="1_37kl0"]
 [ext_resource type="Script" uid="uid://cxrjk51dlyvni" path="res://scripts/gamemanager.gd" id="1_ykrsh"]
 [ext_resource type="PackedScene" uid="uid://k7yl21ee00ji" path="res://prefabs/yarn_dialogue_runner.tscn" id="3_6uqi0"]
+[ext_resource type="Script" uid="uid://d1dcuekbom66u" path="res://scripts/cam.gd" id="4_ppyta"]
 
 [node name="Test" type="Node2D" unique_id=63273623]
 script = ExtResource("1_ykrsh")
@@ -17,3 +18,8 @@ metadata/DialogueNode = "test"
 
 [node name="YarnDialogueRunner" parent="." unique_id=132473946 instance=ExtResource("3_6uqi0")]
 unique_name_in_owner = true
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=715502669]
+position = Vector2(570, 320)
+zoom = Vector2(0.64, 0.64)
+script = ExtResource("4_ppyta")
