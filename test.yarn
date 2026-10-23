@@ -1,4 +1,16 @@
-title: Start
+title: test
 ---
-
+Player: I am a Player.
+Who do you want to talk to?
+-> Mothperson
+	Mothperson: Lämp.
+-> Dr. hc Acula
+	Dr. hc Acula: Looking bloody nice today.
+-> Fishman
+	Fishman: Ah, eels. Very dangerous.
+-> Witchy McWitchface
+	Witchy McWitchface: Gravity is not the only thing I'll be defying.
+-> Muscle Mommy
+	Muscle Mommy: Can I get a hug?
+<<jump test>>
 ===
