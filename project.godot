@@ -11,13 +11,9 @@ config_version=5
 [application]
 
 config/name="Find Your Boo"
-run/main_scene="uid://b8qfvtas1s2sw"
+run/main_scene="uid://bybr8lm1kgm1n"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
-
-[autoload]
-
-YarnSpinner="*uid://bhiw7fae5n1e8"
 
 [display]
 
