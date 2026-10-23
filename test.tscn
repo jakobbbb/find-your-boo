@@ -2,16 +2,99 @@
 
 [ext_resource type="PackedScene" uid="uid://xrs0qqicpldt" path="res://prefabs/npc.tscn" id="1_37kl0"]
 [ext_resource type="Script" uid="uid://cxrjk51dlyvni" path="res://scripts/gamemanager.gd" id="1_ykrsh"]
+[ext_resource type="Texture2D" uid="uid://bkbmf0j7yv0y4" path="res://assets/placeholder/background/House_Placeholder.png" id="2_5tkv4"]
 [ext_resource type="PackedScene" uid="uid://k7yl21ee00ji" path="res://prefabs/yarn_dialogue_runner.tscn" id="3_6uqi0"]
+[ext_resource type="Texture2D" uid="uid://qhkw7cqtw8vj" path="res://assets/placeholder/characters/dr_acula.png" id="4_0m0f1"]
 [ext_resource type="Script" uid="uid://d1dcuekbom66u" path="res://scripts/cam.gd" id="4_ppyta"]
+[ext_resource type="Texture2D" uid="uid://12nc4dd5ytaq" path="res://assets/placeholder/characters/fishman.png" id="5_b0q6j"]
 [ext_resource type="PackedScene" uid="uid://bblklwajfea5g" path="res://prefabs/arrow.tscn" id="5_ykrsh"]
+[ext_resource type="Texture2D" uid="uid://d4cwpp2tq5dm7" path="res://assets/placeholder/characters/twinkch.png" id="6_mhym6"]
+[ext_resource type="Texture2D" uid="uid://d32kxpptp6air" path="res://assets/placeholder/characters/strong lesb.png" id="7_a3se8"]
+[ext_resource type="Texture2D" uid="uid://b417h6penn7qq" path="res://assets/placeholder/characters/literal ghost.png" id="8_uty7l"]
+[ext_resource type="Texture2D" uid="uid://c1780e1r888om" path="res://assets/placeholder/characters/mothy.png" id="9_45l4g"]
 
 [node name="Test" type="Node2D" unique_id=63273623]
 script = ExtResource("1_ykrsh")
 
-[node name="NPC" parent="." unique_id=438049094 instance=ExtResource("1_37kl0")]
-position = Vector2(454, 262)
+[node name="HousePlaceholder" type="Sprite2D" parent="." unique_id=1023348736]
+z_index = -1
+position = Vector2(441.2249, -764.91675)
+scale = Vector2(0.4548333, 0.4548333)
+texture = ExtResource("2_5tkv4")
+
+[node name="NPC_Dr_Acula" parent="." unique_id=438049094 instance=ExtResource("1_37kl0")]
+position = Vector2(-389.00003, -157.91675)
 metadata/DialogueNode = "Start"
+
+[node name="Sprite2D" parent="NPC_Dr_Acula" index="0" unique_id=177765413]
+position = Vector2(709.225, -437)
+scale = Vector2(0.31824818, 0.31824815)
+texture = ExtResource("4_0m0f1")
+
+[node name="CollisionShape2D" parent="NPC_Dr_Acula/Sprite2D/Area2D" parent_id_path=PackedInt32Array(438049094, 1716052840) index="0" unique_id=685501766]
+position = Vector2(-25.13763, 25.137619)
+scale = Vector2(2.33, 6.625)
+
+[node name="NPC_Fishman" parent="." unique_id=1147166367 instance=ExtResource("1_37kl0")]
+position = Vector2(379.22498, -1173.9167)
+metadata/DialogueNode = "Start"
+
+[node name="Sprite2D" parent="NPC_Fishman" index="0" unique_id=177765413]
+scale = Vector2(0.3416058, 0.34160584)
+texture = ExtResource("5_b0q6j")
+
+[node name="CollisionShape2D" parent="NPC_Fishman/Sprite2D/Area2D" parent_id_path=PackedInt32Array(1147166367, 1716052840) index="0" unique_id=685501766]
+position = Vector2(-25.13763, 25.137619)
+scale = Vector2(2.33, 6.625)
+
+[node name="NPC_Twinkch" parent="." unique_id=1839290886 instance=ExtResource("1_37kl0")]
+position = Vector2(328.22498, -157.91675)
+metadata/DialogueNode = "Start"
+
+[node name="Sprite2D" parent="NPC_Twinkch" index="0" unique_id=177765413]
+scale = Vector2(0.3416058, 0.34160584)
+texture = ExtResource("6_mhym6")
+
+[node name="CollisionShape2D" parent="NPC_Twinkch/Sprite2D/Area2D" parent_id_path=PackedInt32Array(1839290886, 1716052840) index="0" unique_id=685501766]
+position = Vector2(-25.13763, 25.137619)
+scale = Vector2(2.33, 6.625)
+
+[node name="NPC_StrongLesb" parent="." unique_id=54922268 instance=ExtResource("1_37kl0")]
+position = Vector2(127.54498, -157.91675)
+metadata/DialogueNode = "Start"
+
+[node name="Sprite2D" parent="NPC_StrongLesb" index="0" unique_id=177765413]
+scale = Vector2(0.3416058, 0.34160584)
+texture = ExtResource("7_a3se8")
+
+[node name="CollisionShape2D" parent="NPC_StrongLesb/Sprite2D/Area2D" parent_id_path=PackedInt32Array(54922268, 1716052840) index="0" unique_id=685501766]
+position = Vector2(-25.13763, 25.137619)
+scale = Vector2(2.33, 6.625)
+
+[node name="NPC_Ghost" parent="." unique_id=1582067632 instance=ExtResource("1_37kl0")]
+position = Vector2(528.225, -157.91675)
+metadata/DialogueNode = "Start"
+
+[node name="Sprite2D" parent="NPC_Ghost" index="0" unique_id=177765413]
+scale = Vector2(0.3416058, 0.34160584)
+texture = ExtResource("8_uty7l")
+
+[node name="CollisionShape2D" parent="NPC_Ghost/Sprite2D/Area2D" parent_id_path=PackedInt32Array(1582067632, 1716052840) index="0" unique_id=685501766]
+position = Vector2(-25.13763, 25.137619)
+scale = Vector2(2.33, 6.625)
+
+[node name="NPC_Mothy" parent="." unique_id=318285534 instance=ExtResource("1_37kl0")]
+position = Vector2(-217.77502, -157.91675)
+metadata/DialogueNode = "Start"
+
+[node name="Sprite2D" parent="NPC_Mothy" index="0" unique_id=177765413]
+position = Vector2(781, -427)
+scale = Vector2(0.3416058, 0.34160584)
+texture = ExtResource("9_45l4g")
+
+[node name="CollisionShape2D" parent="NPC_Mothy/Sprite2D/Area2D" parent_id_path=PackedInt32Array(318285534, 1716052840) index="0" unique_id=685501766]
+position = Vector2(-5.722046e-06, 70.25642)
+scale = Vector2(2.33, 4.435)
 
 [node name="NPC2" parent="." unique_id=27218590 instance=ExtResource("1_37kl0")]
 position = Vector2(799, 351)
@@ -38,3 +121,10 @@ position = Vector2(2, 627)
 
 [connection signal="pressed" from="Camera2D/Arrow" to="Camera2D" method="_on_arrow_pressed"]
 [connection signal="pressed" from="Camera2D2/Arrow" to="Camera2D2" method="_on_arrow_pressed"]
+
+[editable path="NPC_Dr_Acula"]
+[editable path="NPC_Fishman"]
+[editable path="NPC_Twinkch"]
+[editable path="NPC_StrongLesb"]
+[editable path="NPC_Ghost"]
+[editable path="NPC_Mothy"]
