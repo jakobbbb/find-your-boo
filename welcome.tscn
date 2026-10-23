@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://bkbmf0j7yv0y4" path="res://assets/placeholder/background/House_Placeholder.png" id="1_hp420"]
 [ext_resource type="Script" uid="uid://b7f1hb7p6bygw" path="res://scripts/welcome.gd" id="1_odedu"]
+[ext_resource type="Texture2D" uid="uid://bbbypmokd0bcc" path="res://assets/logo.svg" id="3_6xvht"]
 
 [sub_resource type="Gradient" id="Gradient_hp420"]
 offsets = PackedFloat32Array(0.15306123)
@@ -32,5 +33,10 @@ texture = ExtResource("1_hp420")
 position = Vector2(-41.159145, -2.689743)
 scale = Vector2(1, 0.9999999)
 shape = SubResource("RectangleShape2D_0bbe5")
+
+[node name="Logo" type="Sprite2D" parent="." unique_id=1437936750]
+position = Vector2(1033.0001, 73)
+scale = Vector2(0.121722855, 0.12172285)
+texture = ExtResource("3_6xvht")
 
 [connection signal="input_event" from="Sprite2D/Area2D" to="." method="_on_area_2d_input_event"]
