@@ -1,5 +1,11 @@
 title: start
 ---
+<<declare $drac = 10>>
+<<declare $witch = 10>>
+<<declare $moth = 10>>
+<<declare $fish = 10>>
+<<declare $frank = 10>>
+
 Host: Hello! And thanks for tuning in to:
 FIND
 YOUR
