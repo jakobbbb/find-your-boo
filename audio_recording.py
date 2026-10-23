@@ -1,0 +1,110 @@
+#!/usr/bin/env python3
+
+import os
+import csv
+import sys
+from typing import List
+import subprocess
+
+
+def get_line_text(node):
+    pass  # TODO
+
+
+class LineInfo:
+    line_id: str
+    text: str
+    node: str
+
+    @staticmethod
+    def read_file(path: str) -> List[LineInfo]:
+        lines = []
+        with open(path, "r") as f:
+            reader = csv.reader(f)
+            for row in reader:
+                line = LineInfo()
+                line.line_id = row[1]
+                line.text = row[2]
+                line.node = row[4]
+                lines.append(line)
+        return lines
+
+
+class YarnRecorder:
+    def __init__(self, csv_file: str) -> None:
+        self.lines = LineInfo.read_file(csv_file)
+        pass
+
+    def print_nodes(self) -> None:
+        nodes = sorted(list(set([line.node for line in self.lines])))
+        print("Nodes:")
+        for node in nodes:
+            total = 0
+            done = 0
+            for line in self.lines:
+                if line.node == node:
+                    total += 1
+                    line_id_part = line.line_id.split(":")[-1]
+                    if os.path.exists("../Audio/" + line_id_part + ".wav"):
+                        done += 1
+
+            p = int((100 * done) / total)
+            print(f"{node} ({p}%)")
+
+    def print_speakers(self, node: str) -> None:
+        speakers = set()
+        for line in self.lines:
+            if line.node == node and ":" in line.text:
+                speakers.add(line.text.split(":")[0])
+        print("Speakers:")
+        print("\n".join(sorted(list(speakers))))
+
+    def record_lines(self, node: str, speaker: str) -> None:
+        for line in self.lines:
+            if line.node == node and line.text.startswith(speaker):
+                self.record_line(line)
+
+    def record_line(self, line: LineInfo) -> None:
+        print(line.text)
+        self.write_state_html(False, line.text)
+
+        output_dir = "../Audio/"
+        line_id_part = line.line_id.split(":")[-1]
+        take = 0
+        take_str = ""
+        for f in os.listdir(output_dir):
+            if line_id_part in f:
+                take += 1
+                take_str = f"_{take:02d}"
+
+        if input("Ready to record?  Press enter") != "":
+            self.write_state_html(False, "")
+            return
+        filename = output_dir + line_id_part + take_str + ".wav"
+        self.rec = subprocess.Popen(["arecord", "-vv", "--format=cd", filename])
+        self.write_state_html(True, line.text)
+        input("Done?  Press enter")
+
+        self.write_state_html(False, line.text)
+        self.rec.terminate()
+        subprocess.run("clear")
+
+    def write_state_html(self, recording: bool, line: str):
+        html = (
+            '<meta http-equiv="refresh" content="1">'
+            "<style>.rec { color: red; }</style>"
+            f"<h1 class='{'rec' if recording else ''}'"
+            f"style='font-size: 2em'>{line}</h1>"
+        )
+        with open("/tmp/record.html", "w+") as f:
+            f.write(html)
+
+
+if __name__ == "__main__":
+    y = YarnRecorder(sys.argv[1])
+    if len(sys.argv) == 4:
+        y.record_lines(sys.argv[2], sys.argv[3])
+    elif len(sys.argv) == 3:
+        y.print_speakers(sys.argv[2])
+    else:
+        y.print_nodes()
