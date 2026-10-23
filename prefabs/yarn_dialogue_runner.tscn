@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://k7yl21ee00ji"]
+
+[ext_resource type="Script" uid="uid://b5qclimtvr048" path="res://scripts/dialogue.gd" id="1_nfgcd"]
+[ext_resource type="Resource" uid="uid://bv7k2fgfi3ca1" path="res://yarn/boo.yarnproject" id="2_en4qt"]
+[ext_resource type="Script" uid="uid://cph55j8gti5le" path="res://addons/yarn_spinner/ui/dialogue_view.gd" id="3_ne4wp"]
+[ext_resource type="Script" uid="uid://bp60on4gqx4kj" path="res://addons/yarn_spinner/core/variable_storage.gd" id="4_1k4wg"]
+
+[node name="YarnDialogueRunner" type="Node" unique_id=132473946 node_paths=PackedStringArray("variable_storage")]
+script = ExtResource("1_nfgcd")
+yarn_project = ExtResource("2_en4qt")
+start_node = "test"
+variable_storage = NodePath("YarnVariableStorage")
+metadata/_custom_type_script = "uid://flra500ihbix"
+
+[node name="YarnDialogueView" type="CanvasLayer" parent="." unique_id=114677578]
+script = ExtResource("3_ne4wp")
+metadata/_custom_type_script = "uid://cph55j8gti5le"
+
+[node name="YarnVariableStorage" type="Node" parent="." unique_id=1715854679]
+script = ExtResource("4_1k4wg")
+metadata/_custom_type_script = "uid://bp60on4gqx4kj"

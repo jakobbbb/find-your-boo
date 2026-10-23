@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://cxrjk51dlyvni" path="res://scripts/gamemanager.gd" id="1_ykrsh"]
 [ext_resource type="Script" uid="uid://b5qclimtvr048" path="res://scripts/dialogue.gd" id="2_ppyta"]
 [ext_resource type="Script" uid="uid://cph55j8gti5le" path="res://addons/yarn_spinner/ui/dialogue_view.gd" id="3_ppyta"]
-[ext_resource type="Resource" uid="uid://bv7k2fgfi3ca1" path="res://boo.yarnproject" id="3_ykrsh"]
+[ext_resource type="Resource" uid="uid://bv7k2fgfi3ca1" path="res://yarn/boo.yarnproject" id="3_ykrsh"]
 
 [node name="Test" type="Node2D" unique_id=63273623]
 script = ExtResource("1_ykrsh")
