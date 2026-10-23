@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://cxrjk51dlyvni" path="res://scripts/gamemanager.gd" id="1_ykrsh"]
 [ext_resource type="PackedScene" uid="uid://k7yl21ee00ji" path="res://prefabs/yarn_dialogue_runner.tscn" id="3_6uqi0"]
 [ext_resource type="Script" uid="uid://d1dcuekbom66u" path="res://scripts/cam.gd" id="4_ppyta"]
+[ext_resource type="PackedScene" uid="uid://bblklwajfea5g" path="res://prefabs/arrow.tscn" id="5_ykrsh"]
 
 [node name="Test" type="Node2D" unique_id=63273623]
 script = ExtResource("1_ykrsh")
@@ -23,3 +24,17 @@ unique_name_in_owner = true
 position = Vector2(570, 320)
 zoom = Vector2(0.64, 0.64)
 script = ExtResource("4_ppyta")
+
+[node name="Arrow" parent="Camera2D" unique_id=1753165597 instance=ExtResource("5_ykrsh")]
+position = Vector2(2, -618)
+
+[node name="Camera2D2" type="Camera2D" parent="." unique_id=2021939344]
+position = Vector2(568, -696)
+zoom = Vector2(0.64, 0.64)
+script = ExtResource("4_ppyta")
+
+[node name="Arrow" parent="Camera2D2" unique_id=1754077635 instance=ExtResource("5_ykrsh")]
+position = Vector2(2, 627)
+
+[connection signal="pressed" from="Camera2D/Arrow" to="Camera2D" method="_on_arrow_pressed"]
+[connection signal="pressed" from="Camera2D2/Arrow" to="Camera2D2" method="_on_arrow_pressed"]
