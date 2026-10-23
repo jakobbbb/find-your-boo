@@ -1,3 +1,36 @@
 [gd_scene format=3 uid="uid://b8qfvtas1s2sw"]
 
-[node name="Node2D" type="Node2D" unique_id=1515099864]
+[ext_resource type="Texture2D" uid="uid://bkbmf0j7yv0y4" path="res://assets/placeholder/background/House_Placeholder.png" id="1_hp420"]
+[ext_resource type="Script" uid="uid://b7f1hb7p6bygw" path="res://scripts/welcome.gd" id="1_odedu"]
+
+[sub_resource type="Gradient" id="Gradient_hp420"]
+offsets = PackedFloat32Array(0.15306123)
+colors = PackedColorArray(1, 1, 1, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_0bbe5"]
+gradient = SubResource("Gradient_hp420")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0bbe5"]
+size = Vector2(43.40143, 50.472183)
+
+[node name="Welcome" type="Node2D" unique_id=1515099864]
+script = ExtResource("1_odedu")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2094156963]
+position = Vector2(827, 349.00003)
+scale = Vector2(13.15625, 12.640626)
+texture = SubResource("GradientTexture2D_0bbe5")
+
+[node name="HousePlaceholder" type="Sprite2D" parent="Sprite2D" unique_id=21928316]
+position = Vector2(-77.14964, -52.370827)
+scale = Vector2(0.03805542, 0.03960773)
+texture = ExtResource("1_hp420")
+
+[node name="Area2D" type="Area2D" parent="Sprite2D" unique_id=2136474165]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D" unique_id=213148904]
+position = Vector2(-41.159145, -2.689743)
+scale = Vector2(1, 0.9999999)
+shape = SubResource("RectangleShape2D_0bbe5")
+
+[connection signal="input_event" from="Sprite2D/Area2D" to="." method="_on_area_2d_input_event"]
