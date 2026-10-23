@@ -1,22 +1,27 @@
 [gd_scene format=3 uid="uid://bybr8lm1kgm1n"]
 
 [ext_resource type="PackedScene" uid="uid://xrs0qqicpldt" path="res://prefabs/npc.tscn" id="1_37kl0"]
+[ext_resource type="Script" uid="uid://cxrjk51dlyvni" path="res://scripts/gamemanager.gd" id="1_ykrsh"]
 [ext_resource type="Script" uid="uid://b5qclimtvr048" path="res://scripts/dialogue.gd" id="2_ppyta"]
 [ext_resource type="Script" uid="uid://cph55j8gti5le" path="res://addons/yarn_spinner/ui/dialogue_view.gd" id="3_ppyta"]
 [ext_resource type="Resource" uid="uid://bv7k2fgfi3ca1" path="res://boo.yarnproject" id="3_ykrsh"]
 
 [node name="Test" type="Node2D" unique_id=63273623]
+script = ExtResource("1_ykrsh")
 
 [node name="NPC" parent="." unique_id=438049094 instance=ExtResource("1_37kl0")]
 position = Vector2(454, 262)
+metadata/DialogueNode = "Start"
 
 [node name="NPC2" parent="." unique_id=27218590 instance=ExtResource("1_37kl0")]
 position = Vector2(799, 351)
+metadata/DialogueNode = "test"
 
 [node name="YarnDialogueRunner" type="Node" parent="." unique_id=1231268986]
 unique_name_in_owner = true
 script = ExtResource("2_ppyta")
 yarn_project = ExtResource("3_ykrsh")
+start_node = "test"
 metadata/_custom_type_script = "uid://flra500ihbix"
 
 [node name="YarnDialogueView" type="CanvasLayer" parent="YarnDialogueRunner" unique_id=2089908858]
