@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Find Your Boo"
-run/main_scene="uid://d0owxl22gbliy"
+run/main_scene="uid://b8qfvtas1s2sw"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
 

@@ -110,20 +110,20 @@ metadata/DialogueNode = "test"
 unique_name_in_owner = true
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=715502669]
-position = Vector2(570, 320)
+position = Vector2(456, -362)
 zoom = Vector2(0.64, 0.64)
 script = ExtResource("4_ppyta")
 
 [node name="Arrow" parent="Camera2D" unique_id=1753165597 instance=ExtResource("5_ykrsh")]
-position = Vector2(2, -618)
+position = Vector2(72, -569)
 
 [node name="Camera2D2" type="Camera2D" parent="." unique_id=2021939344]
-position = Vector2(568, -696)
+position = Vector2(454, -1378)
 zoom = Vector2(0.64, 0.64)
 script = ExtResource("4_ppyta")
 
 [node name="Arrow" parent="Camera2D2" unique_id=1754077635 instance=ExtResource("5_ykrsh")]
-position = Vector2(2, 627)
+position = Vector2(2, 591)
 
 [connection signal="pressed" from="Camera2D/Arrow" to="Camera2D" method="_on_arrow_pressed"]
 [connection signal="pressed" from="Camera2D2/Arrow" to="Camera2D2" method="_on_arrow_pressed"]
