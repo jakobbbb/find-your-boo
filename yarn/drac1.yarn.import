@@ -1,0 +1,14 @@
+[remap]
+
+importer="yarn_spinner.yarn_file"
+type="Resource"
+uid="uid://basbfbrse28hm"
+path="res://.godot/imported/drac1.yarn-2a3e020bb772c78266250979a519c340.res"
+
+[deps]
+
+source_file="res://yarn/drac1.yarn"
+dest_files=["res://.godot/imported/drac1.yarn-2a3e020bb772c78266250979a519c340.res"]
+
+[params]
+

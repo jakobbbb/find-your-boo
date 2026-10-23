@@ -1,0 +1,14 @@
+[remap]
+
+importer="yarn_spinner.yarn_file"
+type="Resource"
+uid="uid://ca21m1qnuy20c"
+path="res://.godot/imported/horses.yarn-d8b31e9c39f8f0b77bde39f3f2ec1786.res"
+
+[deps]
+
+source_file="res://yarn/horses.yarn"
+dest_files=["res://.godot/imported/horses.yarn-d8b31e9c39f8f0b77bde39f3f2ec1786.res"]
+
+[params]
+

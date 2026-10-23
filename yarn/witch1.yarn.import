@@ -1,0 +1,14 @@
+[remap]
+
+importer="yarn_spinner.yarn_file"
+type="Resource"
+uid="uid://sf2vyg5gmljo"
+path="res://.godot/imported/witch1.yarn-c564f363fbc6228e389fafa0677b4226.res"
+
+[deps]
+
+source_file="res://yarn/witch1.yarn"
+dest_files=["res://.godot/imported/witch1.yarn-c564f363fbc6228e389fafa0677b4226.res"]
+
+[params]
+
