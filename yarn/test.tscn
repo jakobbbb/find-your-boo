@@ -1,24 +1,24 @@
 [gd_scene format=3 uid="uid://bybr8lm1kgm1n"]
 
-[ext_resource type="Script" uid="uid://bysm0drbuwowh" path="res://scripts/npc.gd" id="1_8uh7m"]
-[ext_resource type="Texture2D" uid="uid://cxab3j7s6yvf4" path="res://icon.svg" id="1_37kl0"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_0bbe5"]
-size = Vector2(129, 128)
+[ext_resource type="PackedScene" uid="uid://xrs0qqicpldt" path="res://prefabs/npc.tscn" id="1_37kl0"]
+[ext_resource type="Script" uid="uid://b5qclimtvr048" path="res://scripts/dialogue.gd" id="2_ppyta"]
+[ext_resource type="Script" uid="uid://cph55j8gti5le" path="res://addons/yarn_spinner/ui/dialogue_view.gd" id="3_ppyta"]
+[ext_resource type="Resource" uid="uid://bv7k2fgfi3ca1" path="res://boo.yarnproject" id="3_ykrsh"]
 
 [node name="Test" type="Node2D" unique_id=63273623]
 
-[node name="NPC" type="Node2D" parent="." unique_id=68273794]
+[node name="NPC" parent="." unique_id=438049094 instance=ExtResource("1_37kl0")]
 position = Vector2(454, 262)
-script = ExtResource("1_8uh7m")
 
-[node name="Sprite2D" type="Sprite2D" parent="NPC" unique_id=1598802370]
-texture = ExtResource("1_37kl0")
+[node name="NPC2" parent="." unique_id=27218590 instance=ExtResource("1_37kl0")]
+position = Vector2(799, 351)
 
-[node name="Area2D" type="Area2D" parent="NPC/Sprite2D" unique_id=237225326]
+[node name="YarnDialogueRunner" type="Node" parent="." unique_id=1231268986]
+unique_name_in_owner = true
+script = ExtResource("2_ppyta")
+yarn_project = ExtResource("3_ykrsh")
+metadata/_custom_type_script = "uid://flra500ihbix"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC/Sprite2D/Area2D" unique_id=1955858458]
-position = Vector2(-0.5, 0)
-shape = SubResource("RectangleShape2D_0bbe5")
-
-[connection signal="input_event" from="NPC/Sprite2D/Area2D" to="NPC" method="_on_area_2d_input_event"]
+[node name="YarnDialogueView" type="CanvasLayer" parent="YarnDialogueRunner" unique_id=2089908858]
+script = ExtResource("3_ppyta")
+metadata/_custom_type_script = "uid://cph55j8gti5le"

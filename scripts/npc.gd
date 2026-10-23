@@ -1,9 +1,8 @@
 extends Node
 
-func clicked():
-	print("hello")
+@onready var dia: YarnDialogueRunner = %YarnDialogueRunner
 
 
 func _on_area_2d_input_event(viewport: Node, event: InputEvent, shape_idx: int) -> void:
 	if event.is_pressed():
-		clicked()
+		dia.start_dialogue("Start")
