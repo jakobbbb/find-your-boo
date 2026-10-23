@@ -3,12 +3,12 @@
 importer="yarn_spinner.project"
 type="Resource"
 uid="uid://bv7k2fgfi3ca1"
-path="res://.godot/imported/boo.yarnproject-a2e813d8d52477de2dcb1915a7c7ff1d.res"
+path="res://.godot/imported/boo.yarnproject-3bdacf40dca11bc53edb0f9945910bd7.res"
 
 [deps]
 
-source_file="res://boo.yarnproject"
-dest_files=["res://.godot/imported/boo.yarnproject-a2e813d8d52477de2dcb1915a7c7ff1d.res"]
+source_file="res://yarn/boo.yarnproject"
+dest_files=["res://.godot/imported/boo.yarnproject-3bdacf40dca11bc53edb0f9945910bd7.res"]
 
 [params]
 
