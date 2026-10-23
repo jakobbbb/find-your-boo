@@ -1,0 +1,10 @@
+{
+    "baseLanguage": "en",
+    "projectFileVersion": 4,
+    "sourceFiles": [
+        "**/*.yarn"
+    ],
+    "definitions": [
+        "boo.ysls.json"
+    ]
+}
