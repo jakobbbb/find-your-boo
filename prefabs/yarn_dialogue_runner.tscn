@@ -9,7 +9,8 @@
 [node name="YarnDialogueRunner" type="Node" unique_id=132473946 node_paths=PackedStringArray("variable_storage")]
 script = ExtResource("1_nfgcd")
 yarn_project = ExtResource("2_en4qt")
-start_node = "test"
+start_node = "start"
+auto_start = true
 variable_storage = NodePath("YarnVariableStorage")
 metadata/_custom_type_script = "uid://flra500ihbix"
 
