@@ -31,9 +31,12 @@ position = Vector2(709.225, -437)
 scale = Vector2(0.31824818, 0.31824815)
 texture = ExtResource("4_0m0f1")
 
-[node name="CollisionShape2D" parent="NPC_Dr_Acula/Sprite2D/Area2D" parent_id_path=PackedInt32Array(438049094, 1716052840) index="0" unique_id=685501766]
-position = Vector2(-25.13763, 25.137619)
-scale = Vector2(2.33, 6.625)
+[node name="Sprite2D Ghost" parent="NPC_Dr_Acula" index="1" unique_id=1324753701]
+position = Vector2(717, -430.08325)
+
+[node name="CollisionShape2D" parent="NPC_Dr_Acula/Area2D" parent_id_path=PackedInt32Array(438049094, 1716052840) index="0" unique_id=685501766]
+position = Vector2(704, -428.08325)
+scale = Vector2(0.78, 2.135)
 
 [node name="NPC_Fishman" parent="." unique_id=1147166367 instance=ExtResource("1_37kl0")]
 position = Vector2(379.22498, -1173.9167)
@@ -43,9 +46,9 @@ metadata/DialogueNode = "Start"
 scale = Vector2(0.3416058, 0.34160584)
 texture = ExtResource("5_b0q6j")
 
-[node name="CollisionShape2D" parent="NPC_Fishman/Sprite2D/Area2D" parent_id_path=PackedInt32Array(1147166367, 1716052840) index="0" unique_id=685501766]
-position = Vector2(-25.13763, 25.137619)
-scale = Vector2(2.33, 6.625)
+[node name="CollisionShape2D" parent="NPC_Fishman/Area2D" parent_id_path=PackedInt32Array(1147166367, 1716052840) index="0" unique_id=685501766]
+position = Vector2(-0.22497177, 13.916794)
+scale = Vector2(1, 2)
 
 [node name="NPC_Twinkch" parent="." unique_id=1839290886 instance=ExtResource("1_37kl0")]
 position = Vector2(328.22498, -157.91675)
@@ -55,9 +58,9 @@ metadata/DialogueNode = "Start"
 scale = Vector2(0.3416058, 0.34160584)
 texture = ExtResource("6_mhym6")
 
-[node name="CollisionShape2D" parent="NPC_Twinkch/Sprite2D/Area2D" parent_id_path=PackedInt32Array(1839290886, 1716052840) index="0" unique_id=685501766]
+[node name="CollisionShape2D" parent="NPC_Twinkch/Area2D" parent_id_path=PackedInt32Array(1839290886, 1716052840) index="0" unique_id=685501766]
 position = Vector2(-25.13763, 25.137619)
-scale = Vector2(2.33, 6.625)
+scale = Vector2(1, 2)
 
 [node name="NPC_StrongLesb" parent="." unique_id=54922268 instance=ExtResource("1_37kl0")]
 position = Vector2(127.54498, -157.91675)
@@ -67,9 +70,9 @@ metadata/DialogueNode = "Start"
 scale = Vector2(0.3416058, 0.34160584)
 texture = ExtResource("7_a3se8")
 
-[node name="CollisionShape2D" parent="NPC_StrongLesb/Sprite2D/Area2D" parent_id_path=PackedInt32Array(54922268, 1716052840) index="0" unique_id=685501766]
-position = Vector2(-25.13763, 25.137619)
-scale = Vector2(2.33, 6.625)
+[node name="CollisionShape2D" parent="NPC_StrongLesb/Area2D" parent_id_path=PackedInt32Array(54922268, 1716052840) index="0" unique_id=685501766]
+position = Vector2(-6.544979, -0.08325195)
+scale = Vector2(1, 2)
 
 [node name="NPC_Ghost" parent="." unique_id=1582067632 instance=ExtResource("1_37kl0")]
 position = Vector2(528.225, -157.91675)
@@ -79,9 +82,9 @@ metadata/DialogueNode = "Start"
 scale = Vector2(0.3416058, 0.34160584)
 texture = ExtResource("8_uty7l")
 
-[node name="CollisionShape2D" parent="NPC_Ghost/Sprite2D/Area2D" parent_id_path=PackedInt32Array(1582067632, 1716052840) index="0" unique_id=685501766]
-position = Vector2(-25.13763, 25.137619)
-scale = Vector2(2.33, 6.625)
+[node name="CollisionShape2D" parent="NPC_Ghost/Area2D" parent_id_path=PackedInt32Array(1582067632, 1716052840) index="0" unique_id=685501766]
+position = Vector2(-11.224972, -0.08325195)
+scale = Vector2(1, 2)
 
 [node name="NPC_Mothy" parent="." unique_id=318285534 instance=ExtResource("1_37kl0")]
 position = Vector2(-217.77502, -157.91675)
@@ -92,9 +95,12 @@ position = Vector2(781, -427)
 scale = Vector2(0.3416058, 0.34160584)
 texture = ExtResource("9_45l4g")
 
-[node name="CollisionShape2D" parent="NPC_Mothy/Sprite2D/Area2D" parent_id_path=PackedInt32Array(318285534, 1716052840) index="0" unique_id=685501766]
-position = Vector2(-5.722046e-06, 70.25642)
-scale = Vector2(2.33, 4.435)
+[node name="Sprite2D Ghost" parent="NPC_Mothy" index="1" unique_id=1324753701]
+position = Vector2(789.775, -429.08325)
+
+[node name="CollisionShape2D" parent="NPC_Mothy/Area2D" parent_id_path=PackedInt32Array(318285534, 1716052840) index="0" unique_id=685501766]
+position = Vector2(780.775, -427.08325)
+scale = Vector2(1, 2)
 
 [node name="NPC2" parent="." unique_id=27218590 instance=ExtResource("1_37kl0")]
 position = Vector2(799, 351)
