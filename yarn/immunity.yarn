@@ -1,0 +1,8 @@
+title: immunity
+---
+=> Host: Dr. h.c. Dr. med. Acula! <<if $drac != 1000>>
+=> Host: Bobo Blocksberg! <<if $witch != 1000>>
+=> Host: Mothperson! <<if $moth != 1000>>
+=> Host: Fishy McFishface! <<if $fish != 1000>>
+=> Host: Muscle Mummy! <<if $mum != 1000>>
+===
