@@ -9,6 +9,7 @@ signal set_affection(cname: String, affection: int)
 signal eliminate_char(cname: String)
 signal reveal_char(cname: String)
 signal show_char_sprite(cname: String)
+signal change_cursor(cursor: Input.CursorShape)
 @warning_ignore_restore("unused_signal")
 
 func _ready() -> void:

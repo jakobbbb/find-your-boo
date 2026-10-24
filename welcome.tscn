@@ -104,6 +104,7 @@ offset_right = 62.0
 offset_bottom = -40.0
 grow_horizontal = 2
 grow_vertical = 0
+mouse_default_cursor_shape = 2
 text = "Play"
 
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer/Control" unique_id=278335733]

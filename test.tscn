@@ -21,7 +21,7 @@ script = ExtResource("1_ykrsh")
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1392501608]
 
 [node name="Control" parent="CanvasLayer" unique_id=137605733 instance=ExtResource("13_0m0f1")]
-mouse_filter = 1
+mouse_filter = 2
 
 [node name="HousePlaceholder" type="Sprite2D" parent="." unique_id=1023348736]
 z_index = -1

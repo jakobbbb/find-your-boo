@@ -89,6 +89,7 @@ expand_mode = 1
 layout_mode = 0
 offset_right = 8.0
 offset_bottom = 8.0
+mouse_default_cursor_shape = 2
 text = "End Day (Debug Placeholder)"
 
 [node name="CharSprites" type="Control" parent="." unique_id=2038880602]

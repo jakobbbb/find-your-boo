@@ -49,3 +49,11 @@ func set_ghost_visible(ghostly: bool) -> void:
 		g.show()
 	else:
 		g.hide()
+
+
+func _on_area_2d_mouse_entered() -> void:
+	GameManager.change_cursor.emit(Control.CURSOR_POINTING_HAND)
+
+
+func _on_area_2d_mouse_exited() -> void:
+	GameManager.change_cursor.emit(Control.CURSOR_ARROW)

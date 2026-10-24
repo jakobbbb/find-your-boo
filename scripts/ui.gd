@@ -9,6 +9,7 @@ func _ready() -> void:
 	set_night_day(false)
 	show_char_sprite("NONE")
 	GameManager.show_char_sprite.connect(show_char_sprite)
+	GameManager.change_cursor.connect(_on_change_cursor)
 
 func set_night_day(is_night: bool) -> void:
 	# night.color.a = 1 if is_night else 0
@@ -36,6 +37,9 @@ func _on_end_day_button_pressed() -> void:
 	print(node)
 	%YarnDialogueRunner.start_dialogue(node)
 	
+func _on_change_cursor(cur: Control.CursorShape) -> void:
+	mouse_default_cursor_shape = cur
+
 func show_char_sprite(cname: String) -> void:
 	for c in $CharSprites.get_children():
 		if c.name == cname:
