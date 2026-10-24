@@ -121,20 +121,31 @@ scale = Vector2(1, 2)
 unique_name_in_owner = true
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=715502669]
-position = Vector2(456.00003, -943)
-zoom = Vector2(0.64, 0.64)
+position = Vector2(541, -572)
+zoom = Vector2(0.88, 0.88)
 script = ExtResource("4_ppyta")
 
 [node name="Arrow" parent="Camera2D" unique_id=1753165597 instance=ExtResource("5_ykrsh")]
-position = Vector2(72, -569)
+position = Vector2(-142, -470)
 
 [node name="Camera2D2" type="Camera2D" parent="." unique_id=2021939344]
-position = Vector2(454.00003, -1959)
-zoom = Vector2(0.64, 0.64)
+position = Vector2(686, -1419)
+zoom = Vector2(0.7, 0.7)
 script = ExtResource("4_ppyta")
 
 [node name="Arrow" parent="Camera2D2" unique_id=1754077635 instance=ExtResource("5_ykrsh")]
-position = Vector2(2, 591)
+position = Vector2(-189, 574)
+
+[node name="Arrow2" parent="Camera2D2" unique_id=1100877718 instance=ExtResource("5_ykrsh")]
+position = Vector2(-256, -544)
+
+[node name="Camera2D3" type="Camera2D" parent="." unique_id=223791954]
+position = Vector2(875, -2293)
+zoom = Vector2(0.815, 0.815)
+script = ExtResource("4_ppyta")
+
+[node name="Arrow" parent="Camera2D3" unique_id=275331642 instance=ExtResource("5_ykrsh")]
+position = Vector2(-28, 486)
 
 [node name="EliminationCeremony" parent="." unique_id=1322346346 instance=ExtResource("14_b0q6j")]
 unique_name_in_owner = true
@@ -146,6 +157,8 @@ script = ExtResource("4_ppyta")
 
 [connection signal="pressed" from="Camera2D/Arrow" to="Camera2D" method="_on_arrow_pressed"]
 [connection signal="pressed" from="Camera2D2/Arrow" to="Camera2D2" method="_on_arrow_pressed"]
+[connection signal="pressed" from="Camera2D2/Arrow2" to="Camera2D2" method="_on_arrow_pressed"]
+[connection signal="pressed" from="Camera2D3/Arrow" to="Camera2D3" method="_on_arrow_pressed"]
 
 [editable path="NPC_Dr_Acula"]
 [editable path="NPC_Fishy McFischface"]
