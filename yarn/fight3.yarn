@@ -1,9 +1,397 @@
 title: fight3
 ---
-The Player appears! <<once if $charname == "Dr. h.c. Dr. med. Acula">>
+The Player appears! <<once if $charname == "Dr. h.c. Dr. med. Dr. iur. Acula">>
 The Player appears! <<once if $charname == "Bobo Blocksberg">>
 The Player appears! <<once if $charname == "Mothperson">>
 The Player appears! <<once if $charname == "Fishy McFishface">>
 The Player appears! <<once if $charname == "Muscle Mummy">>
-What will {$charname} do?
+<<if $leave == false and $date != 100>>
+What will {$charname} do? (Player attraction {$date}/100)
+-> Special Moves
+    <<if $charname == "Dr. h.c. Dr. med. Dr. iur. Acula">>
+        -> dd
+            <<if $conf == true>>
+                Wha
+                <<set $date to $date + 1>>
+            <<elseif $horny == true>>
+                who
+                <<set $date to $date + 1>>
+            <<else>>
+                whe
+                <<set $date to $date + 1>>    
+            <<endif>>         
+            <<jump fight3>>
+        -> kkk
+            <<if $conf == true>>
+                Wha
+                <<set $date to $date + 1>>
+            <<elseif $horny == true>>
+                who
+                <<set $date to $date + 1>>
+            <<else>>
+                whe
+                <<set $date to $date + 1>>    
+            <<endif>>         
+            <<jump fight3>>
+        -> aer
+            <<if $conf == true>>
+                Wha
+                <<set $date to $date + 1>>
+            <<elseif $horny == true>>
+                who
+                <<set $date to $date + 1>>
+            <<else>>
+                whe
+                <<set $date to $date + 1>>    
+            <<endif>>         
+            <<jump fight3>>
+    <<elseif $charname == "Bobo Blocksberg">>
+        -> dd
+            <<if $conf == true>>
+                Wha
+                <<set $date to $date + 1>>
+            <<elseif $horny == true>>
+                who
+                <<set $date to $date + 1>>
+            <<else>>
+                whe
+                <<set $date to $date + 1>>    
+            <<endif>>         
+            <<jump fight3>>
+        -> kkk
+            <<if $conf == true>>
+                Wha
+                <<set $date to $date + 1>>
+            <<elseif $horny == true>>
+                who
+                <<set $date to $date + 1>>
+            <<else>>
+                whe
+                <<set $date to $date + 1>>    
+            <<endif>>         
+            <<jump fight3>>
+        -> aer
+            <<if $conf == true>>
+                Wha
+                <<set $date to $date + 1>>
+            <<elseif $horny == true>>
+                who
+                <<set $date to $date + 1>>
+            <<else>>
+                whe
+                <<set $date to $date + 1>>    
+            <<endif>>         
+            <<jump fight3>>
+    <<elseif $charname == "Mothperson">>
+        -> dd
+            <<if $conf == true>>
+                Wha
+                <<set $date to $date + 1>>
+            <<elseif $horny == true>>
+                who
+                <<set $date to $date + 1>>
+            <<else>>
+                whe
+                <<set $date to $date + 1>>    
+            <<endif>>         
+            <<jump fight3>>
+        -> kkk
+            <<if $conf == true>>
+                Wha
+                <<set $date to $date + 1>>
+            <<elseif $horny == true>>
+                who
+                <<set $date to $date + 1>>
+            <<else>>
+                whe
+                <<set $date to $date + 1>>    
+            <<endif>>         
+            <<jump fight3>>
+        -> aer
+            <<if $conf == true>>
+                Wha
+                <<set $date to $date + 1>>
+            <<elseif $horny == true>>
+                who
+                <<set $date to $date + 1>>
+            <<else>>
+                whe
+                <<set $date to $date + 1>>    
+            <<endif>>         
+            <<jump fight3>>
+    <<elseif $charname == "Fishy McFishface">>
+        -> dd
+            <<if $conf == true>>
+                Wha
+                <<set $date to $date + 1>>
+            <<elseif $horny == true>>
+                who
+                <<set $date to $date + 1>>
+            <<else>>
+                whe
+                <<set $date to $date + 1>>    
+            <<endif>>         
+            <<jump fight3>>
+        -> kkk
+            <<if $conf == true>>
+                Wha
+                <<set $date to $date + 1>>
+            <<elseif $horny == true>>
+                who
+                <<set $date to $date + 1>>
+            <<else>>
+                whe
+                <<set $date to $date + 1>>    
+            <<endif>>         
+            <<jump fight3>>
+        -> aer
+            <<if $conf == true>>
+                Wha
+                <<set $date to $date + 1>>
+            <<elseif $horny == true>>
+                who
+                <<set $date to $date + 1>>
+            <<else>>
+                whe
+                <<set $date to $date + 1>>    
+            <<endif>>         
+            <<jump fight3>>
+    <<elseif $charname == "Muscle Mummy">>
+        -> dd
+            <<if $conf == true>>
+                Wha
+                <<set $date to $date + 1>>
+            <<elseif $horny == true>>
+                who
+                <<set $date to $date + 1>>
+            <<else>>
+                whe
+                <<set $date to $date + 1>>    
+            <<endif>>         
+            <<jump fight3>>
+        -> kkk
+            <<if $conf == true>>
+                Wha
+                <<set $date to $date + 1>>
+            <<elseif $horny == true>>
+                who
+                <<set $date to $date + 1>>
+            <<else>>
+                whe
+                <<set $date to $date + 1>>    
+            <<endif>>         
+            <<jump fight3>>
+        -> aer
+            <<if $conf == true>>
+                Wha
+                <<set $date to $date + 1>>
+            <<elseif $horny == true>>
+                who
+                <<set $date to $date + 1>>
+            <<else>>
+                whe
+                <<set $date to $date + 1>>    
+            <<endif>>         
+            <<jump fight3>>
+    <<endif>>
+-> Inventory
+    <<if $charname == "Dr. h.c. Dr. med. Dr. iur. Acula">>
+        -> dd
+            <<if $conf == true>>
+                Wha
+                <<set $date to $date + 1>>
+            <<elseif $horny == true>>
+                who
+                <<set $date to $date + 1>>
+            <<else>>
+                whe
+                <<set $date to $date + 1>>    
+            <<endif>>         
+            <<jump fight3>>
+        -> kkk
+            <<if $conf == true>>
+                Wha
+                <<set $date to $date + 1>>
+            <<elseif $horny == true>>
+                who
+                <<set $date to $date + 1>>
+            <<else>>
+                whe
+                <<set $date to $date + 1>>    
+            <<endif>>         
+            <<jump fight3>>
+        -> aer
+            <<if $conf == true>>
+                Wha
+                <<set $date to $date + 1>>
+            <<elseif $horny == true>>
+                who
+                <<set $date to $date + 1>>
+            <<else>>
+                whe
+                <<set $date to $date + 1>>    
+            <<endif>>         
+            <<jump fight3>>
+    <<elseif $charname == "Bobo Blocksberg">>
+        -> dd
+            <<if $conf == true>>
+                Wha
+                <<set $date to $date + 1>>
+            <<elseif $horny == true>>
+                who
+                <<set $date to $date + 1>>
+            <<else>>
+                whe
+                <<set $date to $date + 1>>    
+            <<endif>>         
+            <<jump fight3>>
+        -> kkk
+            <<if $conf == true>>
+                Wha
+                <<set $date to $date + 1>>
+            <<elseif $horny == true>>
+                who
+                <<set $date to $date + 1>>
+            <<else>>
+                whe
+                <<set $date to $date + 1>>    
+            <<endif>>         
+            <<jump fight3>>
+        -> aer
+            <<if $conf == true>>
+                Wha
+                <<set $date to $date + 1>>
+            <<elseif $horny == true>>
+                who
+                <<set $date to $date + 1>>
+            <<else>>
+                whe
+                <<set $date to $date + 1>>    
+            <<endif>>         
+            <<jump fight3>>
+    <<elseif $charname == "Mothperson">>
+        -> dd
+            <<if $conf == true>>
+                Wha
+                <<set $date to $date + 1>>
+            <<elseif $horny == true>>
+                who
+                <<set $date to $date + 1>>
+            <<else>>
+                whe
+                <<set $date to $date + 1>>    
+            <<endif>>         
+            <<jump fight3>>
+        -> kkk
+            <<if $conf == true>>
+                Wha
+                <<set $date to $date + 1>>
+            <<elseif $horny == true>>
+                who
+                <<set $date to $date + 1>>
+            <<else>>
+                whe
+                <<set $date to $date + 1>>    
+            <<endif>>         
+            <<jump fight3>>
+        -> aer
+            <<if $conf == true>>
+                Wha
+                <<set $date to $date + 1>>
+            <<elseif $horny == true>>
+                who
+                <<set $date to $date + 1>>
+            <<else>>
+                whe
+                <<set $date to $date + 1>>    
+            <<endif>>         
+            <<jump fight3>>
+    <<elseif $charname == "Fishy McFishface">>
+        -> dd
+            <<if $conf == true>>
+                Wha
+                <<set $date to $date + 1>>
+            <<elseif $horny == true>>
+                who
+                <<set $date to $date + 1>>
+            <<else>>
+                whe
+                <<set $date to $date + 1>>    
+            <<endif>>         
+            <<jump fight3>>
+        -> kkk
+            <<if $conf == true>>
+                Wha
+                <<set $date to $date + 1>>
+            <<elseif $horny == true>>
+                who
+                <<set $date to $date + 1>>
+            <<else>>
+                whe
+                <<set $date to $date + 1>>    
+            <<endif>>         
+            <<jump fight3>>
+        -> aer
+            <<if $conf == true>>
+                Wha
+                <<set $date to $date + 1>>
+            <<elseif $horny == true>>
+                who
+                <<set $date to $date + 1>>
+            <<else>>
+                whe
+                <<set $date to $date + 1>>    
+            <<endif>>         
+            <<jump fight3>>
+    <<elseif $charname == "Muscle Mummy">>
+        -> dd
+            <<if $conf == true>>
+                Wha
+                <<set $date to $date + 1>>
+            <<elseif $horny == true>>
+                who
+                <<set $date to $date + 1>>
+            <<else>>
+                whe
+                <<set $date to $date + 1>>    
+            <<endif>>         
+            <<jump fight3>>
+        -> kkk
+            <<if $conf == true>>
+                Wha
+                <<set $date to $date + 1>>
+            <<elseif $horny == true>>
+                who
+                <<set $date to $date + 1>>
+            <<else>>
+                whe
+                <<set $date to $date + 1>>    
+            <<endif>>         
+            <<jump fight3>>
+        -> aer
+            <<if $conf == true>>
+                Wha
+                <<set $date to $date + 1>>
+            <<elseif $horny == true>>
+                who
+                <<set $date to $date + 1>>
+            <<else>>
+                whe
+                <<set $date to $date + 1>>    
+            <<endif>>         
+            <<jump fight3>>
+    <<endif>>
+-> Random
+-> Leave
+    Are you sure?
+    -> Yes.
+        <<set $leave to true>>
+        <<jump fight3>>
+    -> No.
+        <<jump fight3>>
+<<elseif $leave == true>>
+    Really?
+<<elseif $date == 100>>
+    That was fun!
+<<endif>>
 ===

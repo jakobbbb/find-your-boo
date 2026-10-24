@@ -1,5 +1,9 @@
 title: day3
 ---
+<<declare $date = 69>>
+<<declare $leave = false>>
+<<declare $conf = false>>
+<<declare $horny = false>>
 Host: Welcome back to
 FIND
 YOUR
@@ -7,4 +11,30 @@ BOO!
 Host: After we had a nice and chill time getting aquainted with each other...
 Host: And a chilling elimination ceremony...
 Host: Today we are gonna shake things up a little.
+What?
+Host: Today our eligible singles will compete for the affection of our contestant by going on one-on-one dates with them!
+Host: So who will be the first to go on a date?
+<<detour whodate>>
+<<if $leave == true>>
+    Host: Umm, okay.
+        <<set $leave to false>>
+<<else>>
+    Host: Whoa!
+<<endif>>
+Host: Who will be next?
+<<detour whodate>>
+<<if $leave == true>>
+    Host: Umm, okay.
+        <<set $leave to false>>
+<<else>>
+    Host: Whoa!
+<<endif>>
+Host: And for our third and finale date, you may already know who it is:
+<<detour whodate>>
+<<if $leave == true>>
+    Host: Umm, okay.
+        <<set $leave to false>>
+<<else>>
+    Host: Whoa!
+<<endif>>
 ===
