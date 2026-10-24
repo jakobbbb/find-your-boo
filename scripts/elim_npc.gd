@@ -7,6 +7,9 @@ func _ready() -> void:
 
 func _on_area_2d_input_event(_viewport: Node, event: InputEvent, _shape_idx: int) -> void:
 	if event.is_pressed():
+		if is_immune():
+			print(name + " is immune, won't yeet")
+			return
 		var cname = get_meta("DialogueNode")
 		if cname != "ghost":
 			GameManager.set_affection.emit(cname, 1000)
@@ -21,8 +24,15 @@ func _on_reveal_char(cname: String) -> void:
 		revealed = true
 
 func _on_area_2d_mouse_entered() -> void:
-	GameManager.change_cursor.emit(Control.CURSOR_POINTING_HAND)
+	print(GameManager.immune)
+	if is_immune():
+		GameManager.change_cursor.emit(Control.CURSOR_FORBIDDEN)
+	else:
+		GameManager.change_cursor.emit(Control.CURSOR_POINTING_HAND)
 
 
 func _on_area_2d_mouse_exited() -> void:
 	GameManager.change_cursor.emit(Control.CURSOR_ARROW)
+
+func is_immune() -> bool:
+	return get_meta("DialogueNode") == GameManager.immune

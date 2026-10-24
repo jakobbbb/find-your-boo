@@ -61,11 +61,11 @@
       "location": {
         "end": {
           "character": 31,
-          "line": 21
+          "line": 22
         },
         "start": {
           "character": 0,
-          "line": 19
+          "line": 20
         }
       },
       "parameters": [],
@@ -79,11 +79,11 @@
       "location": {
         "end": {
           "character": 27,
-          "line": 24
+          "line": 25
         },
         "start": {
           "character": 0,
-          "line": 23
+          "line": 24
         }
       },
       "parameters": [],
@@ -97,11 +97,11 @@
       "location": {
         "end": {
           "character": 36,
-          "line": 27
+          "line": 28
         },
         "start": {
           "character": 0,
-          "line": 26
+          "line": 27
         }
       },
       "parameters": [
@@ -121,11 +121,11 @@
       "location": {
         "end": {
           "character": 41,
-          "line": 30
+          "line": 31
         },
         "start": {
           "character": 0,
-          "line": 29
+          "line": 30
         }
       },
       "parameters": [
@@ -145,15 +145,39 @@
       "location": {
         "end": {
           "character": 40,
-          "line": 36
+          "line": 37
         },
         "start": {
           "character": 0,
-          "line": 32
+          "line": 33
         }
       },
       "parameters": [],
       "yarnName": "trigger_elim"
+    },
+    {
+      "async": false,
+      "definitionName": "_yarn_command_set_immune",
+      "fileName": "gamemanager.gd",
+      "language": "gdscript",
+      "location": {
+        "end": {
+          "character": 27,
+          "line": 40
+        },
+        "start": {
+          "character": 0,
+          "line": 39
+        }
+      },
+      "parameters": [
+        {
+          "isParamsArray": false,
+          "name": "cname",
+          "type": "string"
+        }
+      ],
+      "yarnName": "set_immune"
     }
   ],
   "version": 2

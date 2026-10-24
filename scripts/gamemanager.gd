@@ -1,6 +1,7 @@
 extends Node
 
 var next_to_be_eliminated = ""
+var immune = ""
 
 @warning_ignore_start("unused_signal")
 signal set_night()
@@ -35,7 +36,9 @@ static func _yarn_command_trigger_elim():
 		GameManager.eliminate_char.emit("ghost")
 		GameManager.eliminate_char.emit(GameManager.next_to_be_eliminated)
 		GameManager.next_to_be_eliminated = ""
-	
+
+static func _yarn_command_set_immune(cname: String) -> void:
+	GameManager.immune = cname
 
 func _on_set_affection(cname: String, affection: int) -> void:
 	if affection == 1000:
