@@ -19,3 +19,10 @@ func _on_reveal_char(cname: String) -> void:
 	if has_meta("DialogueNode") and get_meta("DialogueNode") == cname:
 		$AnimationPlayer.play("ghost_reveal")
 		revealed = true
+
+func _on_area_2d_mouse_entered() -> void:
+	GameManager.change_cursor.emit(Control.CURSOR_POINTING_HAND)
+
+
+func _on_area_2d_mouse_exited() -> void:
+	GameManager.change_cursor.emit(Control.CURSOR_ARROW)
