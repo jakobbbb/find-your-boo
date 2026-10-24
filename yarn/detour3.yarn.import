@@ -1,0 +1,14 @@
+[remap]
+
+importer="yarn_spinner.yarn_file"
+type="Resource"
+uid="uid://dl7biu0kxh45w"
+path="res://.godot/imported/detour3.yarn-080f9af4a645c3810a5c0e4da4f2a8e1.res"
+
+[deps]
+
+source_file="res://yarn/detour3.yarn"
+dest_files=["res://.godot/imported/detour3.yarn-080f9af4a645c3810a5c0e4da4f2a8e1.res"]
+
+[params]
+
