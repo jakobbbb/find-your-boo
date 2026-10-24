@@ -36,3 +36,4 @@ enabled=PackedStringArray("res://addons/yarn_spinner/plugin.cfg")
 [rendering]
 
 rendering_device/driver.windows="d3d12"
+environment/defaults/default_clear_color=Color(0.053075, 0.0341, 0.11, 1)
