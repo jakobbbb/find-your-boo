@@ -9,11 +9,20 @@ func _get_bottom_coord() -> Vector3:
 	return Vector3(v2.x, v2.y, dy)
 
 func _on_area_2d_input_event(viewport: Node, event: InputEvent, shape_idx: int) -> void:
-	if event.is_pressed():
-		var node_base = get_meta("DialogueNode")
-		var node = node_base + str(get_day())
-		print("Starting node", node)
+	if not event.is_pressed():
+		return
+		
+	if get_day() == 2:
+		var char_name = get_meta("Day2CharName")
+		const node = "singles2"
+		dia.variable_storage.set_value("$char_name", char_name)
 		dia.start_dialogue(node)
+		return
+		
+	var node_base = get_meta("DialogueNode")
+	var node = node_base + str(get_day())
+	print("Starting node", node)
+	dia.start_dialogue(node)
 
 func get_day() -> int:
 	return dia.variable_storage.get_value("$day")

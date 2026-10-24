@@ -10,6 +10,7 @@ size = Vector2(129, 128)
 [node name="NPC" type="Node2D" unique_id=438049094]
 script = ExtResource("1_1ov3m")
 metadata/DialogueNode = ""
+metadata/Day2CharName = ""
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=177765413]
 texture = ExtResource("2_cuwdc")
