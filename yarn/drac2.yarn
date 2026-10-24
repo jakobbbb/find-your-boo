@@ -281,7 +281,7 @@ You: So...
         {$charname}: And now I am really strong.
         You: So you don't break any bones?
         {$charname}: No, now I break things with my bones.
-        You marvel at muscles.
+        You marvel at her muscles.
         Because you can't see her bones.
     <<endif>>
 -> insinuate that the moon is not real
@@ -301,10 +301,59 @@ You: So...
         {$charname}: You mean the moonlanding?
         You: No... the moon.
         {$charname}: A fascinating hypothesis.
+        You: The moonlanding is obviously real.
+        {$charname}: You know, there is an obvious question I could ask you know.
+        {$charname}: But I hate being obvious.
     <<elseif $charname == "Bobo Blocksberg">>
+        {$charname}: Then what is the big round thing in the sky at night?
+        You refuse to elaborate.
+        {$charname}: Are you for real?
+        He shoots you an incredulous look.
+        You've seen that look before.
+        It doesn't faze you at all.
+        {$charname}: You know, I've been to the moon.
+        {$charname}: Several times.
+        {$charname}: My great-great-great aunt Mildred lives there.
+        {$charname}: With her bunnies.
+        {$charname}: They bake the greatest rice cake you ever tasted.
+        {$charname}: And you are telling me that the moon isn't real?
+        {$charname}: That my great-great-great aunt Mildred and her bunnies aren't real?
+        {$charname}: That the ricecake isn't real??
+        {$charname}: I find that hard to believe.
+        You silently point to the poster on the wall that says "I believe."
+        {$charname}: Well played.
+        You: Don't hate the player, hate the game.
+        {$charname}: I hate you.
+        But he laughs.
     <<elseif $charname == "Mothperson">>
+        {$charname}: Of kós.
+        {$charname}: It's the Great Lämp.
+        You: Wouldn't that be the sun?
+        {$charname}: No, the sun is the sun.
+        You: Obviously.
+        {$charname}: Fellow believer.
+        They take your hands.
+        The lämp shines on you both.
+        Just sitting in comfortable silence.
     <<elseif $charname == "Fishy McFishface">>
+        {$charname}: If you say so.
+        You: I do.
+        {$charname}: Then who am I to argue.
+        {$charname}: Especially with someone with such pretty eyes.
+        It's the oldest line in the book.
+        But somehow he makes it work.
+        You're blushing.
+        Hard.
+        Uh oh.
+        You are in danger.
+        You scan the small part of your brain that's still working for something to say.
     <<elseif $charname == "Muscle Mummy">>
+        {$charname}: You know I never cared much for it anyways.
+        You: You didn't?
+        {$charname}: I always thought that the moon was kinda overrated.
+        {$charname}: Everyone kept telling me how romantic it was.
+        {$charname}: Doing things in the moonlight.
+        {$charname}: But unless the things that are done involve working out, I am not interested.
     <<endif>>
 -> start singing a song
     <<if $charname == "Dr. h.c. Dr. med. Acula">>
@@ -347,10 +396,10 @@ You: But now I would really like to know what you think about:
     <<elseif $charname == "Muscle Mummy">>
         <<set $mum = $mum + 1>>
     <<endif>>
-    {$charname}: <<if $charname == "Bobo Blocksberg">>
-    {$charname}: <<if $charname == "Mothperson">>
-    {$charname}: <<if $charname == "Fishy McFishface">>
-    {$charname}: <<if $charname == "Muscle Mummy">>
+    {$charname}: Looks like she bites. <<if $charname == "Bobo Blocksberg">>
+    {$charname}: We may have our big differences but she is really smart and I appreciate that. <<if $charname == "Mothperson">>
+    {$charname}: Nice teeth. <<if $charname == "Fishy McFishface">>
+    {$charname}: I think she should work out more. Being so frail and pale is not healthy. <<if $charname == "Muscle Mummy">>
 -> Bobo Blocksberg <<if $charname != "Bobo Blocksberg">>
     <<if $charname == "Dr. h.c. Dr. med. Acula">>
         <<set $drac = $drac + 1>>
@@ -363,10 +412,10 @@ You: But now I would really like to know what you think about:
     <<elseif $charname == "Muscle Mummy">>
         <<set $mum = $mum - 1>>
     <<endif>>
-    {$charname}: <<if $charname == "Dr. h.c. Dr. med. Acula">>
-    {$charname}: <<if $charname == "Mothperson">>
-    {$charname}: <<if $charname == "Fishy McFishface">>
-    {$charname}: <<if $charname == "Muscle Mummy">>
+    {$charname}: Should take life more seriously. <<if $charname == "Dr. h.c. Dr. med. Acula">>
+    {$charname}: Weird guy. Spends all his time in a room without turning on the lämps. <<if $charname == "Mothperson">>
+    {$charname}: Twink. <<if $charname == "Fishy McFishface">>
+    {$charname}: He just makes me want to take care of him. <<if $charname == "Muscle Mummy">>
 -> Mothperson <<if $charname != "Mothperson">>
     <<if $charname == "Dr. h.c. Dr. med. Acula">>
         <<set $drac = $drac + 1>>
@@ -379,10 +428,10 @@ You: But now I would really like to know what you think about:
     <<elseif $charname == "Muscle Mummy">>
         <<set $mum = $mum + 1>>
     <<endif>>
-    {$charname}: <<if $charname == "Dr. h.c. Dr. med. Acula">>
-    {$charname}: <<if $charname == "Bobo Blocksberg">>
-    {$charname}: <<if $charname == "Fishy McFishface">>
-    {$charname}: <<if $charname == "Muscle Mummy">>
+    {$charname}: They have only one interest but at least they are really into it. <<if $charname == "Dr. h.c. Dr. med. Acula">>
+    {$charname}: Always to much light wherever they are. <<if $charname == "Bobo Blocksberg">>
+    {$charname}: A veritable lämp-enthusiast! <<if $charname == "Fishy McFishface">>
+    {$charname}: Funny creature. <<if $charname == "Muscle Mummy">>
 -> Fishy McFishface <<if $charname != "Fishy McFishface">>
     <<if $charname == "Dr. h.c. Dr. med. Acula">>
         <<set $drac = $drac - 1>>
@@ -395,10 +444,10 @@ You: But now I would really like to know what you think about:
     <<elseif $charname == "Muscle Mummy">>
         <<set $mum = $mum + 1>>
     <<endif>>
-    {$charname}: <<if $charname == "Dr. h.c. Dr. med. Acula">>
-    {$charname}: <<if $charname == "Bobo Blocksberg">>
-    {$charname}: <<if $charname == "Mothperson">>
-    {$charname}: <<if $charname == "Muscle Mummy">>
+    {$charname}: *blushed* umm... well... <<if $charname == "Dr. h.c. Dr. med. Acula">>
+    {$charname}: Blocked me on Grindr. <<if $charname == "Bobo Blocksberg">>
+    {$charname}: Fishman. <<if $charname == "Mothperson">>
+    {$charname}: What a smile! <<if $charname == "Muscle Mummy">>
 -> Muscle Mummy <<if $charname != "Muscle Mummy">>
     <<if $charname == "Dr. h.c. Dr. med. Acula">>
         <<set $drac = $drac + 1>>
@@ -411,16 +460,12 @@ You: But now I would really like to know what you think about:
     <<elseif $charname == "Muscle Mummy">>
         <<set $mum = $mum + 1>>
     <<endif>>
-    {$charname}: <<if $charname == "Dr. h.c. Dr. med. Acula">>
-    {$charname}: <<if $charname == "Bobo Blocksberg">>
-    {$charname}: <<if $charname == "Mothperson">>
-    {$charname}: <<if $charname == "Fishy McFishface">>
+    {$charname}: Wouldn't mind studying her anatomy. <<if $charname == "Dr. h.c. Dr. med. Acula">>
+    {$charname}: Queen! <<if $charname == "Bobo Blocksberg">>
+    {$charname}: So sweaty. <<if $charname == "Mothperson">>
+    {$charname}: So dedicated! I love it! <<if $charname == "Fishy McFishface">>
 -> The Ghost
-    {$charname}: <<if $charname == "Dr. h.c. Dr. med. Acula">>
-    {$charname}: <<if $charname == "Bobo Blocksberg">>
-    {$charname}: <<if $charname == "Mothperson">>
-    {$charname}: <<if $charname == "Fishy McFishface">>
-    {$charname}: <<if $charname == "Muscle Mummy">>
+    {$charname}: Boo!
 You: I really enjoyed our time together.
 <<if $charname == "Dr. h.c. Dr. med. Acula">>
     {$charname}: Bet you say that to everyone.
@@ -430,8 +475,63 @@ You: I really enjoyed our time together.
     You smile.
     You: Touché.
 <<elseif $charname == "Bobo Blocksberg">>
+    You: But you have to tell me.
+    You: Was there a party after the elimination yesterday?
+    You: And why wasn't I invited?
+    {$charname}: Well...
+    He's avoiding eye-contact.
+    {$charname}: You weren't invited because there wasn't a party.
+    {$charname}: Just me alone in this room.
+    He smiles weakly.
+    {$charname}: Pathetic, aren't I?
+    You: I don't think so.
+    {$charname}: You don't?
+    He seems genuinely surprised.
+    You: Next time, just tell me and then we can drink alone together.
+    {$charname}: I would love that.
 <<elseif $charname == "Mothperson">>
+    You: Your lämp is really pretty.
+    {$charname}: And so are you.
+    They blush.
+    You blush.
+    Both of you are blushing even harder because the other one is blushing.
+    You are stuck in a blush loop.
+    It's really adorable.
 <<elseif $charname == "Fishy McFishface">>
+    {$charname}: Well, wasn't that a pleasure?
+    You: ...pleasure.
+    What are you doing?
+    You were just able to form proper sentences a second ago and now his hand has accidentally brushed your thigh and your brain is going haywire again.
+    {$charname}: We should do that again sometimes.
+    He has the nerve to wink at you and flash a smile so bright it might attract Mothperson.
+    You suddenly have difficulty breathing.
+    {$charname}: *laughs* Have I taken your breath away?
+    You: I...
+    You: I...
+    You are wheezing.
+    He starts to look really concerned.
+    You: I have asthma...
+    There is too much damn dust in this Villa.
+    {$charname}: Where is your medication?
+    He jumps up and runs out of the room after you manage to give him the important information.
+    He's back with your inhaler in the blink of an eye.
+    He pats your back while you wait for the meds to work.
+    You: Thanks.
+    {$charname}: No worries. Can't have you dying on me, can I?
+    {$charname}: Not when I have so much I want to do to you... if you want me to.
+    He wispers the last sentence in your ear and you feel another asthma attack oncoming.
 <<elseif $charname == "Muscle Mummy">>
+    {$charname}: I think I should get back to my workout soon.
+    You: Oh, don't let me keep you from it!
+    {$charname}: No, I really enjoyed this.
+    {$charname}: I mean I would be glad to pause my workout for you anytime.
+    You: Really?
+    She nods.
+    This feels like a really big compliment.
+    You are not sure how to respond.
+    While you are still thinking, she pulls you in a bonecrushing hug.
+    Your bones are not breaking but even if they were...
+    What a way to go.
+    She releases you way to soon.
 <<endif>>
 ===
