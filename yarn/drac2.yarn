@@ -170,8 +170,32 @@ You: So...
         {$charname}: Correct.
         You: And not a dinosaur?
         {$charname}: Correct.
+        You: ...
+        You: I like your confidence.
+        {$charname}: I like lämp.
     <<elseif $charname == "Fishy McFishface">>
+        {$charname}: Definitely the Ichthyosaurus.
+        {$charname}: Anything with big fins is bound to be a favourite of mine.
+        He winks at you.
+        You blush.
+        You have no idea what he means but still you blush.
+        There must be something wrong with you.
+        {$charname}: Everything all right?
+        He looks half concerned, half amused.
+        You must have stared.
+        You just hope you didn't drool.
+        Again.
     <<elseif $charname == "Muscle Mummy">>
+        {$charname}: Let me think.
+        {$charname}: Not the T-Rex.
+        {$charname}: Not with these embarrassingly weak arms.
+        You nod.
+        A valid concern.
+        {$charname}: I think the Deinonychus would be a good choice.
+        {$charname}: Strong hunter.
+        {$charname}: Fearsome predator.
+        {$charname}: Very likely feathered.
+        {$charname}: What's not to love?
     <<endif>>
 -> talk about the last time you slipped on a banana peel
     <<if $charname == "Dr. h.c. Dr. med. Acula">>
@@ -195,9 +219,70 @@ You: So...
         She snatches them out of your hands and spends about 10 minutes looking at them while occasionally muttering "...bones...".
         It is kind of endearing.
     <<elseif $charname == "Bobo Blocksberg">>
+        {$charname}: Aww, that sounds awful.
+        You: It was.
+        You: And the worst thing is that it keeps happening to me.
+        You: At least once a week.
+        {$charname}: Sounds like you really pissed off some monkeys.
+        {$charname}: I once, accidentally of course, stole a clown's car.
+        {$charname}: I kept wondering how it was so much bigger on the inside.
+        {$charname}: And why suddenly I had some kind of encounter with a cake almost everyday.
+        {$charname}: I stepped in them, they were thrown at me, you name it.
+        {$charname}: It stopped when the police arrested me and the clown got the car back.
+        You: You went to jail??
+        {$charname}: Of course not.
+        {$charname}: I am a witch.
+        {$charname}: I was burned at the stake.
+        You: ???
+        {$charname}: *winks* I bet you were wondering why I am so hot.
+        {$charname}: Also I have a spell for that kind of situation.
+        {$charname}: Obviously.
+        {$charname}: Or I wouldn't be here.
+        You nod.
     <<elseif $charname == "Mothperson">>
+        {$charname}: Where you looking at the sun?
+        You: Huh?
+        {$charname}: When it happend?
+        You: Uuuh... maybe?
+        {$charname}: *nods solemnly* The sun can be very distracting.
+        You: It... is a big lämp I guess?
+        {$charname}: You are right.
+        They look at you an beam.
+        Almost brighter than the sun.
+        And definitely brighter that the lämp.
     <<elseif $charname == "Fishy McFishface">>
+        {$charname}: Oh no.
+        {$charname}: Does it still hurt?
+        You rub your elbow.
+        You: Sometimes.
+        {$charname}: Shall I kiss it better?
+        You: Uuuuh... yeah?
+        He takes your elbow and kisses it very lightly.
+        His lips are suprisingly warm and unsurprisingly wet.
+        Your elbow actually seems to hurt less.
+        {$charname}: *winks* Fishmagic.
+        You: But how?
+        {$charname}: It runs in the family.
     <<elseif $charname == "Muscle Mummy">>
+        {$charname}: Did you break anything?
+        You: I broke my elbow?
+        {$charname}: Poor dear.
+        {$charname}: First time?
+        You: ...yeah.
+        {$charname}: Which means your bones are strong. In general at least.
+        {$charname}: But you should get even stronger.
+        {$charname}: I used to be weak like you.
+        You: Hey!
+        {$charname}: But then I started to get stronger.
+        {$charname}: And stronger.
+        {$charname}: And stronger.
+        {$charname}: And stronger.
+        {$charname}: And stronger.
+        {$charname}: And now I am really strong.
+        You: So you don't break any bones?
+        {$charname}: No, now I break things with my bones.
+        You marvel at muscles.
+        Because you can't see her bones.
     <<endif>>
 -> insinuate that the moon is not real
     <<if $charname == "Dr. h.c. Dr. med. Acula">>
