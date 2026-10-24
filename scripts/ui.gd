@@ -2,6 +2,7 @@ extends Control
 
 @onready var night = $Night/AnimationPlayer
 
+var skipping = false
 
 func _ready() -> void:
 	GameManager.set_night.connect(_on_set_night)
@@ -10,6 +11,17 @@ func _ready() -> void:
 	show_char_sprite("NONE")
 	GameManager.show_char_sprite.connect(show_char_sprite)
 	GameManager.change_cursor.connect(_on_change_cursor)
+
+func _input(event: InputEvent) -> void:
+	if event.is_action_pressed("debug_skip"):
+		skipping = true
+	elif event.is_action_released("debug_skip"):
+		skipping = false
+		
+func _process(_delta: float) -> void:
+	if skipping:
+		%YarnDialogueRunner.request_next_content()
+
 
 func set_night_day(is_night: bool) -> void:
 	# night.color.a = 1 if is_night else 0
@@ -36,7 +48,9 @@ func _on_end_day_button_pressed() -> void:
 	var node = "end" + day
 	print(node)
 	%YarnDialogueRunner.start_dialogue(node)
-	
+
+
+
 func _on_change_cursor(cur: Control.CursorShape) -> void:
 	mouse_default_cursor_shape = cur
 
