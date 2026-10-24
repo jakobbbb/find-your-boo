@@ -19,7 +19,16 @@ func _input(event: InputEvent) -> void:
 		print(get_affection(Chars.Mothy))
 
 func elim(cname: String) -> void:
-	print(cname)  # TODO
+	print("Eliminating " + cname)
+	variable_storage.set_value("$"+cname, 1000)
+	start_dialogue("bye")
+	print()
+	for char in get_children():
+		print(char)
+		print(char.get_script().get_global_name())
+		print()
+	print()
+	print()
 
 func get_affection(c: Chars) -> int:
 	var v = ""
