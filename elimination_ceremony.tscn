@@ -1,0 +1,114 @@
+[gd_scene format=3 uid="uid://jsfbttnege8j"]
+
+[ext_resource type="Script" uid="uid://dsj08iggef2kb" path="res://scripts/elim_ceremony.gd" id="1_oq8jh"]
+[ext_resource type="PackedScene" uid="uid://xrs0qqicpldt" path="res://prefabs/npc.tscn" id="2_gsvjj"]
+[ext_resource type="Texture2D" uid="uid://qhkw7cqtw8vj" path="res://assets/placeholder/characters/dr_acula.png" id="3_fmcle"]
+[ext_resource type="Script" uid="uid://ccigadycljmk8" path="res://scripts/elim_npc.gd" id="3_x77ti"]
+[ext_resource type="Texture2D" uid="uid://12nc4dd5ytaq" path="res://assets/placeholder/characters/fishman.png" id="4_x77ti"]
+[ext_resource type="Texture2D" uid="uid://d4cwpp2tq5dm7" path="res://assets/placeholder/characters/twinkch.png" id="5_2p30f"]
+[ext_resource type="Texture2D" uid="uid://d32kxpptp6air" path="res://assets/placeholder/characters/strong lesb.png" id="6_61yvi"]
+[ext_resource type="Texture2D" uid="uid://b417h6penn7qq" path="res://assets/placeholder/characters/literal ghost.png" id="7_lh37p"]
+[ext_resource type="Texture2D" uid="uid://c1780e1r888om" path="res://assets/placeholder/characters/mothy.png" id="8_4bqgu"]
+
+[node name="Elimination Ceremony" type="Node2D" unique_id=1322346346]
+script = ExtResource("1_oq8jh")
+
+[node name="Background" type="ColorRect" parent="." unique_id=317848435]
+offset_left = -315.0
+offset_top = -223.0
+offset_right = 1376.0
+offset_bottom = 793.0
+color = Color(0, 0, 0, 1)
+
+[node name="Dr_Acula" parent="." unique_id=438049094 instance=ExtResource("2_gsvjj")]
+position = Vector2(-60, 601)
+script = ExtResource("3_x77ti")
+metadata/DialogueNode = "drac"
+
+[node name="Sprite2D" parent="Dr_Acula" index="0" unique_id=177765413]
+position = Vector2(709.225, -437)
+scale = Vector2(0.31824818, 0.31824815)
+texture = ExtResource("3_fmcle")
+
+[node name="Sprite2D Ghost" parent="Dr_Acula" index="1" unique_id=1324753701]
+position = Vector2(717, -430.08325)
+
+[node name="CollisionShape2D" parent="Dr_Acula/Area2D" parent_id_path=PackedInt32Array(438049094, 1716052840) index="0" unique_id=685501766]
+position = Vector2(704, -428.08325)
+scale = Vector2(0.78, 2.135)
+
+[node name="Fishman" parent="." unique_id=1307348235 instance=ExtResource("2_gsvjj")]
+position = Vector2(789, 172)
+script = ExtResource("3_x77ti")
+metadata/DialogueNode = "fish"
+
+[node name="Sprite2D" parent="Fishman" index="0" unique_id=177765413]
+scale = Vector2(0.3416058, 0.34160584)
+texture = ExtResource("4_x77ti")
+
+[node name="CollisionShape2D" parent="Fishman/Area2D" parent_id_path=PackedInt32Array(1307348235, 1716052840) index="0" unique_id=685501766]
+position = Vector2(-0.22497177, 13.916794)
+scale = Vector2(1, 2)
+
+[node name="Twinkch" parent="." unique_id=1476614680 instance=ExtResource("2_gsvjj")]
+position = Vector2(283.225, 162)
+script = ExtResource("3_x77ti")
+metadata/DialogueNode = "witch"
+
+[node name="Sprite2D" parent="Twinkch" index="0" unique_id=177765413]
+scale = Vector2(0.3416058, 0.34160584)
+texture = ExtResource("5_2p30f")
+
+[node name="CollisionShape2D" parent="Twinkch/Area2D" parent_id_path=PackedInt32Array(1476614680, 1716052840) index="0" unique_id=685501766]
+position = Vector2(-25.13763, 25.137619)
+scale = Vector2(1, 2)
+
+[node name="StrongLesb" parent="." unique_id=1493618801 instance=ExtResource("2_gsvjj")]
+position = Vector2(82.54501, 162)
+script = ExtResource("3_x77ti")
+metadata/DialogueNode = "mum"
+
+[node name="Sprite2D" parent="StrongLesb" index="0" unique_id=177765413]
+scale = Vector2(0.3416058, 0.34160584)
+texture = ExtResource("6_61yvi")
+
+[node name="CollisionShape2D" parent="StrongLesb/Area2D" parent_id_path=PackedInt32Array(1493618801, 1716052840) index="0" unique_id=685501766]
+position = Vector2(-6.544979, -0.08325195)
+scale = Vector2(1, 2)
+
+[node name="Ghost" parent="." unique_id=217816342 instance=ExtResource("2_gsvjj")]
+position = Vector2(483.22498, 162)
+script = ExtResource("3_x77ti")
+metadata/DialogueNode = "ghost"
+
+[node name="Sprite2D" parent="Ghost" index="0" unique_id=177765413]
+scale = Vector2(0.3416058, 0.34160584)
+texture = ExtResource("7_lh37p")
+
+[node name="CollisionShape2D" parent="Ghost/Area2D" parent_id_path=PackedInt32Array(217816342, 1716052840) index="0" unique_id=685501766]
+position = Vector2(-11.224972, -0.08325195)
+scale = Vector2(1, 2)
+
+[node name="Mothy" parent="." unique_id=1200665394 instance=ExtResource("2_gsvjj")]
+position = Vector2(180, 617)
+script = ExtResource("3_x77ti")
+metadata/DialogueNode = "moth"
+
+[node name="Sprite2D" parent="Mothy" index="0" unique_id=177765413]
+position = Vector2(781, -427)
+scale = Vector2(0.3416058, 0.34160584)
+texture = ExtResource("8_4bqgu")
+
+[node name="Sprite2D Ghost" parent="Mothy" index="1" unique_id=1324753701]
+position = Vector2(789.775, -429.08325)
+
+[node name="CollisionShape2D" parent="Mothy/Area2D" parent_id_path=PackedInt32Array(1200665394, 1716052840) index="0" unique_id=685501766]
+position = Vector2(780.775, -427.08325)
+scale = Vector2(1, 2)
+
+[editable path="Dr_Acula"]
+[editable path="Fishman"]
+[editable path="Twinkch"]
+[editable path="StrongLesb"]
+[editable path="Ghost"]
+[editable path="Mothy"]

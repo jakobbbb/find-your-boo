@@ -5,7 +5,7 @@ title: start
 <<declare $moth = 10>>
 <<declare $fish = 10>>
 <<declare $mum = 10>>
-<<declare $day = 0>>
+<<declare $day = 1>>
 
 Host: Hello! And thanks for tuning in to:
 FIND
