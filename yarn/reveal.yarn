@@ -4,7 +4,7 @@ Host: Now that our contestant has made their choice
 Host: let's reveal our eligible singles!
 Host: Here they are:
 Host: Dr. h.c. Acula! <<if $drac < 1000>>
-Host: Witch <<if $witch < 1000>>
+Host: Bobo Blocksberg! <<if $witch < 1000>>
 Host: Mothperson! <<if $moth < 1000>>
 Host: Fishy McFishface! <<if $fish < 1000>>
 Host: Muscle Mummy! <<if $mum < 1000>>

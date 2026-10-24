@@ -1,0 +1,14 @@
+[remap]
+
+importer="yarn_spinner.yarn_file"
+type="Resource"
+uid="uid://cuevkg1g2581w"
+path="res://.godot/imported/bye.yarn-290497653d78373c46603a537a970d2e.res"
+
+[deps]
+
+source_file="res://yarn/bye.yarn"
+dest_files=["res://.godot/imported/bye.yarn-290497653d78373c46603a537a970d2e.res"]
+
+[params]
+

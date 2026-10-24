@@ -1,0 +1,9 @@
+title: bye
+---
+Host: And now we have to say Good-bye to:
+Host: Dr. h.c. Acula! <<once if $drac == 1000>>
+Host: Bobo Blocksberg! <<once if $witch == 1000>>
+Host: Mothperson! <<once if $moth == 1000>>
+Host: Fishy McFishface! <<once if $fish == 1000>>
+Host: Muscle Mummy! <<once if $mum == 1000>>
+===
