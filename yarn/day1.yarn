@@ -1,5 +1,6 @@
 title: day1
 ---
+<<set $day = 1>>
 Well, isn't this a ... lovely house.
 You sneeze.
 Twice.

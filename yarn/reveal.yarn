@@ -4,10 +4,15 @@ Host: Now that our contestant has made their choice
 Host: let's reveal our eligible singles!
 Host: Here they are:
 Host: Dr. h.c. Acula! <<if $drac < 1000>>
+Dr. h.c. Acula: Let's have a bloody good time.
 Host: Bobo Blocksberg! <<if $witch < 1000>>
+Bobo Blocksberg: Magic is not the only thing I am wickedly talented at.
 Host: Mothperson! <<if $moth < 1000>>
+Mothperson: Lämp.
 Host: Fishy McFishface! <<if $fish < 1000>>
+Fishy McFishface: Yes, that is an eel in my pocket.
 Host: Muscle Mummy! <<if $mum < 1000>>
+Muscle Mummy: I'll be your crush.
 Host: Aaaaaand...
 Host: A... ghost? How did you get into the show?
 Ghost: Boo!
