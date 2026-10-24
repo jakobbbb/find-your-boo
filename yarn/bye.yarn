@@ -1,10 +1,16 @@
 title: bye
 ---
 Host: And now we have to say Good-bye to:
-Host: Dr. h.c. Acula! <<once if $drac == 1000 and $day == 1>>
-Host: Dr. h.c. Dr. med. Acula! <<once if $drac == 1000 and $day == 2>>
-Host: Dr. h.c. Dr. med. Dr. jur. Acula! <<once if $drac == 1000 and $day == 3>>
-Host: Dr. h.c. Dr. med. Dr. jur. Dr. pol. Acula! <<once if $drac == 1000 and $day == 4>>
+<<once if $drac == 1000>>
+Host: Dr. h.c. Acula! <<if $day == 1>>
+Host: Dr. h.c. Dr. med. Acula! <<if $day == 2>>
+Host: Dr. h.c. Dr. med. Dr. jur. Acula! <<if $day == 3>>
+Host: Dr. h.c. Dr. med. Dr. jur. Dr. pol. Acula! <<if $day == 4>>
+Dr. h.c. Acula: <<if $day == 1>>
+Dr. h.c. Dr. med. Acula: Looks like my efforts were all in vein. <<if $day == 2>>
+Dr. h.c. Dr. med. Dr. jur. Acula: <<if $day == 3>>
+Dr. h.c. Dr. med. Dr. jur. Dr. pol. Acula: <<if $day == 4>>
+<<endonce>>
 Host: Bobo Blocksberg! <<once if $witch == 1000>>
 Host: Mothperson! <<once if $moth == 1000>>
 Host: Fishy McFishface! <<once if $fish == 1000>>
