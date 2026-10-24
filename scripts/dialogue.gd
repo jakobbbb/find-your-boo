@@ -9,10 +9,17 @@ enum Chars {
 	Mothy,
 }
 
+func _ready() -> void:
+	super()
+	GameManager.eliminate_char.connect(elim)
+
 func _input(event: InputEvent) -> void:
 	if is_running() and event.is_action_pressed("ui_cancel"):
 		stop_dialogue()
 		print(get_affection(Chars.Mothy))
+
+func elim(cname: String) -> void:
+	print(cname)  # TODO
 
 func get_affection(c: Chars) -> int:
 	var v = ""

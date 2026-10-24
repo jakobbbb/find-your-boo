@@ -2,7 +2,7 @@ extends Node
 
 signal set_night()
 signal set_day()
-
+signal eliminate_char(cname: String)
 
 func _ready() -> void:
 	randomize_spawns()
