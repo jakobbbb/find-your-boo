@@ -3,6 +3,42 @@
 [ext_resource type="Texture2D" uid="uid://hlgx3u53yqi1" path="res://assets/logo.png" id="1_fyqef"]
 [ext_resource type="Script" uid="uid://divtqwfnuffte" path="res://scripts/ui.gd" id="1_m6e0p"]
 
+[sub_resource type="Animation" id="Animation_m6e0p"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:color:a")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1.0]
+}
+
+[sub_resource type="Animation" id="Animation_27fn8"]
+resource_name = "fade_night"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:color:a")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_nltto"]
+_data = {
+&"RESET": SubResource("Animation_m6e0p"),
+&"fade_night": SubResource("Animation_27fn8")
+}
+
 [node name="UI" type="Control" unique_id=137605733]
 layout_mode = 3
 anchors_preset = 15
@@ -22,7 +58,11 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 1
-color = Color(0, 0, 0, 0)
+color = Color(0, 0, 0, 1)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Night" unique_id=163850681]
+libraries/ = SubResource("AnimationLibrary_nltto")
+playback_auto_capture = false
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1832131237]
 layout_mode = 1
