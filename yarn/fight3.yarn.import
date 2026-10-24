@@ -1,0 +1,14 @@
+[remap]
+
+importer="yarn_spinner.yarn_file"
+type="Resource"
+uid="uid://d3j3oh0kw8r57"
+path="res://.godot/imported/fight3.yarn-d5fb0fd798fb7f4ff505549adf5e7f5c.res"
+
+[deps]
+
+source_file="res://yarn/fight3.yarn"
+dest_files=["res://.godot/imported/fight3.yarn-d5fb0fd798fb7f4ff505549adf5e7f5c.res"]
+
+[params]
+

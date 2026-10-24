@@ -5,26 +5,34 @@ title: whodate
     <<set $date to 0>>
     <<set $conf to false>>
     <<set $horny to false>>
+    <<detour fight3>>
+    ...
 => Host: Looks like it's Bobo Blocksberg! <<once if $witch != 1000>>
     <<set $charname to "Bobo Blocksberg">>
     <<set $date to 0>>
     <<set $conf to false>>
     <<set $horny to false>>
+    <<detour fight3>>
+    ...
 => Host: It seems to be... Mothperson! <<once if $moth != 1000>>
     <<set $charname to "Mothperson">>
     <<set $date to 0>>
     <<set $conf to false>>
     <<set $horny to false>>
+    <<detour fight3>>
+    ...
 => Host: Let's go! Fishy McFishface! <<once if $fish != 1000>>
     <<set $charname to "Fishy McFishface">>
     <<set $date to 0>>
     <<set $conf to false>>
     <<set $horny to false>>
+    <<detour fight3>>
+    ...
 => Host: She is ready to go! Muscle Mummy! <<once if $mum != 1000>>
     <<set $charname to "Muscle Mummy">>
     <<set $date to 0>>
     <<set $conf to false>>
     <<set $horny to false>>
-<<detour fight3>>
-...
+    <<detour fight3>>
+    ...
 ===

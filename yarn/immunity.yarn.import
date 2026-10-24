@@ -1,0 +1,14 @@
+[remap]
+
+importer="yarn_spinner.yarn_file"
+type="Resource"
+uid="uid://j84yc5yalsj6"
+path="res://.godot/imported/immunity.yarn-0b5cb6d8641ba6042f348b75a743917d.res"
+
+[deps]
+
+source_file="res://yarn/immunity.yarn"
+dest_files=["res://.godot/imported/immunity.yarn-0b5cb6d8641ba6042f348b75a743917d.res"]
+
+[params]
+

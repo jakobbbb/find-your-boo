@@ -1,0 +1,14 @@
+[remap]
+
+importer="yarn_spinner.yarn_file"
+type="Resource"
+uid="uid://b20kflihxbmwx"
+path="res://.godot/imported/whodate.yarn-0d1b859ff9d17f1e710964451308b5d4.res"
+
+[deps]
+
+source_file="res://yarn/whodate.yarn"
+dest_files=["res://.godot/imported/whodate.yarn-0d1b859ff9d17f1e710964451308b5d4.res"]
+
+[params]
+

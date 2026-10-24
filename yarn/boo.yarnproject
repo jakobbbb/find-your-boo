@@ -6,5 +6,107 @@
     ],
     "definitions": [
         "boo.ysls.json"
-    ]
+    ],
+    "editorOptions": {
+        "yarnScriptEditor": {
+            "projectGraphPositions": {
+                "boo.yarn": {
+                    "x": 12,
+                    "y": 12
+                },
+                "bye.yarn": {
+                    "x": 12,
+                    "y": 468.25
+                },
+                "day1.yarn": {
+                    "x": 1222,
+                    "y": 217
+                },
+                "day2.yarn": {
+                    "x": 412,
+                    "y": 992
+                },
+                "day3.yarn": {
+                    "x": 412,
+                    "y": 707
+                },
+                "drac1.yarn": {
+                    "x": 282,
+                    "y": 12
+                },
+                "end1.yarn": {
+                    "x": 552,
+                    "y": 12
+                },
+                "end2.yarn": {
+                    "x": 1492,
+                    "y": 217
+                },
+                "fight3.yarn": {
+                    "x": 1280,
+                    "y": 793
+                },
+                "fish1.yarn": {
+                    "x": 822,
+                    "y": 12
+                },
+                "ghost1.yarn": {
+                    "x": 1092,
+                    "y": 12
+                },
+                "ghost234.yarn": {
+                    "x": 1362,
+                    "y": 12
+                },
+                "immunity.yarn": {
+                    "x": 1892,
+                    "y": 217
+                },
+                "moth1.yarn": {
+                    "x": 1632,
+                    "y": 12
+                },
+                "mum1.yarn": {
+                    "x": 1902,
+                    "y": 12
+                },
+                "reveal.yarn": {
+                    "x": 412,
+                    "y": 422
+                },
+                "singles2.yarn": {
+                    "x": 12,
+                    "y": 217
+                },
+                "start.yarn": {
+                    "x": 840,
+                    "y": 234
+                },
+                "test.yarn": {
+                    "x": 282,
+                    "y": 217
+                },
+                "whodate.yarn": {
+                    "x": 876,
+                    "y": 736
+                },
+                "witch1.yarn": {
+                    "x": 562,
+                    "y": 222
+                },
+                "detour3.yarn": {
+                    "x": -367,
+                    "y": -138
+                },
+                "detour2.yarn": {
+                    "x": -87,
+                    "y": -322
+                },
+                "detour1.yarn": {
+                    "x": 296,
+                    "y": -258
+                }
+            }
+        }
+    }
 }

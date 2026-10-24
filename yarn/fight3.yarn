@@ -366,7 +366,9 @@ What will {$charname} do? (Player attraction {$date}/100)
         <<jump fight3>>
 <<elseif $leave == true>>
     Really?
+    <<return>>
 <<elseif $date >= 100>>
     That was fun!
+    <<return>>
 <<endif>>
 ===
