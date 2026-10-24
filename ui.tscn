@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://csippbs4hgnb3"]
+
+[ext_resource type="Texture2D" uid="uid://hlgx3u53yqi1" path="res://assets/logo.png" id="1_fyqef"]
+
+[node name="Control" type="Control" unique_id=137605733]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1832131237]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -253.45313
+offset_top = 32.0
+offset_right = -32.0
+offset_bottom = 146.0
+grow_horizontal = 0
+texture = ExtResource("1_fyqef")
+expand_mode = 1
