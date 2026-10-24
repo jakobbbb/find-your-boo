@@ -1,0 +1,14 @@
+[remap]
+
+importer="yarn_spinner.yarn_file"
+type="Resource"
+uid="uid://bajqi1xb71h0g"
+path="res://.godot/imported/moth1.yarn-56974c244e05caf97550ccee083b2229.res"
+
+[deps]
+
+source_file="res://yarn/moth1.yarn"
+dest_files=["res://.godot/imported/moth1.yarn-56974c244e05caf97550ccee083b2229.res"]
+
+[params]
+
