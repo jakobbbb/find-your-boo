@@ -3,6 +3,7 @@ extends Node
 signal set_night()
 signal set_day()
 
+
 func _ready() -> void:
 	randomize_spawns()
 
@@ -12,8 +13,6 @@ static func _yarn_command_set_night():
 	
 static func _yarn_command_set_day():
 	GameManager.set_day.emit()
-
-
 
 func randomize_spawns():
 	var spawns = []
