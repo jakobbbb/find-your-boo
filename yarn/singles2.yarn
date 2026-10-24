@@ -1,4 +1,4 @@
-title: drac2
+title: singles2
 ---
 <<set $charname to "Dr. h.c. Dr. med. Acula">>
 You: *knock knock*
@@ -110,11 +110,11 @@ You: I am here to get to know you better!
 <<elseif $charname == "Mothperson">>
     {$charname}: Yes, a great idea. 
     {$charname}: We can start by looking at the lämp together.
-    You stare at the lamp.
+    You stare at the lämp.
     It is kinda pretty.
 <<elseif $charname == "Fishy McFishface">>
     {$charname}: Oooh, I can't wait for it.
-    {$charname}: You can come an sit next to me if you want to.
+    {$charname}: You can come and sit next to me if you want to.
     You want to.
     You don't know why but you really want to.
 <<elseif $charname == "Muscle Mummy">>
@@ -466,18 +466,19 @@ You: But now I would really like to know what you think about:
     {$charname}: So dedicated! I love it! <<if $charname == "Fishy McFishface">>
 -> The Ghost
     {$charname}: Boo!
-You: I need your help to make a decision.
+You: Thank you for being so honest with me.
+You: Now to get to know you even better, I need your help to make a decision.
 -> dreams
     <<if $charname == "Dr. h.c. Dr. med. Acula">>
         <<set $drac = $drac + 1>>
     <<elseif $charname == "Bobo Blocksberg">>
-        <<set $witch = $witch - 1>>
+        <<set $witch = $witch + 1>>
     <<elseif $charname == "Mothperson">>
         <<set $moth = $moth + 1>>
     <<elseif $charname == "Fishy McFishface">>
         <<set $fish = $fish + 1>>
     <<elseif $charname == "Muscle Mummy">>
-        <<set $mum = $mum + 1>>
+        <<set $mum = $mum - 1>>
     <<endif>>
     You: I keep having this dream that someone steals all my socks and then I turn into a sock and get stolen too but then we are in a kind of Mafia Romance situation where he gives me 365 days to fall in love with him and if I don't he'll let me go and I am just laying there because I am a sock and what am I supposed to do, I have no arms, I have no legs.
     You: And then he keeps calling me babygirl and asking me if I am lost?
@@ -586,86 +587,45 @@ You: I need your help to make a decision.
         {$charname}: Sorry, I guess I am still a bit drunk.
         You: No worries.
     <<elseif $charname == "Mothperson">>
-        {$charname}: 
+        {$charname}: How many do you already have?
+        You: Three.
+        {$charname}: And how many lämps?
+        You: Umm... 
+        You try to count.
+        You: Maybe like 12?
+        {$charname}: Then have as many cats as you like.
+        You: But I don't know how many I would like.
+        You: That's why I am asking you.
+        {$charname}: Then get one.
+        {$charname}: You can still get more later.
+        You: That's great advise!
     <<elseif $charname == "Fishy McFishface">>
-        {$charname}: 
+        {$charname}: I would advise you to get just one.
+        {$charname}: Because every cat is a queen.
+        {$charname}: And deserves to be treated as such. 
+        {$charname}: If you have to many, then you may not have the time to treat all of them the way they deserve.
+        He seems uncharacteristically serious for a second.
+        It suits him.
+        {$charname}: And I know my fair share about treating someone right.
+        There's a twinkle in his eyes that might just give you a heart attack.
     <<elseif $charname == "Muscle Mummy">>
-        {$charname}: 
+        {$charname}: I love cats.
+        You: So do I.
+        {$charname}: I think you should get two.
+        {$charname}: They are just too adorable.
+        You: I agree!
+        {$charname}: And so soft.
+        {$charname}: And cuddly.
+        She absentmindedly starts to pet your hair.
+        You instinctively start purring.
+        You are way too into this.
+        {$charname}: I also love Cats.
+        You: The musical?
+        {$charname}: Definitely not the movie.
     <<endif>>
 -> curse
     <<if $charname == "Dr. h.c. Dr. med. Acula">>
-        <<set $drac = $drac + 1>>
-    <<elseif $charname == "Bobo Blocksberg">>
-        <<set $witch = $witch + 1>>
-    <<elseif $charname == "Mothperson">>
-        <<set $moth = $moth - 1>>
-    <<elseif $charname == "Fishy McFishface">>
-        <<set $fish = $fish + 1>>
-    <<elseif $charname == "Muscle Mummy">>
-        <<set $mum = $mum + 1>>
-    <<endif>>
-    You: The moon is fake.
-    <<if $charname == "Dr. h.c. Dr. med. Acula">>
-        {$charname}: You mean the moonlanding?
-        You: No... the moon.
-        {$charname}: A fascinating hypothesis.
-        You: The moonlanding is obviously real.
-        {$charname}: You know, there is an obvious question I could ask you know.
-        {$charname}: But I hate being obvious.
-    <<elseif $charname == "Bobo Blocksberg">>
-        {$charname}: Then what is the big round thing in the sky at night?
-        You refuse to elaborate.
-        {$charname}: Are you for real?
-        He shoots you an incredulous look.
-        You've seen that look before.
-        It doesn't faze you at all.
-        {$charname}: You know, I've been to the moon.
-        {$charname}: Several times.
-        {$charname}: My great-great-great aunt Mildred lives there.
-        {$charname}: With her bunnies.
-        {$charname}: They bake the greatest rice cake you ever tasted.
-        {$charname}: And you are telling me that the moon isn't real?
-        {$charname}: That my great-great-great aunt Mildred and her bunnies aren't real?
-        {$charname}: That the ricecake isn't real??
-        {$charname}: I find that hard to believe.
-        You silently point to the poster on the wall that says "I believe."
-        {$charname}: Well played.
-        You: Don't hate the player, hate the game.
-        {$charname}: I hate you.
-        But he laughs.
-    <<elseif $charname == "Mothperson">>
-        {$charname}: Of kós.
-        {$charname}: It's the Great Lämp.
-        You: Wouldn't that be the sun?
-        {$charname}: No, the sun is the sun.
-        You: Obviously.
-        {$charname}: Fellow believer.
-        They take your hands.
-        The lämp shines on you both.
-        Just sitting in comfortable silence.
-    <<elseif $charname == "Fishy McFishface">>
-        {$charname}: If you say so.
-        You: I do.
-        {$charname}: Then who am I to argue.
-        {$charname}: Especially with someone with such pretty eyes.
-        It's the oldest line in the book.
-        But somehow he makes it work.
-        You're blushing.
-        Hard.
-        Uh oh.
-        You are in danger.
-        You scan the small part of your brain that's still working for something to say.
-    <<elseif $charname == "Muscle Mummy">>
-        {$charname}: You know I never cared much for it anyways.
-        You: You didn't?
-        {$charname}: I always thought that the moon was kinda overrated.
-        {$charname}: Everyone kept telling me how romantic it was.
-        {$charname}: Doing things in the moonlight.
-        {$charname}: But unless the things that are done involve working out, I am not interested.
-    <<endif>>
--> bugs
-    <<if $charname == "Dr. h.c. Dr. med. Acula">>
-        <<set $drac = $drac + 1>>
+        <<set $drac = $drac - 1>>
     <<elseif $charname == "Bobo Blocksberg">>
         <<set $witch = $witch - 1>>
     <<elseif $charname == "Mothperson">>
@@ -675,21 +635,163 @@ You: I need your help to make a decision.
     <<elseif $charname == "Muscle Mummy">>
         <<set $mum = $mum + 1>>
     <<endif>>
-    You: It's astounding...
-    You: Time is fleeting...
-    You: Madness... takes it's toll..
-    You: But listen closely!
-    {$charname}: Not for very much longer.
-    You: I've got to... keep control.
-    You: I remember doing the Time Warp!
-    You: Drinking those moments when...
-    You: The blackness would hit me!
-    Together: And the void would be calling
-    Together: Let's do the time warp again...
-    Together: Let's do the time warp again!
-    You do the Time Warp.
-    Again.
-    It works out surprisingly well.
+    You: I think I may have been cursed by a monkey wizard.
+    <<if $charname == "Dr. h.c. Dr. med. Acula">>
+        {$charname}: Which one?
+        You: If I just knew that.
+        {$charname}: You should really find that out first.
+        {$charname}: Then I may be able to help you.
+        You: Really?
+        {$charname}: I said may be able.
+        {$charname}: I promise nothing.
+        You: As you should.
+    <<elseif $charname == "Bobo Blocksberg">>
+        {$charname}: The banana peels?
+        You: The banana peels.
+        {$charname}: Well that seems to be a problem.
+        You: You don't say?
+        {$charname}: I do.
+        You: Do you think there's a way out for me?
+        {$charname}: I appreciate your faith in me but that is way out of my area of expertise.
+        You: Aren't you a wizard??
+        {$charname}: First of all, I am a witch, there is a difference even though most people are not aware of it, thank you very much.
+        {$charname}: And secondly, I may not look like it, but I am a Technowitch. Nature magic is just not my thing.
+        You: Uh, sorry, I didn't know.
+        {$charname}: It's fine.
+        {$charname}: I am also sorry. I kind of overreacted because I hate to feel useless.
+        You: Yeah, I get that.
+        {$charname}: I thought you would.
+        You: Excuse me?
+        {$charname}: I said what I said.
+        He grins and you can't really feel mad.
+    <<elseif $charname == "Mothperson">>
+        {$charname}: Have you tried human sacrifice?
+        {$charname}: It's how my ancestors tried to appease the Great Lämp.
+        You: Did it work?
+        {$charname}: Sometimes?
+        You: So it didn't work?
+        {$charname}: Like I said, sometimes.
+        You: So maybe it would have worked out even without the human sacrifice?
+        {$charname}: Maybe.
+        {$charname}: But they did burn so brightly.
+        You: How do you know that?
+        {$charname}: The information was passed down from the ancestors.
+        You: ...
+        {$charname}: ...
+        You: ...
+        {$charname}: ...
+        You: When was your last human sacrifice?
+        {$charname}: Last week.
+        You: Will invite me to your next one?
+        {$charname}: If you wish to, you will be very welcome.
+        You: I cannot wait to appease the Great Lämp.
+    <<elseif $charname == "Fishy McFishface">>
+        {$charname}: Oh no.
+        You: Huh?
+        {$charname}: I am so sorry.
+        You: What for?
+        {$charname}: That might be my ex.
+        You: Your what??
+        {$charname}: My ex.
+        {$charname}: They weren't too happy about me going on this show.
+        {$charname}: Disagree with it on principle, I think.
+        You: So they cursed me??
+        {$charname}: It is possible.
+        You: To get back at you?
+        {$charname}: No, no, we are still great friends. It was a really amiable break-up.
+        {$charname}: I think this is their idea of a joke.
+        {$charname}: And a kind of prostest, because as I said they disagree with the concept of reality television on priciple.
+        You: Okay...
+        You: But can we circle back to the fact that you used to date a monkey wizard.
+        {$charname}: A wizard monkey.
+        {$charname}: But yes.
+        You: Fascinating.
+    <<elseif $charname == "Muscle Mummy">>
+        {$charname}: Are you sure it's not a wizard monkey?
+        You: Is there a difference?
+        {$charname}: There most certainly is.
+        {$charname}: Monkey wizards are puny little creatures.
+        {$charname}: Physique like wizards, brain like monkey.
+        {$charname}: Wizard monkeys on the other hand...
+        {$charname}: Strong like a monkey and blessed with a wizardly intelligence.
+        You: I didn't know!
+        {$charname}: Most people don't.
+        {$charname}: So which one is it?
+        {$charname}: Monkey wizard or wizard monkey?
+        You think.
+        You: Monkey wizard I guess.
+        {$charname}: Then there's nothing you can do.
+        She pats your shoulder.
+        {$charname}: Just resign to your fate.
+        You: I guess you are right.
+    <<endif>>
+-> bugs
+    <<if $charname == "Dr. h.c. Dr. med. Acula">>
+        <<set $drac = $drac - 1>>
+    <<elseif $charname == "Bobo Blocksberg">>
+        <<set $witch = $witch - 1>>
+    <<elseif $charname == "Mothperson">>
+        <<set $moth = $moth - 1>>
+    <<elseif $charname == "Fishy McFishface">>
+        <<set $fish = $fish + 1>>
+    <<elseif $charname == "Muscle Mummy">>
+        <<set $mum = $mum + 1>>
+    <<endif>>
+    You: There are so many bugs in my code! I hate Godot! What should I do?
+    <<if $charname == "Dr. h.c. Dr. med. Acula">>
+        {$charname}: You have to try harder.
+        You: But I can't!
+        {$charname}: Yes, you can!
+        {$charname}: And you will!
+        {$charname}: Or you will be a total embarrassement just like your parents!
+        You: Excuse me? 
+        {$charname}: I am sorry, were your parents not total losers?
+        You: No, you are right they were.
+        {$charname}: See.
+        {$charname}: But you still have time not to be like them.
+        You nod.
+        Somehow you feel better?
+    <<elseif $charname == "Bobo Blocksberg">>
+        {$charname}: Maybe you should just give up.
+        You: What? No!
+        You: You are supposed to encourage me.
+        You: Make me want to try and work harder.
+        You: So I can grow and evolve.
+        You: Spread my wings and learn to fly.
+        {$charname}: Or you could just give up.
+        You: Never!
+        {$charname}: ...
+        {$charname}: And they say that reverse psychology doesn't work.
+        You glare at him.
+        But you still feel a lot better.
+    <<elseif $charname == "Mothperson">>
+        {$charname}: Have you tried eating them?
+        You: Who?
+        {$charname}: The bugs.
+        You: I could try?
+        {$charname}: Then they won't bother you anymore.
+        {$charname}: Just make sure that the other bugs can see you eating their chum.
+        {$charname}: Because then you might not need to eat a lot of them.
+        {$charname}: They can upset the stomach in great numbers.
+        You think about which bug you should eat first.
+        But anyways, you are feeling better.
+    <<elseif $charname == "Fishy McFishface">>
+        {$charname}: Oooh, I believe in you.
+        You: You do?
+        {$charname}: Obviously.
+        {$charname}: If you are half as smart as you are attractive then you can do anything you set your pretty little mind to.
+        You already forgot your question.
+        You brain just plays an endless loop of "Oh no! He's hot!".
+        But regardless you are vaguely aware of feeling better.
+    <<elseif $charname == "Muscle Mummy">>
+        {$charname}: Squash the bugs!
+        {$charname}: Make them afraid of you.
+        {$charname}: Then you can master anything!
+        You: Even Godot?
+        {$charname}: Even Godot.
+        She pats your shoulder.
+        You feel better.
+    <<endif>>
 You: I really enjoyed our time together.
 <<if $charname == "Dr. h.c. Dr. med. Acula">>
     {$charname}: Bet you say that to everyone.
