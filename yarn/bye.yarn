@@ -12,11 +12,11 @@ Dr. h.c. Dr. med. Dr. jur. Acula: May I play the advocatus diaboli one more time
 Dr. h.c. Dr. med. Dr. jur. Dr. rer. pol. Acula: Just like the spectre haunting Europe, this decision will haunt you. <<if $day == 4>>
 <<endonce>>
 Host: Bobo Blocksberg! <<once if $witch == 1000>>
-Bobo Blocksberg: I tried to be a good witch but it seems I'm just a bad bitch.
+Bobo Blocksberg: I tried to be a good witch but it seems I'm just a bad bitch. <<once if $witch == 1000>>
 Host: Mothperson! <<once if $moth == 1000>>
-Mothperson: May I have lämp?
+Mothperson: May I have lämp? <<once if $moth == 1000>>
 Host: Fishy McFishface! <<once if $fish == 1000>>
-Fishy McFishface: Well, just know that I could have gotten you really really wet.
+Fishy McFishface: Well, just know that I could have gotten you really really wet. <<once if $fish == 1000>>
 Host: Muscle Mummy! <<once if $mum == 1000>>
-Muscle Mummy: Give Mummy a hug!
+Muscle Mummy: Give Mummy a hug! <<once if $mum == 1000>>
 ===
