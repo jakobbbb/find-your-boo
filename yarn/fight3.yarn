@@ -5,7 +5,7 @@ The Player appears! <<once if $charname == "Bobo Blocksberg">>
 The Player appears! <<once if $charname == "Mothperson">>
 The Player appears! <<once if $charname == "Fishy McFishface">>
 The Player appears! <<once if $charname == "Muscle Mummy">>
-<<if $leave == false and $date != 100>>
+<<if $leave == false and $date < 100>>
 The player is confused! <<if $conf == true>>
 The player is ... horny? <<if $horny == true>>
 What will {$charname} do? (Player attraction {$date}/100)
@@ -61,6 +61,8 @@ What will {$charname} do? (Player attraction {$date}/100)
                 <<set $date to $date - 10>>
             <<endif>>         
             <<jump fight3>>
+        -> Go back.
+            <<jump fight3>>
     <<elseif $charname == "Bobo Blocksberg">>
         -> Bewitch the Player.
             <<if $conf == true>>
@@ -113,6 +115,8 @@ What will {$charname} do? (Player attraction {$date}/100)
                 <<set $conf to true>>
             <<endif>>         
             <<jump fight3>>
+        -> Go back.
+            <<jump fight3>>
     <<elseif $charname == "Mothperson">>
         -> Lämp. <<if $lamp == 0>>
             More Lämp?
@@ -127,6 +131,8 @@ What will {$charname} do? (Player attraction {$date}/100)
         -> Great Lämp. <<if $lamp == 2>>
             LÄMP.
             <<set $date to $date + 30>> 
+            <<jump fight3>>
+        -> Go back.
             <<jump fight3>>
     <<elseif $charname == "Fishy McFishface">>
         -> Smirk.
@@ -162,6 +168,8 @@ What will {$charname} do? (Player attraction {$date}/100)
             <<jump fight3>>
         -> Splash.
             Nothing happens.         
+            <<jump fight3>>
+        -> Go back.
             <<jump fight3>>
     <<elseif $charname == "Muscle Mummy">>
         -> Crush Player.
@@ -218,6 +226,8 @@ What will {$charname} do? (Player attraction {$date}/100)
                 <<set $horny to true>>
             <<endif>>         
             <<jump fight3>>
+        -> Go back.
+            <<jump fight3>>
     <<endif>>
 -> Inventory
     <<if $charname == "Dr. h.c. Dr. med. Dr. iur. Acula">>
@@ -236,6 +246,8 @@ What will {$charname} do? (Player attraction {$date}/100)
             <<set $horny to false>>
             <<set $conf to false>>        
             <<jump fight3>>
+        -> Go back.
+            <<jump fight3>>
     <<elseif $charname == "Bobo Blocksberg">>
         -> Wand. <<once>>
             It's old and doesn't work anymore.
@@ -251,6 +263,8 @@ What will {$charname} do? (Player attraction {$date}/100)
             Uh oh, seems like someone switched the potion labels.
             <<set $conf to false>>
             <<set $horny to true>>        
+            <<jump fight3>>
+        -> Go back.
             <<jump fight3>>
     <<elseif $charname == "Mothperson">>
         -> Sunglasses. <<once>>
@@ -268,6 +282,8 @@ What will {$charname} do? (Player attraction {$date}/100)
             <<set $conf to false>>
             <<set $horny to true>>        
             <<jump fight3>>
+        -> Go back.
+            <<jump fight3>>
     <<elseif $charname == "Fishy McFishface">>
         -> Abs. <<once>>
             Yes, it doesn't make sense for these to be in an inventory. No, I don't care. Sue me.
@@ -284,6 +300,8 @@ What will {$charname} do? (Player attraction {$date}/100)
             <<set $horny to false>>
             <<set $conf to true>>        
             <<jump fight3>>
+        -> Go back.
+            <<jump fight3>>
     <<elseif $charname == "Muscle Mummy">>
         -> A pack of cigarettes. <<once>>
             Isn't that like really unhealthy?
@@ -299,6 +317,8 @@ What will {$charname} do? (Player attraction {$date}/100)
             The Player is obviously having some... interesing thoughts.
             <<set $conf to false>>
             <<set $horny to true>>        
+            <<jump fight3>>
+        -> Go back.
             <<jump fight3>>
     <<endif>>
 -> Random
