@@ -28,3 +28,7 @@ func get_affection(c: Chars) -> int:
 		Chars.Mothy:
 			v = "$moth"
 	return variable_storage.get_value_or_default(v, -1)
+
+
+func _on_set_day() -> void:
+	pass # Replace with function body.

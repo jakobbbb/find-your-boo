@@ -1,4 +1,7 @@
 title: Start
 ---
 cat: meow :3  #line:meow
+<<set_night>>
+cat: ZZzzzzzzzzzz
+<<set_day>>
 ===
