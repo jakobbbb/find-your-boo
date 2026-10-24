@@ -1,8 +1,9 @@
 [gd_scene format=3 uid="uid://csippbs4hgnb3"]
 
 [ext_resource type="Texture2D" uid="uid://hlgx3u53yqi1" path="res://assets/logo.png" id="1_fyqef"]
+[ext_resource type="Script" uid="uid://divtqwfnuffte" path="res://scripts/ui.gd" id="1_m6e0p"]
 
-[node name="Control" type="Control" unique_id=137605733]
+[node name="UI" type="Control" unique_id=137605733]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -11,6 +12,16 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+script = ExtResource("1_m6e0p")
+
+[node name="Night" type="ColorRect" parent="." unique_id=1467802930]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0)
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1832131237]
 layout_mode = 1

@@ -3,6 +3,15 @@ extends Node
 func _ready() -> void:
 	randomize_spawns()
 
+
+static func _yarn_command_set_night():
+	print("night")
+	
+static func _yarn_command_set_day():
+	print("day")
+
+
+
 func randomize_spawns():
 	var spawns = []
 	var npcs = []
