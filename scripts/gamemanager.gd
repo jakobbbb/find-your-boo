@@ -1,5 +1,7 @@
 extends Node
 
+var next_to_be_eliminated = ""
+
 @warning_ignore_start("unused_signal")
 signal set_night()
 signal set_day()
@@ -11,10 +13,12 @@ signal show_char_sprite(cname: String)
 
 func _ready() -> void:
 	randomize_spawns()
+	set_affection.connect(_on_set_affection)
 
 
 static func _yarn_command_set_night():
 	GameManager.set_night.emit()
+	GameManager.randomize_spawns()
 	
 static func _yarn_command_set_day():
 	GameManager.set_day.emit()
@@ -24,6 +28,16 @@ static func _yarn_command_reveal(cname: String):
 
 static func _yarn_command_sprite(cname: String):
 	GameManager.show_char_sprite.emit(cname)
+
+static func _yarn_command_trigger_elim():
+	if GameManager.next_to_be_eliminated != "":
+		GameManager.eliminate_char.emit(GameManager.next_to_be_eliminated)
+		GameManager.next_to_be_eliminated = ""
+	
+
+func _on_set_affection(cname: String, affection: int) -> void:
+	if affection == 1000:
+		GameManager.next_to_be_eliminated = cname
 
 func randomize_spawns():
 	var spawns = []

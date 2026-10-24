@@ -37,6 +37,7 @@ Muscle Mummy: Give Mummy a hug! <<once if $mum == 1000>>
 <<if $day == 1>>
 	<<detour reveal>>
 <<endif>>
+<<trigger_elim>>
 <<set_night>>
 <<wait 1>>
 ...
