@@ -1,0 +1,14 @@
+[remap]
+
+importer="yarn_spinner.yarn_file"
+type="Resource"
+uid="uid://ffu4xee16yw2"
+path="res://.godot/imported/reveal.yarn-d846cd67362932bc01d0c61732fcbe46.res"
+
+[deps]
+
+source_file="res://yarn/reveal.yarn"
+dest_files=["res://.godot/imported/reveal.yarn-d846cd67362932bc01d0c61732fcbe46.res"]
+
+[params]
+

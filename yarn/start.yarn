@@ -4,7 +4,7 @@ title: start
 <<declare $witch = 10>>
 <<declare $moth = 10>>
 <<declare $fish = 10>>
-<<declare $frank = 10>>
+<<declare $mum = 10>>
 
 Host: Hello! And thanks for tuning in to:
 FIND
