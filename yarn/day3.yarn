@@ -4,6 +4,7 @@ title: day3
 <<declare $leave = false>>
 <<declare $conf = false>>
 <<declare $horny = false>>
+<<declare $lamp = 0>>
 Host: Welcome back to
 FIND
 YOUR

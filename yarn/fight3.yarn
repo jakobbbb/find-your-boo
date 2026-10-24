@@ -6,382 +6,357 @@ The Player appears! <<once if $charname == "Mothperson">>
 The Player appears! <<once if $charname == "Fishy McFishface">>
 The Player appears! <<once if $charname == "Muscle Mummy">>
 <<if $leave == false and $date != 100>>
+The player is confused! <<if $conf == true>>
+The player is ... horny? <<if $horny == true>>
 What will {$charname} do? (Player attraction {$date}/100)
 -> Special Moves
-    <<if $charname == "Dr. h.c. Dr. med. Dr. iur. Acula">>
-        -> dd
+<<if $charname == "Dr. h.c. Dr. med. Dr. iur. Acula">>
+        -> Step on Player.
             <<if $conf == true>>
-                Wha
-                <<set $date to $date + 1>>
+                The Player evades the shoe!
+                <<set $conf to false>>
+                The Player is no longer confused!
             <<elseif $horny == true>>
-                who
-                <<set $date to $date + 1>>
+                That's very effective!
+                <<set $date to $date + 20>>
+                <<set $horny to false>>
+                The Player has somehow stopped being horny.
             <<else>>
-                whe
-                <<set $date to $date + 1>>    
+                The Player seems to like that?
+                <<set $date to $date + 10>>
+                <<set $horny to true>>
             <<endif>>         
             <<jump fight3>>
-        -> kkk
+        -> Akademische Grade.
             <<if $conf == true>>
-                Wha
-                <<set $date to $date + 1>>
+                Somehow the Player seems to understand perfectly.
+                <<set $date to $date + 20>>
+                <<set $conf to false>>
+                The Player is no longer confused!
             <<elseif $horny == true>>
-                who
-                <<set $date to $date + 1>>
+                The Player doesn't get it but they enjoy listening!
+                <<set $date to $date + 10>>
+                <<set $horny to false>>
+                <<set $conf to true>>
+                The Player has stopped being horny.
             <<else>>
-                whe
-                <<set $date to $date + 1>>    
+                The Player doesn't seem to get it.
+                <<set $conf to true>>
             <<endif>>         
             <<jump fight3>>
-        -> aer
+        -> Chomp.
             <<if $conf == true>>
-                Wha
-                <<set $date to $date + 1>>
+                That's very effective!
+                <<set $conf to false>>
+                <<set $date to $date + 20>>
+                <<set $horny to true>>
+                The Player is no longer confused!
             <<elseif $horny == true>>
-                who
-                <<set $date to $date + 1>>
+                That's very effective!
+                <<set $date to $date + 20>>
+                <<set $horny to false>>
+                The Player has somehow stopped being horny.
             <<else>>
-                whe
-                <<set $date to $date + 1>>    
+                The Player does not want to be eaten.
+                <<set $date to $date - 10>>
             <<endif>>         
             <<jump fight3>>
     <<elseif $charname == "Bobo Blocksberg">>
-        -> dd
+        -> Bewitch the Player.
             <<if $conf == true>>
-                Wha
-                <<set $date to $date + 1>>
+                The Player is charmed.
+                <<set $date to $date + 20>>
+                <<set $conf to false>>
+                <<set $horny to true>>
+                The Player is no longer confused!
             <<elseif $horny == true>>
-                who
-                <<set $date to $date + 1>>
+                The Player does not seem to want that.
+                <<set $horny to false>>
+                The Player has stopped being horny.
             <<else>>
-                whe
-                <<set $date to $date + 1>>    
+                That may have been the wrong spell but it's working.
+                <<set $date to $date + 10>>
+                <<set $conf to true>>
             <<endif>>         
             <<jump fight3>>
-        -> kkk
+        -> Sexy broom dance.
             <<if $conf == true>>
-                Wha
-                <<set $date to $date + 1>>
+                The Player is vibing.
+                <<set $date to $date + 10>>
+                <<set $conf to false>>
+                The Player is no longer confused!
             <<elseif $horny == true>>
-                who
-                <<set $date to $date + 1>>
+                The Player is really enjoying the show.
+                <<set $date to $date + 20>>
+                <<set $horny to false>>
+                The Player has somehow stopped being horny.
             <<else>>
-                whe
-                <<set $date to $date + 1>>    
+                The Player is interested.
+                <<set $date to $date + 10>>
+                <<set $horny to true>>
             <<endif>>         
             <<jump fight3>>
-        -> aer
+        -> Cackle.
             <<if $conf == true>>
-                Wha
-                <<set $date to $date + 1>>
+                That's very effective! But not in a good way.
+                <<set $conf to false>>
+                <<set $date to $date - 10>>
+                The Player is no longer confused!
             <<elseif $horny == true>>
-                who
-                <<set $date to $date + 1>>
+                The Player seems into it?
+                <<set $date to $date + 10>>
+                <<set $horny to false>>
+                The Player has stopped being horny.
             <<else>>
-                whe
-                <<set $date to $date + 1>>    
+                The Player laughs along.
+                <<set $date to $date + 20>>
+                <<set $conf to true>>
             <<endif>>         
             <<jump fight3>>
     <<elseif $charname == "Mothperson">>
-        -> dd
-            <<if $conf == true>>
-                Wha
-                <<set $date to $date + 1>>
-            <<elseif $horny == true>>
-                who
-                <<set $date to $date + 1>>
-            <<else>>
-                whe
-                <<set $date to $date + 1>>    
-            <<endif>>         
+        -> Lämp. <<if $lamp == 0>>
+            More Lämp?
+            <<set $date to $date + 10>> 
+            <<set $lamp to 1>>      
             <<jump fight3>>
-        -> kkk
-            <<if $conf == true>>
-                Wha
-                <<set $date to $date + 1>>
-            <<elseif $horny == true>>
-                who
-                <<set $date to $date + 1>>
-            <<else>>
-                whe
-                <<set $date to $date + 1>>    
-            <<endif>>         
+        -> Big Lämp. <<if $lamp == 1>>
+            Even more lämp?
+            <<set $date to $date + 20>> 
+            <<set $lamp to 2>>  
             <<jump fight3>>
-        -> aer
-            <<if $conf == true>>
-                Wha
-                <<set $date to $date + 1>>
-            <<elseif $horny == true>>
-                who
-                <<set $date to $date + 1>>
-            <<else>>
-                whe
-                <<set $date to $date + 1>>    
-            <<endif>>         
+        -> Great Lämp. <<if $lamp == 2>>
+            LÄMP.
+            <<set $date to $date + 30>> 
             <<jump fight3>>
     <<elseif $charname == "Fishy McFishface">>
-        -> dd
+        -> Smirk.
             <<if $conf == true>>
-                Wha
-                <<set $date to $date + 1>>
+                The Player is even more confused!
             <<elseif $horny == true>>
-                who
-                <<set $date to $date + 1>>
+                That's very effective!
+                <<set $date to $date + 20>>
+                <<set $horny to false>>
+                The Player has somehow stopped being horny.
             <<else>>
-                whe
-                <<set $date to $date + 1>>    
+                The Player blushes.
+                <<set $date to $date + 10>>
+                <<set $horny to true>>
             <<endif>>         
             <<jump fight3>>
-        -> kkk
+        -> Use tentacles *wink*
             <<if $conf == true>>
-                Wha
-                <<set $date to $date + 1>>
+                At least someone is enjoying themselves.
+                <<set $date to $date + 10>>
+                <<set $conf to false>>
+                The Player is no longer confused!
             <<elseif $horny == true>>
-                who
-                <<set $date to $date + 1>>
+                The Player is overwhelmed
+                <<set $horny to false>>
+                <<set $conf to true>>
+                The Player has stopped being horny.
             <<else>>
-                whe
-                <<set $date to $date + 1>>    
+                The Player seems very enthusiastic.
+                <<set $horny to true>>
+                <<set $date to $date + 20>>
             <<endif>>         
             <<jump fight3>>
-        -> aer
-            <<if $conf == true>>
-                Wha
-                <<set $date to $date + 1>>
-            <<elseif $horny == true>>
-                who
-                <<set $date to $date + 1>>
-            <<else>>
-                whe
-                <<set $date to $date + 1>>    
-            <<endif>>         
+        -> Splash.
+            Nothing happens.         
             <<jump fight3>>
     <<elseif $charname == "Muscle Mummy">>
-        -> dd
+        -> Crush Player.
             <<if $conf == true>>
-                Wha
-                <<set $date to $date + 1>>
+                The Player loves to be squeezed!
+                <<set $conf to false>>
+                <<set $date to $date + 20>>
+                <<set $horny to true>>
+                The Player is no longer confused!
             <<elseif $horny == true>>
-                who
-                <<set $date to $date + 1>>
+                *crack* The Player may have broken a bone.
+                <<set $date to $date - 10>>
+                <<set $horny to false>>
+                The Player has stopped being horny.
             <<else>>
-                whe
-                <<set $date to $date + 1>>    
+                The Player seems very relaxed.
+                <<set $date to $date + 10>>
             <<endif>>         
             <<jump fight3>>
-        -> kkk
+        -> 1000 Pushups.
             <<if $conf == true>>
-                Wha
-                <<set $date to $date + 1>>
+                The Player cheers you on.
+                <<set $date to $date + 10>>
+                <<set $conf to false>>
+                <<set $horny to true>>
+                The Player is no longer confused!
             <<elseif $horny == true>>
-                who
-                <<set $date to $date + 1>>
+                The Player is really into it but doesn't understand why.
+                <<set $date to $date + 20>>
+                <<set $horny to false>>
+                <<set $conf to true>>
+                The Player has somehow stopped being horny.
             <<else>>
-                whe
-                <<set $date to $date + 1>>    
+                The Player tries to count the pushups but accidentally falls asleep.
+                <<set $conf to true>>
+                The Player wakes up again.
             <<endif>>         
             <<jump fight3>>
-        -> aer
+        -> Flex.
             <<if $conf == true>>
-                Wha
-                <<set $date to $date + 1>>
+                That's very effective!
+                <<set $conf to false>>
+                <<set $date to $date + 20>>
+                <<set $horny to true>>
+                The Player is no longer confused!
             <<elseif $horny == true>>
-                who
-                <<set $date to $date + 1>>
+                That's very effective!
+                <<set $date to $date + 20>>
+                <<set $horny to false>>
+                The Player has somehow stopped being horny.
             <<else>>
-                whe
-                <<set $date to $date + 1>>    
+                The Player starts drooling.
+                <<set $date to $date + 10>>
+                <<set $horny to true>>
             <<endif>>         
             <<jump fight3>>
     <<endif>>
 -> Inventory
     <<if $charname == "Dr. h.c. Dr. med. Dr. iur. Acula">>
-        -> dd
-            <<if $conf == true>>
-                Wha
-                <<set $date to $date + 1>>
-            <<elseif $horny == true>>
-                who
-                <<set $date to $date + 1>>
-            <<else>>
-                whe
-                <<set $date to $date + 1>>    
-            <<endif>>         
+        -> Stethoscope. <<once>>
+            The Player is unsure what is happening.
+            <<set $horny to false>>
+            <<set $conf to true>>        
             <<jump fight3>>
-        -> kkk
-            <<if $conf == true>>
-                Wha
-                <<set $date to $date + 1>>
-            <<elseif $horny == true>>
-                who
-                <<set $date to $date + 1>>
-            <<else>>
-                whe
-                <<set $date to $date + 1>>    
-            <<endif>>         
+        -> Wig. <<once>>
+            Snatched!
+            <<set $conf to false>>
+            <<set $horny to true>>        
             <<jump fight3>>
-        -> aer
-            <<if $conf == true>>
-                Wha
-                <<set $date to $date + 1>>
-            <<elseif $horny == true>>
-                who
-                <<set $date to $date + 1>>
-            <<else>>
-                whe
-                <<set $date to $date + 1>>    
-            <<endif>>         
+        -> Letter from the President. <<once>>
+            Impressive, yet ain't nobody got time to read all that.
+            <<set $horny to false>>
+            <<set $conf to false>>        
             <<jump fight3>>
     <<elseif $charname == "Bobo Blocksberg">>
-        -> dd
-            <<if $conf == true>>
-                Wha
-                <<set $date to $date + 1>>
-            <<elseif $horny == true>>
-                who
-                <<set $date to $date + 1>>
-            <<else>>
-                whe
-                <<set $date to $date + 1>>    
-            <<endif>>         
+        -> Wand. <<once>>
+            It's old and doesn't work anymore.
+            <<set $horny to false>>
+            <<set $conf to false>>        
             <<jump fight3>>
-        -> kkk
-            <<if $conf == true>>
-                Wha
-                <<set $date to $date + 1>>
-            <<elseif $horny == true>>
-                who
-                <<set $date to $date + 1>>
-            <<else>>
-                whe
-                <<set $date to $date + 1>>    
-            <<endif>>         
+        -> Horny potion. <<once>>
+            Uh oh, seems like someone switched the potion labels.
+            <<set $horny to false>>
+            <<set $conf to true>>        
             <<jump fight3>>
-        -> aer
-            <<if $conf == true>>
-                Wha
-                <<set $date to $date + 1>>
-            <<elseif $horny == true>>
-                who
-                <<set $date to $date + 1>>
-            <<else>>
-                whe
-                <<set $date to $date + 1>>    
-            <<endif>>         
+        -> Confusion potion <<once>>
+            Uh oh, seems like someone switched the potion labels.
+            <<set $conf to false>>
+            <<set $horny to true>>        
             <<jump fight3>>
     <<elseif $charname == "Mothperson">>
-        -> dd
-            <<if $conf == true>>
-                Wha
-                <<set $date to $date + 1>>
-            <<elseif $horny == true>>
-                who
-                <<set $date to $date + 1>>
-            <<else>>
-                whe
-                <<set $date to $date + 1>>    
-            <<endif>>         
+        -> Sunglasses. <<once>>
+            What are they doing in this inventory?
+            <<set $horny to false>>
+            <<set $conf to true>>        
             <<jump fight3>>
-        -> kkk
-            <<if $conf == true>>
-                Wha
-                <<set $date to $date + 1>>
-            <<elseif $horny == true>>
-                who
-                <<set $date to $date + 1>>
-            <<else>>
-                whe
-                <<set $date to $date + 1>>    
-            <<endif>>         
+        -> Lighter. <<once>>
+            High risk, high reward. Use with caution.
+            <<set $horny to false>>
+            <<set $conf to false>>        
             <<jump fight3>>
-        -> aer
-            <<if $conf == true>>
-                Wha
-                <<set $date to $date + 1>>
-            <<elseif $horny == true>>
-                who
-                <<set $date to $date + 1>>
-            <<else>>
-                whe
-                <<set $date to $date + 1>>    
-            <<endif>>         
+        -> Ring light. <<once>>
+            The Player appreciates the impeccable lighting.
+            <<set $conf to false>>
+            <<set $horny to true>>        
             <<jump fight3>>
     <<elseif $charname == "Fishy McFishface">>
-        -> dd
-            <<if $conf == true>>
-                Wha
-                <<set $date to $date + 1>>
-            <<elseif $horny == true>>
-                who
-                <<set $date to $date + 1>>
-            <<else>>
-                whe
-                <<set $date to $date + 1>>    
-            <<endif>>         
+        -> Abs. <<once>>
+            Yes, it doesn't make sense for these to be in an inventory. No, I don't care. Sue me.
+            <<set $conf to false>>
+            <<set $horny to true>>        
             <<jump fight3>>
-        -> kkk
-            <<if $conf == true>>
-                Wha
-                <<set $date to $date + 1>>
-            <<elseif $horny == true>>
-                who
-                <<set $date to $date + 1>>
-            <<else>>
-                whe
-                <<set $date to $date + 1>>    
-            <<endif>>         
+        -> Eels. <<once>>
+            Ah. Very dangerous.
+            <<set $horny to false>>
+            <<set $conf to false>>        
             <<jump fight3>>
-        -> aer
-            <<if $conf == true>>
-                Wha
-                <<set $date to $date + 1>>
-            <<elseif $horny == true>>
-                who
-                <<set $date to $date + 1>>
-            <<else>>
-                whe
-                <<set $date to $date + 1>>    
-            <<endif>>         
+        -> Poseidon's Trident. <<once>>
+            Is that the real one?
+            <<set $horny to false>>
+            <<set $conf to true>>        
             <<jump fight3>>
     <<elseif $charname == "Muscle Mummy">>
-        -> dd
-            <<if $conf == true>>
-                Wha
-                <<set $date to $date + 1>>
-            <<elseif $horny == true>>
-                who
-                <<set $date to $date + 1>>
-            <<else>>
-                whe
-                <<set $date to $date + 1>>    
-            <<endif>>         
+        -> A pack of cigarettes. <<once>>
+            Isn't that like really unhealthy?
+            <<set $horny to false>>
+            <<set $conf to true>>        
             <<jump fight3>>
-        -> kkk
-            <<if $conf == true>>
-                Wha
-                <<set $date to $date + 1>>
-            <<elseif $horny == true>>
-                who
-                <<set $date to $date + 1>>
-            <<else>>
-                whe
-                <<set $date to $date + 1>>    
-            <<endif>>         
+        -> Kettlebell. <<once>>
+            Too heavy for the Player.
+            <<set $horny to false>>
+            <<set $conf to false>>        
             <<jump fight3>>
-        -> aer
-            <<if $conf == true>>
-                Wha
-                <<set $date to $date + 1>>
-            <<elseif $horny == true>>
-                who
-                <<set $date to $date + 1>>
-            <<else>>
-                whe
-                <<set $date to $date + 1>>    
-            <<endif>>         
+        -> Bandages. <<once>>
+            The Player is obviously having some... interesing thoughts.
+            <<set $conf to false>>
+            <<set $horny to true>>        
             <<jump fight3>>
     <<endif>>
 -> Random
+    => A toad appears.
+        <<set $horny to false>>
+        <<set $conf to true>>
+        <<jump fight3>>
+    => A Lavoodoo appears.
+        <<set $horny to false>>
+        <<set $conf to true>>
+        <<jump fight3>>
+    => A cat runs in an scratches the Player.
+        <<set $date = $date - 10>>
+        <<jump fight3>>
+    => The Player gets struck by lightning.
+        They survive this.
+        <<set $date to 0>>
+        <<jump fight3>>
+    => An angelic choir starts singing.
+        <<set $date to $date + 10>>
+        <<jump fight3>>
+    => Amor's arrow missed the Player by half an inch.
+        Noone notices.
+        <<set $horny to false>>
+        <<set $conf to false>>
+        <<jump fight3>>
+    => Rose petals start falling from the ceiling.
+        <<set $date to $date + 10>>
+        <<jump fight3>>
+    => Hideo Kojima appears and congratulates Love and Lizards Studio on their game.
+        <<set $date to $date + 50>>
+        <<jump fight3>>
+    => The Player gets stung by a bee.
+        Ouch.
+        <<set $date to $date - 20>>
+        <<set $horny to false>>
+        <<set $conf to false>>
+        <<jump fight3>>
+    => The Player finds 15 Euro.
+        Now they can buy Currywurst.
+        <<set $horny to false>>
+        <<set $conf to true>>
+        <<set $date to $date + 10>>
+        <<jump fight3>>
+    => The Player accidentally sees an ankle.
+        <<set $conf to false>>
+        <<set $horny to true>>
+        <<jump fight3>>
+    => The ancient deity on whose just as ancient temple grounds the Villa was built curses the Player.
+        Luckily it is only a very minor ancient deity.
+        <<set $conf to false>>
+        <<set $horny to true>>
+        <<jump fight3>>
+    => The moon/The Great Lämp is full tonight.
+        <<set $conf to false>>
+        <<set $horny to true>>
+        <<set $date to $date + 10>>
+        <<jump fight3>>
 -> Leave
     Are you sure?
     -> Yes.
@@ -391,7 +366,7 @@ What will {$charname} do? (Player attraction {$date}/100)
         <<jump fight3>>
 <<elseif $leave == true>>
     Really?
-<<elseif $date == 100>>
+<<elseif $date >= 100>>
     That was fun!
 <<endif>>
 ===
