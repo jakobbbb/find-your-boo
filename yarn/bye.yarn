@@ -4,11 +4,11 @@ Host: And now we have to say Good-bye to:
 <<once if $drac == 1000>>
 Host: Dr. h.c. Acula! <<if $day == 1>>
 Host: Dr. h.c. Dr. med. Acula! <<if $day == 2>>
-Host: Dr. h.c. Dr. med. Dr. jur. Acula! <<if $day == 3>>
-Host: Dr. h.c. Dr. med. Dr. jur. Dr. pol. Acula! <<if $day == 4>>
-Dr. h.c. Acula: <<if $day == 1>>
+Host: Dr. h.c. Dr. med. Dr. iur. Acula! <<if $day == 3>>
+Host: Dr. h.c. Dr. med. Dr. iur. Dr. phil. Acula! <<if $day == 4>>
+Dr. h.c. Acula: I should have gone into crypt-o. <<if $day == 1>>
 Dr. h.c. Dr. med. Acula: Looks like my efforts were all in vein. <<if $day == 2>>
-Dr. h.c. Dr. med. Dr. jur. Acula: <<if $day == 3>>
+Dr. h.c. Dr. med. Dr. jur. Acula: May I play the advocatus diaboli one more time? <<if $day == 3>>
 Dr. h.c. Dr. med. Dr. jur. Dr. pol. Acula: <<if $day == 4>>
 <<endonce>>
 Host: Bobo Blocksberg! <<once if $witch == 1000>>
