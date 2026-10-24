@@ -132,7 +132,8 @@ script = ExtResource("4_ppyta")
 [node name="Arrow" parent="Camera2D2" unique_id=1754077635 instance=ExtResource("5_ykrsh")]
 position = Vector2(2, 591)
 
-[node name="Elimination Ceremony" parent="." unique_id=1322346346 instance=ExtResource("14_b0q6j")]
+[node name="EliminationCeremony" parent="." unique_id=1322346346 instance=ExtResource("14_b0q6j")]
+unique_name_in_owner = true
 position = Vector2(2771, 410)
 
 [node name="EliminationCamera" type="Camera2D" parent="." unique_id=1106246604]
