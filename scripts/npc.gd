@@ -15,7 +15,7 @@ func _on_area_2d_input_event(viewport: Node, event: InputEvent, shape_idx: int) 
 	if get_day() == 2:
 		var char_name = get_meta("Day2CharName")
 		const node = "singles2"
-		dia.variable_storage.set_value("$char_name", char_name)
+		dia.variable_storage.set_value("$charname", char_name)
 		dia.start_dialogue(node)
 		return
 		
