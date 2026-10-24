@@ -9,7 +9,6 @@ Say hello:
     <<set $moth = $moth + 1>>
     You: Hi.
 -> serious
-    <<set $witch = $witch + 1>>
     You: Hello, it is nice to meet you.
 -> flirty
     <<set $moth = $moth - 1>>

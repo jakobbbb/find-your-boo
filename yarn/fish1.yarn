@@ -1,0 +1,46 @@
+title: fish1
+---
+<<set $ghostname = "Ghost 4">>
+Say hello:
+-> funny
+    You: Bone-jour!
+-> neutral
+    <<set $fish = $fish + 1>>
+    You: Hi.
+-> serious
+    <<set $fish = $fish + 1>>
+    You: Hello, it is nice to meet you.
+-> flirty
+    <<set $fish = $fish - 1>>
+    You: Hello, boo-tiful!
+{$ghostname}: Hello.
+Ask:
+-> about horses
+    You: Got any thoughts about horses?
+    <<set $fish = $fish + 1>>
+    => {$ghostname}: Scary.
+    => {$ghostname}: *neighs*
+    => {$ghostname}: Too many teeth.
+    => {$ghostname}: *shudders* Too many.
+    => {$ghostname}: Never.
+    => {$ghostname}: My parents were murdered by a horse.
+-> about anime
+    <<set $fish = $fish - 1>>
+    You: Who is your favourite "My Favourite Anime" character?
+    => {$ghostname}: Obviously Anichi-chan.
+    => {$ghostname}: Probably Shin Oyama.
+    => {$ghostname}: Fluffy, the murder goose.
+    => {$ghostname}: Definitely Dr Evelle Batt Gui.
+    => {$ghostname}: Never seen it.
+    => {$ghostname}: Uuuh, Hannelore, I guess?
+-> about communism
+    <<set $fish = $fish + 1>>
+    You: Do you ever catch yourself thinking about the spectre that's haunting Europe?
+    => {$ghostname}: Far too often.
+    => {$ghostname}: We have nothing to lose but our chains.
+    => {$ghostname}: I am deadly afraid of ghosts.
+    => {$ghostname}: I even know that bitch.
+    => {$ghostname}: *starts humming the Internationale*
+    => {$ghostname}: Never.
+You: Thank you for your honesty.
+===
