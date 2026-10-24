@@ -1,6 +1,7 @@
 title: day2
 ---
 <<set $day = 2>>
+<<declare $charname = "bby">>
 You're still thinking about the elimination ceremony.
 To be completely honest, you kind of panicked when the host asked you to choose.
 You hope you made the right decision.

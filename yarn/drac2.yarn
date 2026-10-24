@@ -1,0 +1,352 @@
+title: drac2
+---
+<<set $charname to "Dr. h.c. Dr. med. Acula">>
+You: *knock knock*
+<<if $charname == "Dr. h.c. Dr. med. Acula">>
+    {$charname}: You may come in.
+<<elseif $charname == "Bobo Blocksberg">>
+    {$charname}: *yells* The door's open!
+<<elseif $charname == "Mothperson">>
+    {$charname}: Come in but please don't turn off the lämp.
+<<elseif $charname == "Fishy McFishface">>
+    {$charname}: Oh you... just get in already!
+<<elseif $charname == "Muscle Mummy">>
+    {$charname}: If the smell of sweat doesn't bother you, then come in.
+<<endif>>
+You:
+-> thx
+    <<if $charname == "Dr. h.c. Dr. med. Acula">>
+        <<set $drac = $drac - 1>>
+    <<elseif $charname == "Bobo Blocksberg">>
+        <<set $witch = $witch + 1>>
+    <<elseif $charname == "Mothperson">>
+        <<set $moth = $moth + 1>>
+    <<elseif $charname == "Fishy McFishface">>
+        <<set $fish = $fish + 1>>
+    <<elseif $charname == "Muscle Mummy">>
+        <<set $mum = $mum + 1>>
+    <<endif>>
+    You: Thanks for letting me in.
+    <<if $charname == "Dr. h.c. Dr. med. Acula">>
+        {$charname}: You're welcome.
+    <<elseif $charname == "Bobo Blocksberg">>
+        {$charname}: No problem.
+    <<elseif $charname == "Mothperson">>
+        {$charname}: Of kós.
+    <<elseif $charname == "Fishy McFishface">>
+        {$charname}: You're always welcome. *winks*
+    <<elseif $charname == "Muscle Mummy">>
+        {$charname}: ...9...10...11...12!
+        {$charname}: No worries, darling, I just had to finish my reps.
+    <<endif>>
+-> huh
+    <<if $charname == "Dr. h.c. Dr. med. Acula">>
+        <<set $drac = $drac + 1>>
+    <<elseif $charname == "Bobo Blocksberg">>
+        <<set $witch = $witch + 1>>
+    <<elseif $charname == "Mothperson">>
+        <<set $moth = $moth - 1>>
+    <<elseif $charname == "Fishy McFishface">>
+        <<set $fish = $fish + 1>>
+    <<elseif $charname == "Muscle Mummy">>
+        <<set $mum = $mum - 1>>
+    <<endif>>
+    <<if $charname == "Dr. h.c. Dr. med. Acula">>
+        You: Shouldn't it be the other way around?
+        {$charname}: Probably.
+    <<elseif $charname == "Bobo Blocksberg">>
+        You: Why are you yelling?
+        {$charname}: Because my room is really dark.
+        {$charname}: Which means I can't hear you so well.
+    <<elseif $charname == "Mothperson">>
+        You: The lämp?
+        {$charname}: Yes, the lämp.
+    <<elseif $charname == "Fishy McFishface">>
+        You: Um, I am in.
+        {$charname}: *amused smile* I can see that.
+    <<elseif $charname == "Muscle Mummy">>
+        You: Why are you sweaty?
+        {$charname}: These muscles have to be worked out or they get restless.
+        You stare at her muscles.
+        Somehow you get it.
+    <<endif>>
+-> boo
+    You: Boo!
+    <<if $charname == "Dr. h.c. Dr. med. Acula">>
+        <<set $drac = $drac + 1>>
+    <<elseif $charname == "Bobo Blocksberg">>
+        <<set $witch = $witch - 1>>
+    <<elseif $charname == "Mothperson">>
+        <<set $moth = $moth + 1>>
+    <<elseif $charname == "Fishy McFishface">>
+        <<set $fish = $fish - 1>>
+    <<elseif $charname == "Muscle Mummy">>
+        <<set $mum = $mum + 1>>
+    <<endif>>
+    <<if $charname == "Dr. h.c. Dr. med. Acula">>
+        {$charname}: *blinks very slowly*
+    <<elseif $charname == "Bobo Blocksberg">>
+        {$charname}: Ah, you almost got me.
+    <<elseif $charname == "Mothperson">>
+        {$charname}: *nods in agreement*
+    <<elseif $charname == "Fishy McFishface">>
+        {$charname}: Now aren't you just adorable.
+        You blush.
+    <<elseif $charname == "Muscle Mummy">>
+        {$charname}: ...9...10...11...12!
+        {$charname}: Sorry, did you say something?
+    <<endif>>
+You: I am here to get to know you better!
+<<if $charname == "Dr. h.c. Dr. med. Acula">>
+    {$charname}: Don't you say that to everyone?
+    You: ...
+    You: Yes, but I guess that's the point of the show?
+    {$charname}: Touché.
+<<elseif $charname == "Bobo Blocksberg">>
+    {$charname}: Sure thing but please close the door.
+    {$charname}: I am still hungover.
+    Hungover? But how? Was there a party after the elimination ceremony you weren't invited to?
+    The thought is gnawing on you like a very weak zombie.
+<<elseif $charname == "Mothperson">>
+    {$charname}: Yes, a great idea. 
+    {$charname}: We can start by looking at the lämp together.
+    You stare at the lamp.
+    It is kinda pretty.
+<<elseif $charname == "Fishy McFishface">>
+    {$charname}: Oooh, I can't wait for it.
+    {$charname}: You can come an sit next to me if you want to.
+    You want to.
+    You don't know why but you really want to.
+<<elseif $charname == "Muscle Mummy">>
+    {$charname}: You are lucky, I just finished all my reps.
+    {$charname}: ...
+    {$charname}: Maybe I should go and have a shower first.
+    You: Oh no, it's fine.
+    It really is.
+    Somehow she smells really nice.
+<<endif>>
+You: So...
+-> ask about favourite dinosaur
+    <<if $charname == "Dr. h.c. Dr. med. Acula">>
+        <<set $drac = $drac + 1>>
+    <<elseif $charname == "Bobo Blocksberg">>
+        <<set $witch = $witch + 1>>
+    <<elseif $charname == "Mothperson">>
+        <<set $moth = $moth + 1>>
+    <<elseif $charname == "Fishy McFishface">>
+        <<set $fish = $fish - 1>>
+    <<elseif $charname == "Muscle Mummy">>
+        <<set $mum = $mum + 1>>
+    <<endif>>
+    You: My favourite dinosaur is the Pterodactylus. Which one is yours?
+    <<if $charname == "Dr. h.c. Dr. med. Acula">>
+        {$charname}: The Indominus Rex.
+        You: That is not a real dinosaur.
+        {$charname}: Is any dinosaur actually "real"?
+        You: Yes?
+        {$charname}: That's what they want you to believe.
+        You: Who?
+        {$charname}: The dinosaurs.
+    <<elseif $charname == "Bobo Blocksberg">>
+        {$charname}: Ooof.
+        {$charname}: Probably the one with the long neck?
+        You: The Brontosaurus?
+        You: The Brachiosaurus?
+        You: The Diplodocus?
+        You: The Apatosaurus?
+        You: The Argentinosaurus?
+        {$charname}: Ah, my bad.
+        {$charname}: I meant the Compsognathus.
+        You: That's a fucking chicken.
+        {$charname}: A dinosaur chicken.
+        You: Aren't all chicken dinosaurs?
+        {$charname}: Maybe but not all dinosaurs are chicken.
+        You: Can't argue with that.
+        {$charname}: *cheep*
+        You: *cheep*
+    <<elseif $charname == "Mothperson">>
+        {$charname}: I guess that would be Archaeolepis mane.
+        You: But that's a moth?
+        {$charname}: Correct.
+        You: And not a dinosaur?
+        {$charname}: Correct.
+    <<elseif $charname == "Fishy McFishface">>
+    <<elseif $charname == "Muscle Mummy">>
+    <<endif>>
+-> talk about the last time you slipped on a banana peel
+    <<if $charname == "Dr. h.c. Dr. med. Acula">>
+        <<set $drac = $drac - 1>>
+    <<elseif $charname == "Bobo Blocksberg">>
+        <<set $witch = $witch + 1>>
+    <<elseif $charname == "Mothperson">>
+        <<set $moth = $moth + 1>>
+    <<elseif $charname == "Fishy McFishface">>
+        <<set $fish = $fish + 1>>
+    <<elseif $charname == "Muscle Mummy">>
+        <<set $mum = $mum - 1>>
+    <<endif>>
+    You: It really hurt.
+    <<if $charname == "Dr. h.c. Dr. med. Acula">>
+        You: I broke my elbow.
+        {$charname}: I don't care that you broke your elbow.
+        You: Really?
+        {$charname}: No of course not, do you have any x-rays?
+        You show her the x-rays.
+        She snatches them out of your hands and spends about 10 minutes looking at them while occasionally muttering "...bones...".
+        It is kind of endearing.
+    <<elseif $charname == "Bobo Blocksberg">>
+    <<elseif $charname == "Mothperson">>
+    <<elseif $charname == "Fishy McFishface">>
+    <<elseif $charname == "Muscle Mummy">>
+    <<endif>>
+-> insinuate that the moon is not real
+    <<if $charname == "Dr. h.c. Dr. med. Acula">>
+        <<set $drac = $drac + 1>>
+    <<elseif $charname == "Bobo Blocksberg">>
+        <<set $witch = $witch + 1>>
+    <<elseif $charname == "Mothperson">>
+        <<set $moth = $moth - 1>>
+    <<elseif $charname == "Fishy McFishface">>
+        <<set $fish = $fish + 1>>
+    <<elseif $charname == "Muscle Mummy">>
+        <<set $mum = $mum + 1>>
+    <<endif>>
+    You: The moon is fake.
+    <<if $charname == "Dr. h.c. Dr. med. Acula">>
+        {$charname}: You mean the moonlanding?
+        You: No... the moon.
+        {$charname}: A fascinating hypothesis.
+    <<elseif $charname == "Bobo Blocksberg">>
+    <<elseif $charname == "Mothperson">>
+    <<elseif $charname == "Fishy McFishface">>
+    <<elseif $charname == "Muscle Mummy">>
+    <<endif>>
+-> start singing a song
+    <<if $charname == "Dr. h.c. Dr. med. Acula">>
+        <<set $drac = $drac + 1>>
+    <<elseif $charname == "Bobo Blocksberg">>
+        <<set $witch = $witch - 1>>
+    <<elseif $charname == "Mothperson">>
+        <<set $moth = $moth + 1>>
+    <<elseif $charname == "Fishy McFishface">>
+        <<set $fish = $fish + 1>>
+    <<elseif $charname == "Muscle Mummy">>
+        <<set $mum = $mum + 1>>
+    <<endif>>
+    You: It's astounding...
+    You: Time is fleeting...
+    You: Madness... takes it's toll..
+    You: But listen closely!
+    {$charname}: Not for very much longer.
+    You: I've got to... keep control.
+    You: I remember doing the Time Warp!
+    You: Drinking those moments when...
+    You: The blackness would hit me!
+    Together: And the void would be calling
+    Together: Let's do the time warp again...
+    Together: Let's do the time warp again!
+    You do the Time Warp.
+    Again.
+    It works out surprisingly well.
+You: I feel like I already know you better!
+You: But now I would really like to know what you think about:
+-> Dr. h.c. Dr. med. Acula <<if $charname != "Dr. h.c. Dr. med. Acula">>
+    <<if $charname == "Dr. h.c. Dr. med. Acula">>
+        <<set $drac = $drac + 1>>
+    <<elseif $charname == "Bobo Blocksberg">>
+        <<set $witch = $witch + 1>>
+    <<elseif $charname == "Mothperson">>
+        <<set $moth = $moth - 1>>
+    <<elseif $charname == "Fishy McFishface">>
+        <<set $fish = $fish + 1>>
+    <<elseif $charname == "Muscle Mummy">>
+        <<set $mum = $mum + 1>>
+    <<endif>>
+    {$charname}: <<if $charname == "Bobo Blocksberg">>
+    {$charname}: <<if $charname == "Mothperson">>
+    {$charname}: <<if $charname == "Fishy McFishface">>
+    {$charname}: <<if $charname == "Muscle Mummy">>
+-> Bobo Blocksberg <<if $charname != "Bobo Blocksberg">>
+    <<if $charname == "Dr. h.c. Dr. med. Acula">>
+        <<set $drac = $drac + 1>>
+    <<elseif $charname == "Bobo Blocksberg">>
+        <<set $witch = $witch + 1>>
+    <<elseif $charname == "Mothperson">>
+        <<set $moth = $moth + 1>>
+    <<elseif $charname == "Fishy McFishface">>
+        <<set $fish = $fish + 1>>
+    <<elseif $charname == "Muscle Mummy">>
+        <<set $mum = $mum - 1>>
+    <<endif>>
+    {$charname}: <<if $charname == "Dr. h.c. Dr. med. Acula">>
+    {$charname}: <<if $charname == "Mothperson">>
+    {$charname}: <<if $charname == "Fishy McFishface">>
+    {$charname}: <<if $charname == "Muscle Mummy">>
+-> Mothperson <<if $charname != "Mothperson">>
+    <<if $charname == "Dr. h.c. Dr. med. Acula">>
+        <<set $drac = $drac + 1>>
+    <<elseif $charname == "Bobo Blocksberg">>
+        <<set $witch = $witch + 1>>
+    <<elseif $charname == "Mothperson">>
+        <<set $moth = $moth + 1>>
+    <<elseif $charname == "Fishy McFishface">>
+        <<set $fish = $fish - 1>>
+    <<elseif $charname == "Muscle Mummy">>
+        <<set $mum = $mum + 1>>
+    <<endif>>
+    {$charname}: <<if $charname == "Dr. h.c. Dr. med. Acula">>
+    {$charname}: <<if $charname == "Bobo Blocksberg">>
+    {$charname}: <<if $charname == "Fishy McFishface">>
+    {$charname}: <<if $charname == "Muscle Mummy">>
+-> Fishy McFishface <<if $charname != "Fishy McFishface">>
+    <<if $charname == "Dr. h.c. Dr. med. Acula">>
+        <<set $drac = $drac - 1>>
+    <<elseif $charname == "Bobo Blocksberg">>
+        <<set $witch = $witch + 1>>
+    <<elseif $charname == "Mothperson">>
+        <<set $moth = $moth + 1>>
+    <<elseif $charname == "Fishy McFishface">>
+        <<set $fish = $fish + 1>>
+    <<elseif $charname == "Muscle Mummy">>
+        <<set $mum = $mum + 1>>
+    <<endif>>
+    {$charname}: <<if $charname == "Dr. h.c. Dr. med. Acula">>
+    {$charname}: <<if $charname == "Bobo Blocksberg">>
+    {$charname}: <<if $charname == "Mothperson">>
+    {$charname}: <<if $charname == "Muscle Mummy">>
+-> Muscle Mummy <<if $charname != "Muscle Mummy">>
+    <<if $charname == "Dr. h.c. Dr. med. Acula">>
+        <<set $drac = $drac + 1>>
+    <<elseif $charname == "Bobo Blocksberg">>
+        <<set $witch = $witch - 1>>
+    <<elseif $charname == "Mothperson">>
+        <<set $moth = $moth + 1>>
+    <<elseif $charname == "Fishy McFishface">>
+        <<set $fish = $fish + 1>>
+    <<elseif $charname == "Muscle Mummy">>
+        <<set $mum = $mum + 1>>
+    <<endif>>
+    {$charname}: <<if $charname == "Dr. h.c. Dr. med. Acula">>
+    {$charname}: <<if $charname == "Bobo Blocksberg">>
+    {$charname}: <<if $charname == "Mothperson">>
+    {$charname}: <<if $charname == "Fishy McFishface">>
+-> The Ghost
+    {$charname}: <<if $charname == "Dr. h.c. Dr. med. Acula">>
+    {$charname}: <<if $charname == "Bobo Blocksberg">>
+    {$charname}: <<if $charname == "Mothperson">>
+    {$charname}: <<if $charname == "Fishy McFishface">>
+    {$charname}: <<if $charname == "Muscle Mummy">>
+You: I really enjoyed our time together.
+<<if $charname == "Dr. h.c. Dr. med. Acula">>
+    {$charname}: Bet you say that to everyone.
+    You: ...
+    You: Yes, yes I do.
+    {$charname}: I guess that's the point of the show.
+    You smile.
+    You: Touché.
+<<elseif $charname == "Bobo Blocksberg">>
+<<elseif $charname == "Mothperson">>
+<<elseif $charname == "Fishy McFishface">>
+<<elseif $charname == "Muscle Mummy">>
+<<endif>>
+===
