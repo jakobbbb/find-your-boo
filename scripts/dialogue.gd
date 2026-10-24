@@ -1,4 +1,4 @@
-extends YarnDialogueRunner
+@tool extends YarnDialogueRunner
 
 enum Chars {
 	DrAcula,
@@ -24,9 +24,11 @@ func elim(cname: String) -> void:
 	print("Set affection for " + cname + " to 1000")
 	start_dialogue("bye")
 	print()
-	for char in %EliminationCeremony.get_children():
-		if char.get_meta("DialogueNode") == cname:
-			char.hide()
+	for character in %EliminationCeremony.get_children():
+		if not character.has_meta("DialogueNode"):
+			continue
+		if character.get_meta("DialogueNode") == cname:
+			character.hide()
 			
 
 func get_affection(c: Chars) -> int:

@@ -1,8 +1,10 @@
 extends Node
 
+@warning_ignore_start("unused_signal")
 signal set_night()
 signal set_day()
 signal eliminate_char(cname: String)
+@warning_ignore_restore("unused_signal")
 
 func _ready() -> void:
 	randomize_spawns()
