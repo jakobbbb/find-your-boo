@@ -12,9 +12,15 @@
 [ext_resource type="Texture2D" uid="uid://d32kxpptp6air" path="res://assets/placeholder/characters/strong lesb.png" id="7_a3se8"]
 [ext_resource type="Texture2D" uid="uid://b417h6penn7qq" path="res://assets/placeholder/characters/literal ghost.png" id="8_uty7l"]
 [ext_resource type="Texture2D" uid="uid://c1780e1r888om" path="res://assets/placeholder/characters/mothy.png" id="9_45l4g"]
+[ext_resource type="PackedScene" uid="uid://csippbs4hgnb3" path="res://ui.tscn" id="13_0m0f1"]
 
 [node name="Test" type="Node2D" unique_id=63273623]
 script = ExtResource("1_ykrsh")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1392501608]
+
+[node name="Control" parent="CanvasLayer" unique_id=137605733 instance=ExtResource("13_0m0f1")]
+mouse_filter = 1
 
 [node name="HousePlaceholder" type="Sprite2D" parent="." unique_id=1023348736]
 z_index = -1
