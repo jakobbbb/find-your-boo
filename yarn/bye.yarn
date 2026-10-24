@@ -9,10 +9,14 @@ Host: Dr. h.c. Dr. med. Dr. iur. Dr. phil. Acula! <<if $day == 4>>
 Dr. h.c. Acula: I should have gone into crypt-o. <<if $day == 1>>
 Dr. h.c. Dr. med. Acula: Looks like my efforts were all in vein. <<if $day == 2>>
 Dr. h.c. Dr. med. Dr. jur. Acula: May I play the advocatus diaboli one more time? <<if $day == 3>>
-Dr. h.c. Dr. med. Dr. jur. Dr. pol. Acula: <<if $day == 4>>
+Dr. h.c. Dr. med. Dr. jur. Dr. rer. pol. Acula: Just like the spectre haunting Europe, this decision will haunt you. <<if $day == 4>>
 <<endonce>>
 Host: Bobo Blocksberg! <<once if $witch == 1000>>
+Bobo Blocksberg: I tried to be a good witch but it seems I'm just a bad bitch.
 Host: Mothperson! <<once if $moth == 1000>>
+Mothperson: May I have lämp?
 Host: Fishy McFishface! <<once if $fish == 1000>>
+Fishy McFishface: Well, just know that I could have gotten you really really wet.
 Host: Muscle Mummy! <<once if $mum == 1000>>
+Muscle Mummy: Give Mummy a hug!
 ===
