@@ -40,7 +40,7 @@ scale = Vector2(0.31824818, 0.31824815)
 texture = ExtResource("4_0m0f1")
 
 [node name="Sprite2D Ghost" parent="NPC_Dr_Acula" index="1" unique_id=1324753701]
-position = Vector2(717, -430.08325)
+position = Vector2(17, 4)
 
 [node name="CollisionShape2D" parent="NPC_Dr_Acula/Area2D" parent_id_path=PackedInt32Array(438049094, 1716052840) index="0" unique_id=685501766]
 position = Vector2(13.775024, 7.1093445)
@@ -108,7 +108,6 @@ scale = Vector2(0.3416058, 0.34160584)
 texture = ExtResource("9_45l4g")
 
 [node name="Sprite2D Ghost" parent="NPC_Mothperson" index="1" unique_id=1324753701]
-visible = true
 position = Vector2(5.7750244, -4.230713)
 
 [node name="Area2D" parent="NPC_Mothperson" index="2" unique_id=1716052840]

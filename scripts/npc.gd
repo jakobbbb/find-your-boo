@@ -4,12 +4,20 @@ extends Node
 
 func _ready() -> void:
 	GameManager.eliminate_char.connect(_on_elim_char)
+	dia.node_started.connect(_on_node_start)
+	set_ghost_visible(true)  # starting off ghostly
 
 func _on_elim_char(cname: String) -> void:
 	if not has_meta("DialogueNode"):
 		return
 	if cname == get_meta("DialogueNode"):
 		self.transform.origin = Vector2(99999999, 9999999999)
+
+func _on_node_start(node_name: String) -> void:
+	if node_name.begins_with("day"):
+		var d = int(node_name.replace("day", ""))
+		set_ghost_visible(d == 1)
+			
 	
 func _get_bottom_coord() -> Vector3:
 	var c = $Area2D/CollisionShape2D
@@ -34,3 +42,10 @@ func _on_area_2d_input_event(_viewport: Node, event: InputEvent, _shape_idx: int
 
 func get_day() -> int:
 	return dia.variable_storage.get_value("$day")
+
+func set_ghost_visible(ghostly: bool) -> void:
+	var g = $"Sprite2D Ghost"
+	if ghostly:
+		g.show()
+	else:
+		g.hide()
