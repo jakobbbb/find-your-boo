@@ -5,6 +5,7 @@ signal set_night()
 signal set_day()
 signal eliminate_char(cname: String)
 signal reveal_char(cname: String)
+signal show_char_sprite(cname: String)
 @warning_ignore_restore("unused_signal")
 
 func _ready() -> void:
@@ -19,6 +20,9 @@ static func _yarn_command_set_day():
 
 static func _yarn_command_reveal(cname: String):
 	GameManager.reveal_char.emit(cname)
+
+static func _yarn_command_sprite(cname: String):
+	GameManager.show_char_sprite.emit(cname)
 
 func randomize_spawns():
 	var spawns = []

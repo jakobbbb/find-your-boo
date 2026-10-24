@@ -7,6 +7,8 @@ func _ready() -> void:
 	GameManager.set_night.connect(_on_set_night)
 	GameManager.set_day.connect(_on_set_day)
 	set_night_day(false)
+	show_char_sprite("NONE")
+	GameManager.show_char_sprite.connect(show_char_sprite)
 
 func set_night_day(is_night: bool) -> void:
 	# night.color.a = 1 if is_night else 0
@@ -16,6 +18,8 @@ func set_night_day(is_night: bool) -> void:
 	else:
 		night.play_backwards("fade_night")
 
+func _on_line() -> void:
+	pass
 
 func _on_set_day() -> void:
 	set_night_day(false)
@@ -31,3 +35,10 @@ func _on_end_day_button_pressed() -> void:
 	var node = "end" + day
 	print(node)
 	%YarnDialogueRunner.start_dialogue(node)
+	
+func show_char_sprite(cname: String) -> void:
+	for c in $CharSprites.get_children():
+		if c.name == cname:
+			c.show()
+		else:
+			c.hide()

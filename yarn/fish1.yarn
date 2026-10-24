@@ -1,6 +1,7 @@
 title: fish1
 ---
 <<set $ghostname = "Ghost 4">>
+<<sprite "ghost">>
 Say hello:
 -> funny
     You: Bone-jour!

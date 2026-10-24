@@ -12,10 +12,12 @@ enum Chars {
 func _ready() -> void:
 	super()
 	GameManager.eliminate_char.connect(elim)
+	node_completed.connect(_on_node_end)
 
 func _input(event: InputEvent) -> void:
 	if is_running() and event.is_action_pressed("ui_cancel"):
 		stop_dialogue()
+		_on_node_end()
 		print(get_affection(Chars.Mothy))
 
 func elim(cname: String) -> void:
@@ -49,3 +51,6 @@ func get_affection(c: Chars) -> int:
 
 func _on_set_day() -> void:
 	pass # Replace with function body.
+
+func _on_node_end() -> void:
+	GameManager.show_char_sprite.emit("NONE")

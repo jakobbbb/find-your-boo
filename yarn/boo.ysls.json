@@ -61,11 +61,11 @@
       "location": {
         "end": {
           "character": 29,
-          "line": 14
+          "line": 15
         },
         "start": {
           "character": 0,
-          "line": 13
+          "line": 14
         }
       },
       "parameters": [],
@@ -79,11 +79,11 @@
       "location": {
         "end": {
           "character": 27,
-          "line": 17
+          "line": 18
         },
         "start": {
           "character": 0,
-          "line": 16
+          "line": 17
         }
       },
       "parameters": [],
@@ -97,11 +97,11 @@
       "location": {
         "end": {
           "character": 36,
-          "line": 20
+          "line": 21
         },
         "start": {
           "character": 0,
-          "line": 19
+          "line": 20
         }
       },
       "parameters": [
@@ -112,6 +112,30 @@
         }
       ],
       "yarnName": "reveal"
+    },
+    {
+      "async": false,
+      "definitionName": "_yarn_command_sprite",
+      "fileName": "gamemanager.gd",
+      "language": "gdscript",
+      "location": {
+        "end": {
+          "character": 41,
+          "line": 24
+        },
+        "start": {
+          "character": 0,
+          "line": 23
+        }
+      },
+      "parameters": [
+        {
+          "isParamsArray": false,
+          "name": "cname",
+          "type": "string"
+        }
+      ],
+      "yarnName": "sprite"
     }
   ],
   "version": 2

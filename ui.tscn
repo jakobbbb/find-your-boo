@@ -2,6 +2,13 @@
 
 [ext_resource type="Texture2D" uid="uid://hlgx3u53yqi1" path="res://assets/logo.png" id="1_fyqef"]
 [ext_resource type="Script" uid="uid://divtqwfnuffte" path="res://scripts/ui.gd" id="1_m6e0p"]
+[ext_resource type="Texture2D" uid="uid://qhkw7cqtw8vj" path="res://assets/placeholder/characters/dr_acula.png" id="2_27fn8"]
+[ext_resource type="Texture2D" uid="uid://12nc4dd5ytaq" path="res://assets/placeholder/characters/fishman.png" id="3_ok7cu"]
+[ext_resource type="Texture2D" uid="uid://d16h1t1y8nfuu" path="res://assets/placeholder/characters/ghost_costume.png" id="4_irxef"]
+[ext_resource type="Texture2D" uid="uid://b417h6penn7qq" path="res://assets/placeholder/characters/literal ghost.png" id="5_e2l4f"]
+[ext_resource type="Texture2D" uid="uid://c1780e1r888om" path="res://assets/placeholder/characters/mothy.png" id="6_n5rqp"]
+[ext_resource type="Texture2D" uid="uid://d32kxpptp6air" path="res://assets/placeholder/characters/strong lesb.png" id="7_gs482"]
+[ext_resource type="Texture2D" uid="uid://d4cwpp2tq5dm7" path="res://assets/placeholder/characters/twinkch.png" id="8_cxd00"]
 
 [sub_resource type="Animation" id="Animation_m6e0p"]
 length = 0.001
@@ -69,11 +76,12 @@ layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -253.45313
-offset_top = 32.0
-offset_right = -32.0
-offset_bottom = 146.0
+offset_left = -191.99994
+offset_top = 14.0
+offset_right = 29.453125
+offset_bottom = 128.0
 grow_horizontal = 0
+scale = Vector2(0.7958697, 0.7958697)
 texture = ExtResource("1_fyqef")
 expand_mode = 1
 
@@ -82,5 +90,126 @@ layout_mode = 0
 offset_right = 8.0
 offset_bottom = 8.0
 text = "End Day (Debug Placeholder)"
+
+[node name="CharSprites" type="Control" parent="." unique_id=2038880602]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="fish" type="TextureRect" parent="CharSprites" unique_id=2087202365]
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -121.0
+offset_top = 22.999985
+offset_right = 564.0
+offset_bottom = 388.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.35674, 0.35674)
+mouse_filter = 2
+texture = ExtResource("3_ok7cu")
+
+[node name="ghost" type="TextureRect" parent="CharSprites" unique_id=2109383057]
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -121.0
+offset_top = 22.999985
+offset_right = 564.0
+offset_bottom = 388.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.35674, 0.35674)
+mouse_filter = 2
+texture = ExtResource("4_irxef")
+
+[node name="litghost" type="TextureRect" parent="CharSprites" unique_id=944239330]
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -121.0
+offset_top = 22.999985
+offset_right = 564.0
+offset_bottom = 388.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.35674, 0.35674)
+mouse_filter = 2
+texture = ExtResource("5_e2l4f")
+
+[node name="moth" type="TextureRect" parent="CharSprites" unique_id=710653433]
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -121.0
+offset_top = 22.999985
+offset_right = 564.0
+offset_bottom = 388.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.35674, 0.35674)
+mouse_filter = 2
+texture = ExtResource("6_n5rqp")
+
+[node name="mum" type="TextureRect" parent="CharSprites" unique_id=1192381649]
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -121.0
+offset_top = 22.999985
+offset_right = 564.0
+offset_bottom = 388.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.35674, 0.35674)
+mouse_filter = 2
+texture = ExtResource("7_gs482")
+
+[node name="witch" type="TextureRect" parent="CharSprites" unique_id=570013840]
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -121.0
+offset_top = 22.999985
+offset_right = 564.0
+offset_bottom = 388.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.35674, 0.35674)
+mouse_filter = 2
+texture = ExtResource("8_cxd00")
+
+[node name="drac" type="TextureRect" parent="CharSprites" unique_id=74724193]
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -121.0
+offset_top = 22.999985
+offset_right = 564.0
+offset_bottom = 388.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.35674, 0.35674)
+mouse_filter = 2
+texture = ExtResource("2_27fn8")
 
 [connection signal="pressed" from="End Day Button" to="." method="_on_end_day_button_pressed"]

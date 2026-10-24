@@ -1,6 +1,7 @@
 title: witch1
 ---
 <<set $ghostname = "Ghost 2">>
+<<sprite "ghost">>
 Say hello:
 -> funny
     <<set $witch = $witch + 1>>
