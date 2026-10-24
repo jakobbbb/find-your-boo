@@ -239,7 +239,7 @@ You: So...
         {$charname}: Or I wouldn't be here.
         You nod.
     <<elseif $charname == "Mothperson">>
-        {$charname}: Where you looking at the sun?
+        {$charname}: Were you looking at the sun?
         You: Huh?
         {$charname}: When it happend?
         You: Uuuh... maybe?
@@ -248,7 +248,7 @@ You: So...
         {$charname}: You are right.
         They look at you and beam.
         Almost brighter than the sun.
-        And definitely brighter that the lämp.
+        And definitely brighter than the lämp.
     <<elseif $charname == "Fishy McFishface">>
         {$charname}: Oh no.
         {$charname}: Does it still hurt?
@@ -301,7 +301,7 @@ You: So...
         You: No... the moon.
         {$charname}: A fascinating hypothesis.
         You: The moonlanding is definitely real.
-        {$charname}: You know, there is an obvious question I could ask you know.
+        {$charname}: You know, there is an obvious question I could ask you now.
         {$charname}: But I hate being obvious.
     <<elseif $charname == "Bobo Blocksberg">>
         {$charname}: Then what is the big round thing in the sky at night?
@@ -797,7 +797,9 @@ You: I really enjoyed our time together.
     You: ...
     You: Yes, yes I do.
     {$charname}: I guess that's the point of the show.
-    You smile.
+    The corners of her mouth begin to twitch.
+    Is... is that a smile?
+    You decide to smile back.
     You: Touché.
 <<elseif $charname == "Bobo Blocksberg">>
     You: But you have to tell me.
