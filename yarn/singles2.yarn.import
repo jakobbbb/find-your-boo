@@ -1,0 +1,14 @@
+[remap]
+
+importer="yarn_spinner.yarn_file"
+type="Resource"
+uid="uid://dr44x3cu45d15"
+path="res://.godot/imported/singles2.yarn-e1ecafc9796e2e0216dce2823ffb9c29.res"
+
+[deps]
+
+source_file="res://yarn/singles2.yarn"
+dest_files=["res://.godot/imported/singles2.yarn-e1ecafc9796e2e0216dce2823ffb9c29.res"]
+
+[params]
+

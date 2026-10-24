@@ -52,42 +52,6 @@
         }
       ],
       "yarnName": "cam"
-    },
-    {
-      "async": false,
-      "definitionName": "_yarn_command_set_night",
-      "fileName": "gamemanager.gd",
-      "language": "gdscript",
-      "location": {
-        "end": {
-          "character": 29,
-          "line": 11
-        },
-        "start": {
-          "character": 0,
-          "line": 10
-        }
-      },
-      "parameters": [],
-      "yarnName": "set_night"
-    },
-    {
-      "async": false,
-      "definitionName": "_yarn_command_set_day",
-      "fileName": "gamemanager.gd",
-      "language": "gdscript",
-      "location": {
-        "end": {
-          "character": 27,
-          "line": 14
-        },
-        "start": {
-          "character": 0,
-          "line": 13
-        }
-      },
-      "parameters": [],
-      "yarnName": "set_day"
     }
   ],
   "version": 2

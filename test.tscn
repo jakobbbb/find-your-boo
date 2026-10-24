@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://xrs0qqicpldt" path="res://prefabs/npc.tscn" id="1_37kl0"]
 [ext_resource type="Script" uid="uid://cxrjk51dlyvni" path="res://scripts/gamemanager.gd" id="1_ykrsh"]
-[ext_resource type="Texture2D" uid="uid://bkbmf0j7yv0y4" path="res://assets/placeholder/background/House_Placeholder.png" id="2_5tkv4"]
+[ext_resource type="Texture2D" uid="uid://siy6quplvmt3" path="res://assets/placeholder/background/House_Design.png" id="2_5tkv4"]
 [ext_resource type="PackedScene" uid="uid://k7yl21ee00ji" path="res://prefabs/yarn_dialogue_runner.tscn" id="3_6uqi0"]
 [ext_resource type="Texture2D" uid="uid://qhkw7cqtw8vj" path="res://assets/placeholder/characters/dr_acula.png" id="4_0m0f1"]
 [ext_resource type="Script" uid="uid://d1dcuekbom66u" path="res://scripts/cam.gd" id="4_ppyta"]
@@ -30,11 +30,11 @@ scale = Vector2(0.4548333, 0.4548333)
 texture = ExtResource("2_5tkv4")
 
 [node name="NPC_Dr_Acula" parent="." unique_id=438049094 instance=ExtResource("1_37kl0")]
-position = Vector2(-389, -738.91675)
+position = Vector2(841, -1171)
 metadata/DialogueNode = "drac"
 
 [node name="Sprite2D" parent="NPC_Dr_Acula" index="0" unique_id=177765413]
-position = Vector2(709.225, -437)
+position = Vector2(19, -1.807373)
 scale = Vector2(0.31824818, 0.31824815)
 texture = ExtResource("4_0m0f1")
 
@@ -42,47 +42,47 @@ texture = ExtResource("4_0m0f1")
 position = Vector2(717, -430.08325)
 
 [node name="CollisionShape2D" parent="NPC_Dr_Acula/Area2D" parent_id_path=PackedInt32Array(438049094, 1716052840) index="0" unique_id=685501766]
-position = Vector2(704, -428.08325)
+position = Vector2(13.775024, 7.1093445)
 scale = Vector2(0.78, 2.135)
 
-[node name="NPC_Fishman" parent="." unique_id=1147166367 instance=ExtResource("1_37kl0")]
-position = Vector2(379.225, -1754.9167)
+[node name="NPC_Fishy McFischface" parent="." unique_id=1147166367 instance=ExtResource("1_37kl0")]
+position = Vector2(662, -1610)
 metadata/DialogueNode = "fish"
 
-[node name="Sprite2D" parent="NPC_Fishman" index="0" unique_id=177765413]
+[node name="Sprite2D" parent="NPC_Fishy McFischface" index="0" unique_id=177765413]
 scale = Vector2(0.3416058, 0.34160584)
 texture = ExtResource("5_b0q6j")
 
-[node name="CollisionShape2D" parent="NPC_Fishman/Area2D" parent_id_path=PackedInt32Array(1147166367, 1716052840) index="0" unique_id=685501766]
+[node name="CollisionShape2D" parent="NPC_Fishy McFischface/Area2D" parent_id_path=PackedInt32Array(1147166367, 1716052840) index="0" unique_id=685501766]
 position = Vector2(-0.22497177, 13.916794)
 scale = Vector2(1, 2)
 
-[node name="NPC_Twinkch" parent="." unique_id=1839290886 instance=ExtResource("1_37kl0")]
-position = Vector2(328.225, -738.91675)
+[node name="NPC_Bobo Blocksberg" parent="." unique_id=1839290886 instance=ExtResource("1_37kl0")]
+position = Vector2(556, -535)
 metadata/DialogueNode = "witch"
 
-[node name="Sprite2D" parent="NPC_Twinkch" index="0" unique_id=177765413]
+[node name="Sprite2D" parent="NPC_Bobo Blocksberg" index="0" unique_id=177765413]
 scale = Vector2(0.3416058, 0.34160584)
 texture = ExtResource("6_mhym6")
 
-[node name="CollisionShape2D" parent="NPC_Twinkch/Area2D" parent_id_path=PackedInt32Array(1839290886, 1716052840) index="0" unique_id=685501766]
+[node name="CollisionShape2D" parent="NPC_Bobo Blocksberg/Area2D" parent_id_path=PackedInt32Array(1839290886, 1716052840) index="0" unique_id=685501766]
 position = Vector2(-25.13763, 25.137619)
 scale = Vector2(1, 2)
 
-[node name="NPC_StrongLesb" parent="." unique_id=54922268 instance=ExtResource("1_37kl0")]
-position = Vector2(127.54501, -738.91675)
+[node name="NPC_Muscle Mummy" parent="." unique_id=54922268 instance=ExtResource("1_37kl0")]
+position = Vector2(197, -528)
 metadata/DialogueNode = "mum"
 
-[node name="Sprite2D" parent="NPC_StrongLesb" index="0" unique_id=177765413]
+[node name="Sprite2D" parent="NPC_Muscle Mummy" index="0" unique_id=177765413]
 scale = Vector2(0.3416058, 0.34160584)
 texture = ExtResource("7_a3se8")
 
-[node name="CollisionShape2D" parent="NPC_StrongLesb/Area2D" parent_id_path=PackedInt32Array(54922268, 1716052840) index="0" unique_id=685501766]
+[node name="CollisionShape2D" parent="NPC_Muscle Mummy/Area2D" parent_id_path=PackedInt32Array(54922268, 1716052840) index="0" unique_id=685501766]
 position = Vector2(-6.544979, -0.08325195)
 scale = Vector2(1, 2)
 
 [node name="NPC_Ghost" parent="." unique_id=1582067632 instance=ExtResource("1_37kl0")]
-position = Vector2(528.225, -738.91675)
+position = Vector2(677, -2147)
 metadata/DialogueNode = "ghost"
 
 [node name="Sprite2D" parent="NPC_Ghost" index="0" unique_id=177765413]
@@ -93,20 +93,24 @@ texture = ExtResource("8_uty7l")
 position = Vector2(-11.224972, -0.08325195)
 scale = Vector2(1, 2)
 
-[node name="NPC_Mothy" parent="." unique_id=318285534 instance=ExtResource("1_37kl0")]
-position = Vector2(-217.775, -738.91675)
+[node name="NPC_Mothperson" parent="." unique_id=318285534 instance=ExtResource("1_37kl0")]
+position = Vector2(604, -1147)
 metadata/DialogueNode = "moth"
 
-[node name="Sprite2D" parent="NPC_Mothy" index="0" unique_id=177765413]
-position = Vector2(781, -427)
+[node name="Sprite2D" parent="NPC_Mothperson" index="0" unique_id=177765413]
+position = Vector2(-3, -2.147461)
 scale = Vector2(0.3416058, 0.34160584)
 texture = ExtResource("9_45l4g")
 
-[node name="Sprite2D Ghost" parent="NPC_Mothy" index="1" unique_id=1324753701]
-position = Vector2(789.775, -429.08325)
+[node name="Sprite2D Ghost" parent="NPC_Mothperson" index="1" unique_id=1324753701]
+visible = true
+position = Vector2(5.7750244, -4.230713)
 
-[node name="CollisionShape2D" parent="NPC_Mothy/Area2D" parent_id_path=PackedInt32Array(318285534, 1716052840) index="0" unique_id=685501766]
-position = Vector2(780.775, -427.08325)
+[node name="Area2D" parent="NPC_Mothperson" index="2" unique_id=1716052840]
+position = Vector2(-4, -3)
+
+[node name="CollisionShape2D" parent="NPC_Mothperson/Area2D" index="0" unique_id=685501766]
+position = Vector2(-6, 1)
 scale = Vector2(1, 2)
 
 [node name="YarnDialogueRunner" parent="." unique_id=132473946 instance=ExtResource("3_6uqi0")]
@@ -139,8 +143,8 @@ script = ExtResource("4_ppyta")
 [connection signal="pressed" from="Camera2D2/Arrow" to="Camera2D2" method="_on_arrow_pressed"]
 
 [editable path="NPC_Dr_Acula"]
-[editable path="NPC_Fishman"]
-[editable path="NPC_Twinkch"]
-[editable path="NPC_StrongLesb"]
+[editable path="NPC_Fishy McFischface"]
+[editable path="NPC_Bobo Blocksberg"]
+[editable path="NPC_Muscle Mummy"]
 [editable path="NPC_Ghost"]
-[editable path="NPC_Mothy"]
+[editable path="NPC_Mothperson"]
