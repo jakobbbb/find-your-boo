@@ -2,6 +2,13 @@ extends Node
 
 @onready var dia: YarnDialogueRunner = %YarnDialogueRunner
 
+func _ready() -> void:
+	GameManager.eliminate_char.connect(_on_elim_char)
+
+func _on_elim_char(cname: String) -> void:
+	if cname == get_meta("DialogueNode"):
+		self.transform.origin = Vector2(99999999, 9999999999)
+	
 func _get_bottom_coord() -> Vector3:
 	var c = $Area2D/CollisionShape2D
 	var dy = 0.5 * c.shape.get_rect().size.y
