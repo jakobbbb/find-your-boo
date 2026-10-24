@@ -10,7 +10,7 @@ The player is confused! <<if $conf == true>>
 The player is ... horny? <<if $horny == true>>
 What will {$charname} do? (Player attraction {$date}/100)
 -> Special Moves
-<<if $charname == "Dr. h.c. Dr. med. Dr. iur. Acula">>
+    <<if $charname == "Dr. h.c. Dr. med. Dr. iur. Acula">>
         -> Step on Player.
             <<if $conf == true>>
                 The Player evades the shoe!
