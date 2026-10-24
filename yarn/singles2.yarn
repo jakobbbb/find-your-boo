@@ -1,6 +1,5 @@
 title: singles2
 ---
-<<set $charname to "Dr. h.c. Dr. med. Acula">>
 You: *knock knock*
 <<if $charname == "Dr. h.c. Dr. med. Acula">>
     {$charname}: You may come in.
@@ -625,7 +624,7 @@ You: Now to get to know you even better, I need your help to make a decision.
     <<endif>>
 -> curse
     <<if $charname == "Dr. h.c. Dr. med. Acula">>
-        <<set $drac = $drac - 1>>
+        <<set $drac = $drac + 1>>
     <<elseif $charname == "Bobo Blocksberg">>
         <<set $witch = $witch - 1>>
     <<elseif $charname == "Mothperson">>
@@ -729,7 +728,7 @@ You: Now to get to know you even better, I need your help to make a decision.
     <<if $charname == "Dr. h.c. Dr. med. Acula">>
         <<set $drac = $drac - 1>>
     <<elseif $charname == "Bobo Blocksberg">>
-        <<set $witch = $witch - 1>>
+        <<set $witch = $witch + 1>>
     <<elseif $charname == "Mothperson">>
         <<set $moth = $moth - 1>>
     <<elseif $charname == "Fishy McFishface">>
