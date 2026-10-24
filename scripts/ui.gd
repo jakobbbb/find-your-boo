@@ -24,3 +24,10 @@ func _on_set_day() -> void:
 func _on_set_night() -> void:
 	print("ui: Good night")
 	set_night_day(true)
+
+
+func _on_end_day_button_pressed() -> void:
+	var day = str(int(%YarnDialogueRunner.variable_storage.get_value("$day")))
+	var node = "end" + day
+	print(node)
+	%YarnDialogueRunner.start_dialogue(node)

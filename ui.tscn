@@ -76,3 +76,11 @@ offset_bottom = 146.0
 grow_horizontal = 0
 texture = ExtResource("1_fyqef")
 expand_mode = 1
+
+[node name="End Day Button" type="Button" parent="." unique_id=232247873]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+text = "End Day (Debug Placeholder)"
+
+[connection signal="pressed" from="End Day Button" to="." method="_on_end_day_button_pressed"]
