@@ -1,0 +1,14 @@
+[remap]
+
+importer="yarn_spinner.yarn_file"
+type="Resource"
+uid="uid://b50fyw3jjyrnx"
+path="res://.godot/imported/frank1.yarn-987baabd7f409dea2e3c6ca0aaf7c929.res"
+
+[deps]
+
+source_file="res://yarn/frank1.yarn"
+dest_files=["res://.godot/imported/frank1.yarn-987baabd7f409dea2e3c6ca0aaf7c929.res"]
+
+[params]
+

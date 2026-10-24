@@ -1,0 +1,14 @@
+[remap]
+
+importer="yarn_spinner.yarn_file"
+type="Resource"
+uid="uid://djcy0d65qxpvh"
+path="res://.godot/imported/fish1.yarn-a6c64028ba27e97450ed9292229271bc.res"
+
+[deps]
+
+source_file="res://yarn/fish1.yarn"
+dest_files=["res://.godot/imported/fish1.yarn-a6c64028ba27e97450ed9292229271bc.res"]
+
+[params]
+
