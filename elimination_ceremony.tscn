@@ -21,20 +21,20 @@ offset_bottom = 793.0
 color = Color(0, 0, 0, 1)
 
 [node name="Dr_Acula" parent="." unique_id=438049094 instance=ExtResource("2_gsvjj")]
-position = Vector2(-60, 601)
+position = Vector2(649, 168)
 script = ExtResource("3_x77ti")
 metadata/DialogueNode = "drac"
 
 [node name="Sprite2D" parent="Dr_Acula" index="0" unique_id=177765413]
-position = Vector2(709.225, -437)
+position = Vector2(8.000061, -15)
 scale = Vector2(0.31824818, 0.31824815)
 texture = ExtResource("3_fmcle")
 
 [node name="Sprite2D Ghost" parent="Dr_Acula" index="1" unique_id=1324753701]
-position = Vector2(717, -430.08325)
+position = Vector2(-0.99993896, 0)
 
 [node name="CollisionShape2D" parent="Dr_Acula/Area2D" parent_id_path=PackedInt32Array(438049094, 1716052840) index="0" unique_id=685501766]
-position = Vector2(704, -428.08325)
+position = Vector2(-10, -2.0000305)
 scale = Vector2(0.78, 2.135)
 
 [node name="Fishman" parent="." unique_id=1307348235 instance=ExtResource("2_gsvjj")]
@@ -90,20 +90,23 @@ position = Vector2(-11.224972, -0.08325195)
 scale = Vector2(1, 2)
 
 [node name="Mothy" parent="." unique_id=1200665394 instance=ExtResource("2_gsvjj")]
-position = Vector2(180, 617)
+position = Vector2(982, 165)
 script = ExtResource("3_x77ti")
 metadata/DialogueNode = "moth"
 
 [node name="Sprite2D" parent="Mothy" index="0" unique_id=177765413]
-position = Vector2(781, -427)
+position = Vector2(8.999939, -9)
 scale = Vector2(0.3416058, 0.34160584)
 texture = ExtResource("8_4bqgu")
 
 [node name="Sprite2D Ghost" parent="Mothy" index="1" unique_id=1324753701]
-position = Vector2(789.775, -429.08325)
+position = Vector2(6.999939, 0)
 
-[node name="CollisionShape2D" parent="Mothy/Area2D" parent_id_path=PackedInt32Array(1200665394, 1716052840) index="0" unique_id=685501766]
-position = Vector2(780.775, -427.08325)
+[node name="Area2D" parent="Mothy" index="2" unique_id=1716052840]
+position = Vector2(5, 8)
+
+[node name="CollisionShape2D" parent="Mothy/Area2D" index="0" unique_id=685501766]
+position = Vector2(-4, -3.000061)
 scale = Vector2(1, 2)
 
 [editable path="Dr_Acula"]

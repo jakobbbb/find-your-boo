@@ -3,17 +3,24 @@ title: reveal
 Host: Now that our contestant has made their choice
 Host: let's reveal our eligible singles!
 Host: Here they are:
+<<reveal drac>>
 Host: Dr. h.c. Acula!
 Dr. h.c. Acula: Let's have a bloody good time.
+<<reveal witch>>
 Host: Bobo Blocksberg!
 Bobo Blocksberg: Magic is not the only thing I am wickedly talented at.
+<<reveal moth>>
 Host: Mothperson!
 Mothperson: Lämp.
+<<reveal fish>>
 Host: Fishy McFishface!
 Fishy McFishface: Yes, that is an eel in my pocket.
 Host: Muscle Mummy!
+<<reveal mum>>
 Muscle Mummy: I'll be your crush.
 Host: Aaaaaand...
+<<reveal ghost>>
 Host: A... ghost? How did you get into the show?
 Ghost: Boo!
+<<jump day2>>
 ===

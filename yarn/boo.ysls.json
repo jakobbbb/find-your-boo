@@ -61,11 +61,11 @@
       "location": {
         "end": {
           "character": 29,
-          "line": 13
+          "line": 14
         },
         "start": {
           "character": 0,
-          "line": 12
+          "line": 13
         }
       },
       "parameters": [],
@@ -79,15 +79,39 @@
       "location": {
         "end": {
           "character": 27,
-          "line": 16
+          "line": 17
         },
         "start": {
           "character": 0,
-          "line": 15
+          "line": 16
         }
       },
       "parameters": [],
       "yarnName": "set_day"
+    },
+    {
+      "async": false,
+      "definitionName": "_yarn_command_reveal",
+      "fileName": "gamemanager.gd",
+      "language": "gdscript",
+      "location": {
+        "end": {
+          "character": 36,
+          "line": 20
+        },
+        "start": {
+          "character": 0,
+          "line": 19
+        }
+      },
+      "parameters": [
+        {
+          "isParamsArray": false,
+          "name": "cname",
+          "type": "string"
+        }
+      ],
+      "yarnName": "reveal"
     }
   ],
   "version": 2
