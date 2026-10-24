@@ -3,6 +3,7 @@ extends Node
 @warning_ignore_start("unused_signal")
 signal set_night()
 signal set_day()
+signal set_affection(cname: String, affection: int)
 signal eliminate_char(cname: String)
 signal reveal_char(cname: String)
 signal show_char_sprite(cname: String)

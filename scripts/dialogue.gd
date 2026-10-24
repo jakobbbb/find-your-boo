@@ -12,19 +12,17 @@ enum Chars {
 func _ready() -> void:
 	super()
 	GameManager.eliminate_char.connect(elim)
+	GameManager.set_affection.connect(set_affection)
 	node_completed.connect(_on_node_end)
 
 func _input(event: InputEvent) -> void:
 	if is_running() and event.is_action_pressed("ui_cancel"):
 		stop_dialogue()
-		_on_node_end()
+		_on_node_end("")
 		print(get_affection(Chars.Mothy))
 
 func elim(cname: String) -> void:
 	print("Eliminating " + cname)
-	variable_storage.set_value("$"+cname, 1000)
-	print("Set affection for " + cname + " to 1000")
-	start_dialogue("bye")
 	print()
 	for character in %EliminationCeremony.get_children():
 		if not character.has_meta("DialogueNode"):
@@ -48,9 +46,15 @@ func get_affection(c: Chars) -> int:
 			v = "$moth"
 	return variable_storage.get_value_or_default(v, -1)
 
+func set_affection(cname: String, val: int) -> void:
+	
+	variable_storage.set_value("$"+cname, val)
+	print("Set affection for " + cname + " to " + str(val))
+	if val == 1000:
+		start_dialogue("bye")
 
 func _on_set_day() -> void:
 	pass # Replace with function body.
 
-func _on_node_end() -> void:
+func _on_node_end(_node_name) -> void:
 	GameManager.show_char_sprite.emit("NONE")

@@ -1,6 +1,21 @@
 title: bye
 ---
 Host: And now we have to say Good-bye to:
+<<if $day == 1>>
+	<<if $drac == 1000>>
+		<<reveal "drac">>
+	<<elseif $fish == 1000>>
+		<<reveal "fish">>
+	<<elseif $ghost == 1000>>
+		<<reveal "ghost">>
+	<<elseif $witch == 1000>>
+		<<reveal "witch">>
+	<<elseif $moth == 1000>>
+		<<reveal "moth">>
+	<<elseif $mum == 1000>>
+		<<reveal "mum">>
+	<<endif>>
+<<endif>>
 <<once if $drac == 1000>>
 Host: Dr. h.c. Acula! <<if $day == 1>>
 Host: Dr. h.c. Dr. med. Acula! <<if $day == 2>>
@@ -31,7 +46,7 @@ Muscle Mummy: Give Mummy a hug! <<once if $mum == 1000>>
 	<<jump day2>>
 <<elseif $day == 2>>
 	<<jump day3>>
-<<elseif $day == 3>>
-	<<jump day4>>
+//<<elseif $day == 3>>
+//	<<jump day4>>
 <<endif>>
 ===
