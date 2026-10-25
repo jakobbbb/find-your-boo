@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://poeqqktaad5f"
-path="res://.godot/imported/IMFellDWPica-Italic.ttf-22864e10f0731a0ae23cb9ceaf520f96.fontdata"
+path="res://.godot/imported/IMFellDWPica-Italic.ttf-2646f82e11273cb2bf5eec6700fb68b6.fontdata"
 
 [deps]
 
-source_file="res://Fonts_Tarek/IMFellDWPica-Italic.ttf"
-dest_files=["res://.godot/imported/IMFellDWPica-Italic.ttf-22864e10f0731a0ae23cb9ceaf520f96.fontdata"]
+source_file="res://fonts/IMFellDWPica/IMFellDWPica-Italic.ttf"
+dest_files=["res://.godot/imported/IMFellDWPica-Italic.ttf-2646f82e11273cb2bf5eec6700fb68b6.fontdata"]
 
 [params]
 
