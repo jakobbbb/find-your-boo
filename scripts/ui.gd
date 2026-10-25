@@ -67,7 +67,10 @@ func show_char_sprite(cname: String) -> void:
 	for c in $CharSprites.get_children():
 		if c.name == cname:
 			c.show()
-			$Night.color.a = 1.0
+			$Night.color.a = 0.8
+			found = true
+		elif cname == "host":
+			$Night.color.a = 0.8
 			found = true
 		else:
 			c.hide()
