@@ -15,6 +15,7 @@ func _on_area_2d_input_event(_viewport: Node, event: InputEvent, _shape_idx: int
 			GameManager.set_affection.emit(cname, 1000)
 		else:
 			print("won't eliminate the ghost :)")
+			GameManager.trigger_dialogue.emit("noghost")
 
 func _on_reveal_char(cname: String) -> void:
 	if revealed:

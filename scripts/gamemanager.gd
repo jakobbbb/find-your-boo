@@ -12,6 +12,7 @@ signal reveal_char(cname: String)
 signal show_char_sprite(cname: String)
 signal play_theme(cname: String)
 signal change_cursor(cursor: Input.CursorShape)
+signal trigger_dialogue(node_name: String)
 @warning_ignore_restore("unused_signal")
 
 func _ready() -> void:

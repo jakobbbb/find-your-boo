@@ -13,6 +13,7 @@ func _ready() -> void:
 	super()
 	GameManager.eliminate_char.connect(elim)
 	GameManager.set_affection.connect(set_affection)
+	GameManager.trigger_dialogue.connect(start_dialogue)
 	node_completed.connect(_on_node_end)
 
 func _input(event: InputEvent) -> void:
