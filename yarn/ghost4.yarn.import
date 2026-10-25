@@ -1,0 +1,14 @@
+[remap]
+
+importer="yarn_spinner.yarn_file"
+type="Resource"
+uid="uid://dxpjahynun1c1"
+path="res://.godot/imported/ghost4.yarn-5e988c46e01bee6302e1722cafb55ad4.res"
+
+[deps]
+
+source_file="res://yarn/ghost4.yarn"
+dest_files=["res://.godot/imported/ghost4.yarn-5e988c46e01bee6302e1722cafb55ad4.res"]
+
+[params]
+
