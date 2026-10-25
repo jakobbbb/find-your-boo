@@ -61,6 +61,9 @@ func _on_end_day_button_pressed() -> void:
 	%YarnDialogueRunner.start_dialogue(node)
 
 func check_elim_button_visible() -> void:
+	$"End Day Button".show()
+	return  # TODO implement this properly
+	
 	var day = int(%YarnDialogueRunner.variable_storage.get_value("$day"))
 	if day > last_day_ended:
 		$"End Day Button".show()
