@@ -91,7 +91,7 @@ layout_mode = 0
 offset_right = 8.0
 offset_bottom = 8.0
 mouse_default_cursor_shape = 2
-text = "End Day (Debug Placeholder)"
+text = "Start Elimination Ceremony"
 
 [node name="CharSprites" type="Control" parent="." unique_id=2038880602]
 layout_mode = 1
