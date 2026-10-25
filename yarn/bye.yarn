@@ -40,9 +40,9 @@ Muscle Mummy: Give Mummy a hug! <<once if $mum == 1000>>
 <<trigger_elim>>
 <<set_night>>
 <<wait 1>>
-<<rotate Background night>>
 <<cam HouseCamera>>
 ...
+<<rotate Background night>>
 <<set_day>>
 <<if $day == 1>>
 	<<jump day2>>

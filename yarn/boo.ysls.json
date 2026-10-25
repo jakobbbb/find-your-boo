@@ -34,12 +34,12 @@
       "language": "gdscript",
       "location": {
         "end": {
-          "character": 15,
-          "line": 32
+          "character": 25,
+          "line": 31
         },
         "start": {
           "character": 0,
-          "line": 28
+          "line": 26
         }
       },
       "parameters": [

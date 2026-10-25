@@ -55,8 +55,13 @@ func _on_change_cursor(cur: Control.CursorShape) -> void:
 	mouse_default_cursor_shape = cur
 
 func show_char_sprite(cname: String) -> void:
+	var found = false
 	for c in $CharSprites.get_children():
 		if c.name == cname:
 			c.show()
+			$Night.color.a = 0.1
+			found = true
 		else:
 			c.hide()
+	if not found:
+		$Night.color.a = 0.0
