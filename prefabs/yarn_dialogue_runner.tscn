@@ -859,6 +859,7 @@ metadata/_custom_type_script = "uid://d23fbixt5yo3d"
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="YarnVoiceOverPresenter" unique_id=1866203799]
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1953683457]
+layer = 18
 
 [node name="YarnLinePresenter" type="Node" parent="CanvasLayer" unique_id=111049964 node_paths=PackedStringArray("text_label", "character_label")]
 script = ExtResource("4_en4qt")
