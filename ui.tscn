@@ -46,6 +46,84 @@ _data = {
 &"fade_night": SubResource("Animation_27fn8")
 }
 
+[sub_resource type="Animation" id="Animation_waa4j"]
+resource_name = "ComeIn_Animation"
+length = 1.0333333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../../CharSpritesFight:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.9),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(961, 85), Vector2(-157, 85)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../../Player Character:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.2, 0.96666664),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-342.99988, -12), Vector2(670, -11.999998)]
+}
+
+[sub_resource type="Animation" id="Animation_ok7cu"]
+resource_name = "Player Hit"
+length = 0.26666668
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../../Player Character:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.03333333, 0.099999994, 0.16666667, 0.23333335),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(670, -11.999998), Vector2(636, 1.9999981), Vector2(721, -11.999998), Vector2(683.99994, 12.999996), Vector2(670, -11.999998)]
+}
+
+[sub_resource type="Animation" id="Animation_irxef"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../../CharSpritesFight:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-157, 85)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../../Player Character:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(670, -11.999998)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_e2l4f"]
+_data = {
+&"ComeIn_Animation": SubResource("Animation_waa4j"),
+&"Player Hit": SubResource("Animation_ok7cu"),
+&"RESET": SubResource("Animation_irxef")
+}
+
 [node name="UI" type="Control" unique_id=137605733]
 z_as_relative = false
 layout_mode = 3
@@ -203,6 +281,154 @@ mouse_filter = 2
 texture = ExtResource("8_n5rqp")
 
 [node name="drac" type="TextureRect" parent="CharSprites" unique_id=74724193]
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -314.99997
+offset_top = -64.0
+offset_right = 1909.0
+offset_bottom = 956.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.38294032, 0.38294032)
+mouse_filter = 2
+texture = ExtResource("9_gs482")
+
+[node name="Fight Animator" type="AnimationPlayer" parent="." unique_id=924765262]
+root_node = NodePath("../Night/AnimationPlayer")
+libraries/ = SubResource("AnimationLibrary_e2l4f")
+
+[node name="Player Character" type="TextureRect" parent="." unique_id=2009100417]
+visible = false
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 94.0
+offset_top = -11.999998
+offset_right = 2318.0
+offset_bottom = 1008.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.22294031, 0.22294031)
+mouse_filter = 2
+texture = ExtResource("3_ok7cu")
+
+[node name="CharSpritesFight" type="Control" parent="." unique_id=846541007]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -157.0
+offset_top = 85.0
+offset_right = -156.99805
+offset_bottom = 85.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.76, 0.76)
+mouse_filter = 2
+
+[node name="fish" type="TextureRect" parent="CharSpritesFight" unique_id=1429669965]
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -314.99997
+offset_top = -64.0
+offset_right = 1909.0
+offset_bottom = 956.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.38294032, 0.38294032)
+mouse_filter = 2
+texture = ExtResource("3_ok7cu")
+
+[node name="ghost" type="TextureRect" parent="CharSpritesFight" unique_id=654129391]
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -329.0
+offset_top = -32.0
+offset_right = 1895.0
+offset_bottom = 988.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.35674, 0.35674)
+mouse_filter = 2
+texture = ExtResource("4_waa4j")
+
+[node name="litghost" type="TextureRect" parent="CharSpritesFight" unique_id=2068972402]
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -329.0
+offset_top = -32.0
+offset_right = 1895.0
+offset_bottom = 988.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.35674, 0.35674)
+mouse_filter = 2
+texture = ExtResource("4_waa4j")
+
+[node name="moth" type="TextureRect" parent="CharSpritesFight" unique_id=2115611372]
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -314.99997
+offset_top = -64.0
+offset_right = 1909.0
+offset_bottom = 956.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.38294032, 0.38294032)
+mouse_filter = 2
+texture = ExtResource("6_irxef")
+
+[node name="mum" type="TextureRect" parent="CharSpritesFight" unique_id=86345501]
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -314.99997
+offset_top = -64.0
+offset_right = 1909.0
+offset_bottom = 956.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.38294032, 0.38294032)
+mouse_filter = 2
+texture = ExtResource("7_e2l4f")
+
+[node name="witch" type="TextureRect" parent="CharSpritesFight" unique_id=960597371]
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -314.99997
+offset_top = -64.0
+offset_right = 1909.0
+offset_bottom = 956.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.38294032, 0.38294032)
+mouse_filter = 2
+texture = ExtResource("8_n5rqp")
+
+[node name="drac" type="TextureRect" parent="CharSpritesFight" unique_id=2033693802]
 layout_mode = 1
 anchors_preset = 13
 anchor_left = 0.5
