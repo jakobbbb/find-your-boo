@@ -25,7 +25,6 @@ GameManager="*uid://cxrjk51dlyvni"
 [display]
 
 window/stretch/mode="canvas_items"
-mouse_cursor/custom_image="uid://ddoe5abqudqk2"
 mouse_cursor/tooltip_position_offset=Vector2(0, 0)
 
 [editor_plugins]
