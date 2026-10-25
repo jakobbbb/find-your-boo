@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://hlgx3u53yqi1" path="res://assets/logo.png" id="1_fyqef"]
 [ext_resource type="Script" uid="uid://divtqwfnuffte" path="res://scripts/ui.gd" id="1_m6e0p"]
+[ext_resource type="Texture2D" uid="uid://dvaodftedih7x" path="res://assets/placeholder/background/button_ceremony.png" id="3_irxef"]
 [ext_resource type="Texture2D" uid="uid://cmdehcgx51nsu" path="res://assets/placeholder/characters/closeUps/Colored/fishy_color.png" id="3_ok7cu"]
 [ext_resource type="Texture2D" uid="uid://bjnvatb1aeedx" path="res://assets/placeholder/characters/closeUps/Colored/ghost_colored.png" id="4_waa4j"]
 [ext_resource type="Texture2D" uid="uid://dlgx6wij1baxj" path="res://assets/placeholder/characters/closeUps/Colored/mothperson_color.png" id="6_irxef"]
@@ -89,8 +90,10 @@ expand_mode = 1
 layout_mode = 0
 offset_right = 8.0
 offset_bottom = 8.0
+scale = Vector2(0.047871366, 0.047871366)
 mouse_default_cursor_shape = 2
-text = "Start Elimination Ceremony"
+icon = ExtResource("3_irxef")
+flat = true
 
 [node name="CharSprites" type="Control" parent="." unique_id=2038880602]
 layout_mode = 1
