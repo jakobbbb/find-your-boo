@@ -1,9 +1,0 @@
-[gd_scene format=3 uid="uid://bq5h6d1opwyu0"]
-
-[ext_resource type="Texture2D" uid="uid://ddoe5abqudqk2" path="res://assets/mouse_cursor_normal.png" id="1_uqhu5"]
-[ext_resource type="Script" uid="uid://dtq6qkrp7ecsi" path="res://mouse_cursor.gd" id="2_pwj4x"]
-
-[node name="MouseCursor" type="Sprite2D" unique_id=2021655766]
-scale = Vector2(0.31999987, 0.31999987)
-texture = ExtResource("1_uqhu5")
-script = ExtResource("2_pwj4x")
