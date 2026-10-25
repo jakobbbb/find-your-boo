@@ -1,0 +1,111 @@
+title: permadeath
+---
+Someone places a contract before you.
+You are too overwhelmed, so you just sign it without reading.
+Suddenly...
+A hand snatches the contract.
+<<if $charname == "Dr. h.c. Dr. med. Dr. iur. Dr. phil. Acula">>
+    <<sprite "drac">>
+    <<theme "drac">>
+    It's surprisingly pale.
+    {$charname}: Yes. YES!
+    You: Huh?
+    {$charname}: Finally I can stop pretending.
+    You: What?
+    {$charname}: Oh, you really didn't suspect?
+    {$charname}: A pity.
+    {$charname}: I didn't think you were as dumb as you looked.
+    You: Excuse me?
+    {$charname}: Ugh.
+    {$charname}: You just signed a contract to let me suck you dry.
+    Looks like you should always read documents before signing them.
+    {$charname}: Anyways...
+    She gets out a handkerchief and ties it round her own neck.
+    {$charname}: Your bloodtype is AB-?
+    You: ...yes.
+    {$charname}: Delicious.
+    You: I cannot believe that I actually liked you...
+<<elseif $charname == "Bobo Blocksberg">>
+    <<sprite "witch">>
+    <<theme "witch">>
+    It's surprisingly green.
+    {$charname}: Yes. YES!
+    You: Huh?
+    {$charname}: Finally I can stop pretending.
+    You: What?
+    {$charname}: Oh, you really didn't suspect?
+    {$charname}: Damn.
+    {$charname}: Didn't think you were as stupid as you looked.
+    You: Excuse me?
+    {$charname}: Ugh.
+    {$charname}: You just signed a contract to let me use your organs as ingredients for my potions.
+    Looks like you should always read documents before signing them.
+    {$charname}: Anyways...
+    He pulls out his wand.
+    {$charname}: Hold very still then this will only hurt a little.
+    You: Really?
+    {$charname}: No, it will hurt like hell.
+    You: I cannot believe that I actually liked you...
+<<elseif $charname == "Mothperson">>
+    <<sprite "moth">>
+    <<theme "moth">>
+    It's surprisingly fuzzy.
+    {$charname}: Yes. YES!
+    You: Huh?
+    {$charname}: Finally I can stop pretending.
+    You: What?
+    {$charname}: Oh, you really didn't suspect?
+    {$charname}: Of kós.
+    {$charname}: I don't know why I thought you would.
+    You: Excuse me?
+    {$charname}: Well.
+    {$charname}: You just signed a contract to let me sacrifice you to the Great Lämp.
+    Looks like you should always read documents before signing them.
+    {$charname}: Anyways...
+    They take out a rope and tie your hands.
+    {$charname}: You will make a fine sacrifice.
+    {$charname}: The Great Lämp will be pleased.
+    You: I cannot believe that I actually liked you...
+<<elseif $charname == "Fishy McFishface">>
+    <<sprite "fish">>
+    <<theme "fish">>
+    It's surprisingly slimy.
+    {$charname}: Yes. YES!
+    You: Huh?
+    {$charname}: Finally I can stop pretending.
+    You: What?
+    {$charname}: Oh, you really didn't suspect?
+    {$charname}: Oof.
+    {$charname}: You really are gullible.
+    You: Excuse me?
+    {$charname}: Well.
+    {$charname}: You just signed a contract to let me eat you.
+    {$charname}: And I don't mean eating you out.
+    {$charname}: I will actually eat you.
+    Looks like you should always read documents before signing them.
+    {$charname}: Well...
+    He takes out a knife and fork.
+    {$charname}: I would appreciate it if you kept the screaming to a minimum.
+    You: I cannot believe that I actually liked you...
+<<elseif $charname == "Muscle Mummy">>
+    <<sprite "mum">>
+    <<theme "mum">>
+    It's surprisingly muscular.
+    {$charname}: Yes. YES!
+    You: Huh?
+    {$charname}: Finally I can stop pretending.
+    You: What?
+    {$charname}: Oh, you really didn't suspect?
+    {$charname}: Hmm...
+    {$charname}: I thought you were smarter than this.
+    You: Excuse me?
+    {$charname}: Hm. Look.
+    {$charname}: You just signed a contract to let me grind your body into powder, so I can put it in my protein shakes.
+    Looks like you should always read documents before signing them.
+    {$charname}: Anyways...
+    She pulls you close.
+    {$charname}: I will break every bone in your body first.
+    You: I cannot believe that I actually liked you...
+<<endif>>
+{$charname}: Well, looks like...
+===

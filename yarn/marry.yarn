@@ -1,0 +1,83 @@
+title: marry
+---
+Someone places a contract before you.
+You are too overwhelmed, so you just sign it without reading.
+Suddenly...
+There's bells chiming.
+There's confetti flying.
+There is an organ playing.
+People are cheering.
+Someone takes your hand.
+<<if $charname == "Dr. h.c. Dr. med. Dr. iur. Dr. phil. Acula">>
+    <<sprite "drac">>
+    <<theme "drac">>
+    It's surprisingly cold.
+    {$charname}: You know, I was actually planning on just sucking you dry.
+    You: Huh?
+    {$charname}: But for some godforsaken reason you managed to actually make me like you.
+    You: Thanks, I guess?
+    {$charname}: I think we will get along splendidly.
+    She cosies up to you.
+    Somehow you believe her wholeheartedly.
+<<elseif $charname == "Bobo Blocksberg">>
+    <<sprite "witch">>
+    <<theme "witch">>
+    It's surprisingly green.
+    {$charname}: You know, I was actually planning on using your organs as ingredients for my potions.
+    You: Huh?
+    {$charname}: But I guess somehow you charmed your way into my heart.
+    You:  Umm... thanks?
+    {$charname}: I am sure that we can make this marriage thing work for us.
+    He grins and ... is that his hand on your ass?
+    You grin back.
+    You: Oh, you bet we will.
+<<elseif $charname == "Mothperson">>
+    <<sprite "moth">>
+    <<theme "moth">>
+    It's surprisingly fuzzy.
+    {$charname}: You know, I was actually planning on sacrificing you to the Great Lämp.
+    You: Huh?
+    {$charname}: But now I see, that you are the light of my life.
+    You: No offence to the Great Lämp of course.
+    {$charname}: Of kós.
+    You are looking forwards to cozy D&D sessions and the occasional human sacrifice.
+    The future seems bright.
+<<elseif $charname == "Fishy McFishface">>
+    <<sprite "fish">>
+    <<theme "fish">>
+    It's surprisingly wet.
+    {$charname}: You know, I was actually planning on just eating you.
+    You: Huh?
+    {$charname}: And I don't mean eating you out.
+    {$charname}: Just literally eating you.
+    {$charname}: But you showed me that it would be much more fun to do the former with you.
+    He winks.
+    You feel simultaneously aroused and insulted.
+    {$charname}: Don't worry, there is a lot of oxygen rooms for you in my unterwater castle.
+    You: Okay, thanks?
+    {$charname}: But don't forget your inhaler.
+    {$charname}: Because I will make you gasp for air everyday.
+    It's a stupid joke but it makes you giddy anyways.
+    You can hardly wait.
+<<elseif $charname == "Muscle Mummy">>
+    <<sprite "mum">>
+    <<theme "mum">>
+    It's surprisingly muscular.
+    {$charname}: You know, I was actually planning on grinding your body into powder and putting it in my protein shakes.
+    You: Huh?
+    {$charname}: But now I know, that we are stronger together.
+    You: Thanks?
+    {$charname}: And now we will get even stronger.
+    You: And dominate the world.
+    {$charname}: And crush our enemies.
+    She pulls you close.
+    You feel incredibly safe.
+<<endif>>
+...
+What?
+Did you think something terrible would happen?
+Did you think that this is some kind of horror game where you get killed when you least expect it?
+Just when you have reached your happy ending?
+Well...
+Looks like...
+===

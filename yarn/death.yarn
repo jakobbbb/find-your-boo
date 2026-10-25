@@ -1,0 +1,144 @@
+title: death
+---
+<<if $charname == "Dr. h.c. Dr. med. Dr. iur. Dr. phil. Acula">>
+    <<sprite "drac">>
+    <<theme "drac">>
+    <<if $drac <= 5>>
+        <<if dice(4) == 1>>
+            <<jump marry>>
+        <<else>>
+            <<jump permadeath>>
+        <<endif>>
+    <<elseif $drac <= 10>>
+        <<if dice(6) == 1>>
+            <<jump marry>>
+        <<else>>
+            <<jump permadeath>>
+        <<endif>>
+    <<elseif $drac <= 15>>
+        <<if dice(8) == 1>>
+            <<jump marry>>
+        <<else>>
+            <<jump permadeath>>
+        <<endif>>
+    <<else>>
+        <<if dice(10) == 1>>
+            <<jump marry>>
+        <<else>>
+            <<jump permadeath>>
+        <<endif>>
+    <<endif>>
+<<elseif $charname == "Bobo Blocksberg">>
+    <<sprite "witch">>
+    <<theme "witch">>
+    <<if $witch <= 5>>
+        <<if dice(4) == 1>>
+            <<jump marry>>
+        <<else>>
+            <<jump permadeath>>
+        <<endif>>
+    <<elseif $witch <= 10>>
+        <<if dice(6) == 1>>
+            <<jump marry>>
+        <<else>>
+            <<jump permadeath>>
+        <<endif>>
+    <<elseif $witch <= 15>>
+        <<if dice(8) == 1>>
+            <<jump marry>>
+        <<else>>
+            <<jump permadeath>>
+        <<endif>>
+    <<else>>
+        <<if dice(10) == 1>>
+            <<jump marry>>
+        <<else>>
+            <<jump permadeath>>
+        <<endif>>
+    <<endif>>
+<<elseif $charname == "Mothperson">>
+    <<sprite "moth">>
+    <<theme "moth">>
+    <<if $moth <= 5>>
+        <<if dice(4) == 1>>
+            <<jump marry>>
+        <<else>>
+            <<jump permadeath>>
+        <<endif>>
+    <<elseif $moth <= 10>>
+        <<if dice(6) == 1>>
+            <<jump marry>>
+        <<else>>
+            <<jump permadeath>>
+        <<endif>>
+    <<elseif $moth <= 15>>
+        <<if dice(8) == 1>>
+            <<jump marry>>
+        <<else>>
+            <<jump permadeath>>
+        <<endif>>
+    <<else>>
+        <<if dice(10) == 1>>
+            <<jump marry>>
+        <<else>>
+            <<jump permadeath>>
+        <<endif>>
+    <<endif>>
+<<elseif $charname == "Fishy McFishface">>
+    <<sprite "fish">>
+    <<theme "fish">>
+    <<if $fish <= 5>>
+        <<if dice(4) == 1>>
+            <<jump marry>>
+        <<else>>
+            <<jump permadeath>>
+        <<endif>>
+    <<elseif $fish <= 10>>
+        <<if dice(6) == 1>>
+            <<jump marry>>
+        <<else>>
+            <<jump permadeath>>
+        <<endif>>
+    <<elseif $fish <= 15>>
+        <<if dice(8) == 1>>
+            <<jump marry>>
+        <<else>>
+            <<jump permadeath>>
+        <<endif>>
+    <<else>>
+        <<if dice(10) == 1>>
+            <<jump marry>>
+        <<else>>
+            <<jump permadeath>>
+        <<endif>>
+    <<endif>>
+<<elseif $charname == "Muscle Mummy">>
+    <<sprite "mum">>
+    <<theme "mum">>
+    <<if $mum <= 5>>
+        <<if dice(4) == 1>>
+            <<jump marry>>
+        <<else>>
+            <<jump permadeath>>
+        <<endif>>
+    <<elseif $mum <= 10>>
+        <<if dice(6) == 1>>
+            <<jump marry>>
+        <<else>>
+            <<jump permadeath>>
+        <<endif>>
+    <<elseif $mum <= 15>>
+        <<if dice(8) == 1>>
+            <<jump marry>>
+        <<else>>
+            <<jump permadeath>>
+        <<endif>>
+    <<else>>
+        <<if dice(10) == 1>>
+            <<jump marry>>
+        <<else>>
+            <<jump permadeath>>
+        <<endif>>
+    <<endif>>
+<<endif>>
+===
