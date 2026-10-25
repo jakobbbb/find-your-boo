@@ -48,7 +48,7 @@ Muscle Mummy: Give Mummy a hug! <<once if $mum == 1000>>
 	<<jump day2>>
 <<elseif $day == 2>>
 	<<jump day3>>
-//<<elseif $day == 3>>
-//	<<jump day4>>
+<<elseif $day == 3>>
+	<<jump day4>>
 <<endif>>
 ===
