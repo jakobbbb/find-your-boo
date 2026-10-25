@@ -2,12 +2,11 @@ extends Sprite2D
 
 var where = "night"
 var speedy = 1.0
-const BIG_SPEED = 16.0
+const BIG_SPEED = 64.0
 
-const START_NIGHT = 1.6
-const END_NIGHT = 4.6
-const START_DAY = 5.5
-const END_DAY = 6.5
+const START_NIGHT = 2.1
+const END_NIGHT = 3.7
+const END_DAY = 6.2
 
 func _ready() -> void:
 	rotation = START_NIGHT
@@ -15,6 +14,7 @@ func _ready() -> void:
 
 func _process(delta: float) -> void:	
 	rotate(delta * 0.01 * speedy)
+	print(rotation)
 	if rotation >= 2 * PI:
 		rotation -= 2 * PI
 		
