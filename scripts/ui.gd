@@ -4,6 +4,8 @@ extends Control
 
 var skipping = false
 
+var last_day_ended = -1
+
 func _ready() -> void:
 	GameManager.set_night.connect(_on_set_night)
 	GameManager.set_day.connect(_on_set_day)
@@ -45,6 +47,12 @@ func _on_set_night() -> void:
 
 func _on_end_day_button_pressed() -> void:
 	var day = str(int(%YarnDialogueRunner.variable_storage.get_value("$day")))
+	
+	if (last_day_ended >= int(day)):
+		return
+		
+	last_day_ended = int(day)
+	
 	var node = "end" + day
 	print(node)
 	%YarnDialogueRunner.start_dialogue(node)
@@ -59,7 +67,7 @@ func show_char_sprite(cname: String) -> void:
 	for c in $CharSprites.get_children():
 		if c.name == cname:
 			c.show()
-			$Night.color.a = 0.1
+			$Night.color.a = 1.0
 			found = true
 		else:
 			c.hide()
