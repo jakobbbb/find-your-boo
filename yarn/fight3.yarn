@@ -386,9 +386,21 @@ What will {$charname} do? (Player attraction {$date}/100)
         <<jump fight3>>
 <<elseif $leave == true>>
     Really?
-    <<return>>
+    <<if visited_count("whodate") == 1>>
+        <<jump day3_2>>
+    <<elseif visited_count("whodate") == 2>>
+        <<jump day3_3>>
+    <<elseif visited_count("whodate") == 3>>
+        <<jump day3_4>>
+    <<endif>>
 <<elseif $date >= 100>>
     That was fun!
-    <<return>>
+    <<if visited_count("whodate") == 1>>
+        <<jump day3_2>>
+    <<elseif visited_count("whodate") == 2>>
+        <<jump day3_3>>
+    <<elseif visited_count("whodate") == 3>>
+        <<jump day3_4>>
+    <<endif>>
 <<endif>>
 ===

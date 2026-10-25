@@ -15,7 +15,10 @@ Host: Today we are gonna shake things up a little.
 What?
 Host: Today our eligible singles will compete for the affection of our contestant by going on one-on-one dates with them!
 Host: So who will be the first to go on a date?
-    <<detour whodate>>
+    <<jump whodate>>
+===
+title: day3_2
+---
 <<if $leave == true>>
     Host: Umm, okay.
         <<set $leave to false>>
@@ -23,7 +26,10 @@ Host: So who will be the first to go on a date?
     Host: Whoa!
 <<endif>>
 Host: Who will be next?
-    <<detour whodate>>
+    <<jump whodate>>
+===
+title: day3_3
+---
 <<if $leave == true>>
     Host: Umm, okay.
         <<set $leave to false>>
@@ -31,11 +37,17 @@ Host: Who will be next?
     Host: Whoa!
 <<endif>>
 Host: And for our third and finale date, you may already know who it is:
-    <<detour whodate>>
+    <<jump whodate>>
+===
+title: day3_4
+---
 <<if $leave == true>>
     Host: Umm, okay.
         <<set $leave to false>>
+    Host: After this rather disappointing end to our date day, let's commence with the Elimination Ceremony!
 <<else>>
     Host: Whoa!
+    Host: After this great end to our date day, let's commence with the Elimination Ceremony!
 <<endif>>
+<<jump end3>>
 ===
