@@ -35,11 +35,11 @@
       "location": {
         "end": {
           "character": 25,
-          "line": 31
+          "line": 30
         },
         "start": {
           "character": 0,
-          "line": 26
+          "line": 25
         }
       },
       "parameters": [
