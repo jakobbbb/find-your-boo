@@ -3,18 +3,23 @@ title: singles2
 You: *knock knock*
 <<if $charname == "Dr. h.c. Dr. med. Acula">>
     <<sprite "drac">>
+    <<theme "drac">>
     {$charname}: You may come in.
 <<elseif $charname == "Bobo Blocksberg">>
     <<sprite "witch">>
+    <<theme "witch">>
     {$charname}: *yells* The door's open!
 <<elseif $charname == "Mothperson">>
     <<sprite "moth">>
+    <<theme "moth">>
     {$charname}: Come in but please don't turn off the lämp.
 <<elseif $charname == "Fishy McFishface">>
     <<sprite "fish">>
+    <<theme "fish">>
     {$charname}: Oh you... just get in already!
 <<elseif $charname == "Muscle Mummy">>
     <<sprite "mum">>
+    <<theme "mum">>
     {$charname}: If the smell of sweat doesn't bother you, then come in.
 <<endif>>
 You: ...

@@ -5,6 +5,17 @@ The Player appears! <<once if $charname == "Bobo Blocksberg">>
 The Player appears! <<once if $charname == "Mothperson">>
 The Player appears! <<once if $charname == "Fishy McFishface">>
 The Player appears! <<once if $charname == "Muscle Mummy">>
+<<if $charname == "Dr. h.c. Dr. med. Dr. iur. Acula">>
+    <<theme "drac">>
+<<elseif $charname == "Bobo Blocksberg">>
+    <<theme "witch">>
+<<elseif $charname == "Mothperson">>
+    <<theme "moth">>
+<<elseif $charname == "Fishy McFishface">>
+    <<theme "fish">>
+<<elseif $charname == "Muscle Mummy">>
+    <<theme "mum">>
+<<endif>>
 <<if $leave == false and $date < 100>>
 The player is confused! <<if $conf == true>>
 The player is ... horny? <<if $horny == true>>
