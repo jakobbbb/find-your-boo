@@ -23,6 +23,7 @@ func _input(event: InputEvent) -> void:
 func _process(_delta: float) -> void:
 	if skipping:
 		%YarnDialogueRunner.request_next_content()
+	check_elim_button_visible()
 
 
 func set_night_day(is_night: bool) -> void:
@@ -52,12 +53,18 @@ func _on_end_day_button_pressed() -> void:
 		return
 		
 	last_day_ended = int(day)
+	check_elim_button_visible()
 	
 	var node = "end" + day
 	print(node)
 	%YarnDialogueRunner.start_dialogue(node)
 
-
+func check_elim_button_visible() -> void:
+	var day = int(%YarnDialogueRunner.variable_storage.get_value("$day"))
+	if day > last_day_ended:
+		$"End Day Button".show()
+	else:
+		$"End Day Button".hide()
 
 func _on_change_cursor(cur: Control.CursorShape) -> void:
 	mouse_default_cursor_shape = cur

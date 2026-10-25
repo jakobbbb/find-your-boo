@@ -14,7 +14,6 @@ func _ready() -> void:
 
 func _process(delta: float) -> void:	
 	rotate(delta * 0.01 * speedy)
-	print(rotation)
 	if rotation >= 2 * PI:
 		rotation -= 2 * PI
 		
