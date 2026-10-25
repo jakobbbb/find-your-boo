@@ -147,6 +147,7 @@ script = ExtResource("4_ppyta")
 
 [node name="Arrow" parent="Camera2D" unique_id=1753165597 instance=ExtResource("5_ykrsh")]
 position = Vector2(-142, -470)
+scale = Vector2(1, -1)
 
 [node name="Camera2D2" type="Camera2D" parent="." unique_id=2021939344]
 position = Vector2(686, -1419)
@@ -158,6 +159,7 @@ position = Vector2(-189, 574)
 
 [node name="Arrow2" parent="Camera2D2" unique_id=1100877718 instance=ExtResource("5_ykrsh")]
 position = Vector2(-256, -544)
+rotation = 3.1415927
 
 [node name="Camera2D3" type="Camera2D" parent="." unique_id=223791954]
 position = Vector2(875, -2293)

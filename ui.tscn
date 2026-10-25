@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://bff3xa0rmr58j" path="res://assets/placeholder/characters/closeUps/Colored/mommy_color.png" id="7_e2l4f"]
 [ext_resource type="Texture2D" uid="uid://dofssarxvn1c2" path="res://assets/placeholder/characters/closeUps/Colored/bobo_color.png" id="8_n5rqp"]
 [ext_resource type="Texture2D" uid="uid://bvkv70bkp8gag" path="res://assets/placeholder/characters/closeUps/Colored/dr_ampire_color.png" id="9_gs482"]
+[ext_resource type="Texture2D" uid="uid://gp2wgifq1jny" path="res://assets/placeholder/characters/closeUps/Colored/player_color.png" id="10_irxef"]
 
 [sub_resource type="Animation" id="Animation_m6e0p"]
 length = 0.001
@@ -315,7 +316,7 @@ grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.22294031, 0.22294031)
 mouse_filter = 2
-texture = ExtResource("3_ok7cu")
+texture = ExtResource("10_irxef")
 
 [node name="CharSpritesFight" type="Control" parent="." unique_id=846541007]
 layout_mode = 1

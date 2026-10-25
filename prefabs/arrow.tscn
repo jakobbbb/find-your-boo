@@ -11,6 +11,7 @@ script = ExtResource("1_6ga5o")
 metadata/DialogueNode = ""
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=177765413]
+modulate = Color(0.9499534, 0.26170254, 0.32757476, 1)
 scale = Vector2(0.72, 0.72)
 texture = ExtResource("2_6ga5o")
 
