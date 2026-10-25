@@ -10,6 +10,7 @@ signal set_affection(cname: String, affection: int)
 signal eliminate_char(cname: String)
 signal reveal_char(cname: String)
 signal show_char_sprite(cname: String)
+signal play_theme(cname: String)
 signal change_cursor(cursor: Input.CursorShape)
 @warning_ignore_restore("unused_signal")
 
@@ -39,6 +40,9 @@ static func _yarn_command_trigger_elim():
 
 static func _yarn_command_set_immune(cname: String) -> void:
 	GameManager.immune = cname
+
+static func _yarn_command_theme(cname: String) -> void:
+	GameManager.play_theme.emit(cname)
 
 func _on_set_affection(cname: String, affection: int) -> void:
 	if affection == 1000:

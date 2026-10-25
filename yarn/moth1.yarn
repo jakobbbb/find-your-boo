@@ -2,6 +2,7 @@ title: moth1
 ---
 <<set $ghostname = "Ghost 3">>
 <<sprite "ghost">>
+<<theme "moth">>
 Say hello:
 -> funny
     <<set $moth = $moth + 1>>

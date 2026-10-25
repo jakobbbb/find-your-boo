@@ -58,3 +58,4 @@ func _on_set_day() -> void:
 
 func _on_node_end(_node_name) -> void:
 	GameManager.show_char_sprite.emit("NONE")
+	GameManager.play_theme.emit("main")

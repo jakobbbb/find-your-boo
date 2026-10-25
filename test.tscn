@@ -14,6 +14,8 @@
 [ext_resource type="Texture2D" uid="uid://c1780e1r888om" path="res://assets/placeholder/characters/mothy.png" id="9_45l4g"]
 [ext_resource type="PackedScene" uid="uid://csippbs4hgnb3" path="res://ui.tscn" id="13_0m0f1"]
 [ext_resource type="PackedScene" uid="uid://jsfbttnege8j" path="res://elimination_ceremony.tscn" id="14_b0q6j"]
+[ext_resource type="PackedScene" uid="uid://b1hi3h3u2jjw3" path="res://prefabs/audio.tscn" id="15_mhym6"]
+[ext_resource type="AudioStream" uid="uid://bhnrbufu2s5mq" path="res://audio/Themes/Boo_Main_Theme.wav" id="16_a3se8"]
 
 [node name="Test" type="Node2D" unique_id=63273623]
 script = ExtResource("1_ykrsh")
@@ -154,6 +156,9 @@ position = Vector2(2771, 410)
 [node name="EliminationCamera" type="Camera2D" parent="." unique_id=1106246604]
 position = Vector2(3260, 673)
 script = ExtResource("4_ppyta")
+
+[node name="Audio" parent="." unique_id=1040499853 instance=ExtResource("15_mhym6")]
+stream = ExtResource("16_a3se8")
 
 [connection signal="pressed" from="Camera2D/Arrow" to="Camera2D" method="_on_arrow_pressed"]
 [connection signal="pressed" from="Camera2D2/Arrow" to="Camera2D2" method="_on_arrow_pressed"]

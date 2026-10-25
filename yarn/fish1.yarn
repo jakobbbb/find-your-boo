@@ -2,6 +2,7 @@ title: fish1
 ---
 <<set $ghostname = "Ghost 4">>
 <<sprite "ghost">>
+<<theme "fish">>
 Say hello:
 -> funny
     You: Bone-jour!

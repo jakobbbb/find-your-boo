@@ -61,11 +61,11 @@
       "location": {
         "end": {
           "character": 31,
-          "line": 22
+          "line": 23
         },
         "start": {
           "character": 0,
-          "line": 20
+          "line": 21
         }
       },
       "parameters": [],
@@ -79,11 +79,11 @@
       "location": {
         "end": {
           "character": 27,
-          "line": 25
+          "line": 26
         },
         "start": {
           "character": 0,
-          "line": 24
+          "line": 25
         }
       },
       "parameters": [],
@@ -97,11 +97,11 @@
       "location": {
         "end": {
           "character": 36,
-          "line": 28
+          "line": 29
         },
         "start": {
           "character": 0,
-          "line": 27
+          "line": 28
         }
       },
       "parameters": [
@@ -121,11 +121,11 @@
       "location": {
         "end": {
           "character": 41,
-          "line": 31
+          "line": 32
         },
         "start": {
           "character": 0,
-          "line": 30
+          "line": 31
         }
       },
       "parameters": [
@@ -145,11 +145,11 @@
       "location": {
         "end": {
           "character": 40,
-          "line": 37
+          "line": 38
         },
         "start": {
           "character": 0,
-          "line": 33
+          "line": 34
         }
       },
       "parameters": [],
@@ -163,11 +163,11 @@
       "location": {
         "end": {
           "character": 27,
-          "line": 40
+          "line": 41
         },
         "start": {
           "character": 0,
-          "line": 39
+          "line": 40
         }
       },
       "parameters": [
@@ -178,6 +178,30 @@
         }
       ],
       "yarnName": "set_immune"
+    },
+    {
+      "async": false,
+      "definitionName": "_yarn_command_theme",
+      "fileName": "gamemanager.gd",
+      "language": "gdscript",
+      "location": {
+        "end": {
+          "character": 35,
+          "line": 44
+        },
+        "start": {
+          "character": 0,
+          "line": 43
+        }
+      },
+      "parameters": [
+        {
+          "isParamsArray": false,
+          "name": "cname",
+          "type": "string"
+        }
+      ],
+      "yarnName": "theme"
     }
   ],
   "version": 2
