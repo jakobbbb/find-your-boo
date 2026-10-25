@@ -5,6 +5,7 @@ title: day3
 <<declare $conf = false>>
 <<declare $horny = false>>
 <<declare $lamp = 0>>
+<<set $day = 3>>
 Host: Welcome back to
 FIND
 YOUR

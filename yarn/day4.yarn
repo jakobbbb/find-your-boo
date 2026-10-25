@@ -1,10 +1,12 @@
 title: day4
 ---
 <<declare $famname = "lol">>
+<<set $day = 4>>
 Even after sleeping, you still feel like you've been put through the wringer several times.
 Who knew that dates could be that exhausting?
 ...
 Oh no, is that the host?
+<<cam Camera2D>>
 Host: Welcome back to
 FIND
 YOUR

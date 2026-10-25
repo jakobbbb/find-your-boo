@@ -61,6 +61,7 @@ texture = ExtResource("2_5tkv4")
 position = Vector2(841, -1171)
 metadata/DialogueNode = "drac"
 metadata/Day2CharName = "Dr. h.c. Dr. med. Acula"
+metadata/Day4CharName = "Dr. h.c. Dr. med. Dr. iur. Dr. phil. Acula"
 
 [node name="Sprite2D" parent="NPC_Dr_Acula" index="0" unique_id=177765413]
 scale = Vector2(0.31824818, 0.31824815)
@@ -74,6 +75,7 @@ scale = Vector2(0.78, 2.135)
 position = Vector2(662, -1610)
 metadata/DialogueNode = "fish"
 metadata/Day2CharName = "Fishy McFishface"
+metadata/Day4CharName = "Fishy McFishface"
 
 [node name="Sprite2D" parent="NPC_Fishy McFischface" index="0" unique_id=177765413]
 scale = Vector2(0.3416058, 0.34160584)
@@ -87,6 +89,7 @@ scale = Vector2(1, 2)
 position = Vector2(556, -535)
 metadata/DialogueNode = "witch"
 metadata/Day2CharName = "Bobo Blocksberg"
+metadata/Day4CharName = "Bobo Blocksberg"
 
 [node name="Sprite2D" parent="NPC_Bobo Blocksberg" index="0" unique_id=177765413]
 scale = Vector2(0.3416058, 0.34160584)
@@ -100,6 +103,7 @@ scale = Vector2(1, 2)
 position = Vector2(197, -528)
 metadata/DialogueNode = "mum"
 metadata/Day2CharName = "Muscle Mummy"
+metadata/Day4CharName = "Muscle Mummy"
 
 [node name="Sprite2D" parent="NPC_Muscle Mummy" index="0" unique_id=177765413]
 scale = Vector2(0.3416058, 0.34160584)
@@ -112,6 +116,8 @@ scale = Vector2(1, 2)
 [node name="NPC_Ghost" parent="." unique_id=1582067632 instance=ExtResource("1_37kl0")]
 position = Vector2(677, -2147)
 metadata/DialogueNode = "ghost"
+metadata/Day2CharName = "ghost"
+metadata/Day4CharName = "ghost"
 
 [node name="Sprite2D" parent="NPC_Ghost" index="0" unique_id=177765413]
 scale = Vector2(0.3416058, 0.34160584)
@@ -125,6 +131,7 @@ scale = Vector2(1, 2)
 position = Vector2(604, -1147)
 metadata/DialogueNode = "moth"
 metadata/Day2CharName = "Mothperson"
+metadata/Day4CharName = "Mothperson"
 
 [node name="Sprite2D" parent="NPC_Mothperson" index="0" unique_id=177765413]
 scale = Vector2(0.3416058, 0.34160584)
