@@ -86,17 +86,35 @@
     },
     {
       "async": false,
+      "definitionName": "_yarn_command_reset_immunity",
+      "fileName": "elim_npc.gd",
+      "language": "gdscript",
+      "location": {
+        "end": {
+          "character": 25,
+          "line": 39
+        },
+        "start": {
+          "character": 0,
+          "line": 38
+        }
+      },
+      "parameters": [],
+      "yarnName": "reset_immunity"
+    },
+    {
+      "async": false,
       "definitionName": "_yarn_command_set_night",
       "fileName": "gamemanager.gd",
       "language": "gdscript",
       "location": {
         "end": {
           "character": 31,
-          "line": 24
+          "line": 23
         },
         "start": {
           "character": 0,
-          "line": 22
+          "line": 21
         }
       },
       "parameters": [],
@@ -110,11 +128,11 @@
       "location": {
         "end": {
           "character": 27,
-          "line": 27
+          "line": 26
         },
         "start": {
           "character": 0,
-          "line": 26
+          "line": 25
         }
       },
       "parameters": [],
@@ -128,11 +146,11 @@
       "location": {
         "end": {
           "character": 36,
-          "line": 30
+          "line": 29
         },
         "start": {
           "character": 0,
-          "line": 29
+          "line": 28
         }
       },
       "parameters": [
@@ -156,7 +174,7 @@
         },
         "start": {
           "character": 0,
-          "line": 32
+          "line": 31
         }
       },
       "parameters": [
