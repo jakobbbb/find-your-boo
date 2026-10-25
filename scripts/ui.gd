@@ -16,10 +16,11 @@ func _ready() -> void:
 	GameManager.change_cursor.connect(_on_change_cursor)
 
 func _input(event: InputEvent) -> void:
-	if event.is_action_pressed("debug_skip"):
-		skipping = true
-	elif event.is_action_released("debug_skip"):
-		skipping = false
+	if OS.is_debug_build():
+		if event.is_action_pressed("debug_skip"):
+			skipping = true
+		elif event.is_action_released("debug_skip"):
+			skipping = false
 		
 func _process(_delta: float) -> void:
 	if skipping:
