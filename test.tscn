@@ -3,7 +3,9 @@
 [ext_resource type="PackedScene" uid="uid://xrs0qqicpldt" path="res://prefabs/npc.tscn" id="1_37kl0"]
 [ext_resource type="Script" uid="uid://cxrjk51dlyvni" path="res://scripts/gamemanager.gd" id="1_ykrsh"]
 [ext_resource type="Texture2D" uid="uid://siy6quplvmt3" path="res://assets/placeholder/background/House_Design.png" id="2_5tkv4"]
+[ext_resource type="Texture2D" uid="uid://c3bjede0j22lp" path="res://assets/daynight.png" id="2_uty7l"]
 [ext_resource type="PackedScene" uid="uid://k7yl21ee00ji" path="res://prefabs/yarn_dialogue_runner.tscn" id="3_6uqi0"]
+[ext_resource type="Script" uid="uid://q0fq5n0vh3q1" path="res://scripts/background.gd" id="3_45l4g"]
 [ext_resource type="Texture2D" uid="uid://qhkw7cqtw8vj" path="res://assets/placeholder/characters/dr_acula.png" id="4_0m0f1"]
 [ext_resource type="Script" uid="uid://d1dcuekbom66u" path="res://scripts/cam.gd" id="4_ppyta"]
 [ext_resource type="Texture2D" uid="uid://12nc4dd5ytaq" path="res://assets/placeholder/characters/fishman.png" id="5_b0q6j"]
@@ -19,6 +21,13 @@
 
 [node name="Test" type="Node2D" unique_id=63273623]
 script = ExtResource("1_ykrsh")
+
+[node name="Background" type="Sprite2D" parent="." unique_id=1150446554]
+z_index = -35
+position = Vector2(1805, 1693)
+scale = Vector2(3.7176342, 3.7176342)
+texture = ExtResource("2_uty7l")
+script = ExtResource("3_45l4g")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1392501608]
 
@@ -148,6 +157,11 @@ script = ExtResource("4_ppyta")
 
 [node name="Arrow" parent="Camera2D3" unique_id=275331642 instance=ExtResource("5_ykrsh")]
 position = Vector2(-28, 486)
+
+[node name="HouseCamera" type="Camera2D" parent="." unique_id=1292981991]
+position = Vector2(1710, -1491)
+zoom = Vector2(0.255, 0.255)
+script = ExtResource("4_ppyta")
 
 [node name="EliminationCeremony" parent="." unique_id=1322346346 instance=ExtResource("14_b0q6j")]
 unique_name_in_owner = true

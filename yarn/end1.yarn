@@ -1,6 +1,10 @@
 title: end1
 ---
+<<set_night>>
+<<wait 1>>
 <<cam EliminationCamera>>
+<<set_day>>
+<<wait 1>>
 Host: Hello and welcome to our first elimination ceremony!
 Host: Who will our contestant choose to leave the Villa first?
 Host: Ghost 1?

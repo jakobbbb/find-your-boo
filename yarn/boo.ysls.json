@@ -29,6 +29,37 @@
     },
     {
       "async": false,
+      "definitionName": "_yarn_command_rotate",
+      "fileName": "background.gd",
+      "language": "gdscript",
+      "location": {
+        "end": {
+          "character": 15,
+          "line": 32
+        },
+        "start": {
+          "character": 0,
+          "line": 28
+        }
+      },
+      "parameters": [
+        {
+          "documentation": "The name of the Background node the runner will search for to run this command upon.",
+          "isParamsArray": false,
+          "name": "target",
+          "subtype": "Background",
+          "type": "instance"
+        },
+        {
+          "isParamsArray": false,
+          "name": "w",
+          "type": "string"
+        }
+      ],
+      "yarnName": "rotate"
+    },
+    {
+      "async": false,
       "definitionName": "_yarn_command_cam",
       "fileName": "cam.gd",
       "language": "gdscript",
