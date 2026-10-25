@@ -19,6 +19,7 @@
 [ext_resource type="PackedScene" uid="uid://jsfbttnege8j" path="res://elimination_ceremony.tscn" id="14_b0q6j"]
 [ext_resource type="PackedScene" uid="uid://b1hi3h3u2jjw3" path="res://prefabs/audio.tscn" id="15_mhym6"]
 [ext_resource type="AudioStream" uid="uid://bhnrbufu2s5mq" path="res://audio/Themes/Boo_Main_Theme.wav" id="16_a3se8"]
+[ext_resource type="Texture2D" uid="uid://yin5okkuti3c" path="res://assets/placeholder/background/graveyard.png" id="20_vxl6d"]
 
 [node name="Test" type="Node2D" unique_id=63273623]
 script = ExtResource("1_ykrsh")
@@ -189,6 +190,10 @@ script = ExtResource("4_ppyta")
 
 [node name="Audio" parent="." unique_id=1040499853 instance=ExtResource("15_mhym6")]
 stream = ExtResource("16_a3se8")
+
+[node name="Graveyard" type="Sprite2D" parent="." unique_id=237317887]
+position = Vector2(3163, -528)
+texture = ExtResource("20_vxl6d")
 
 [connection signal="pressed" from="Camera2D/Arrow" to="Camera2D" method="_on_arrow_pressed"]
 [connection signal="pressed" from="Camera2D2/Arrow" to="Camera2D2" method="_on_arrow_pressed"]
