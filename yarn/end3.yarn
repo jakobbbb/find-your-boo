@@ -1,0 +1,21 @@
+title: end3
+---
+<<cam EliminationCamera>>
+Host: Hello and welcome to our third elimination ceremony!
+Host: Who will have to leave the Villa tonight?
+Host: Let me remind you who's still in the game!
+Host: Dr. h.c. Dr. med. Acula! <<if $drac != 1000>>
+Host: Bobo Blocksberg! <<if $witch != 1000>>
+Host: Mothperson! <<if $moth != 1000>>
+Host: Fishy McFishface! <<if $fish != 1000>>
+Host: Muscle Mummy! <<if $mum != 1000>>
+Host: After this elimination ceremony we will be down to just two singles!
+Host: Which means tomorrow is the night we've all been waiting for.
+Host: The night where you, the contestant, will
+FIND
+YOUR
+BOO!
+Host: Are you ready to make a decision?
+Not really, but also don't have a choice.
+Just get it over with.
+===

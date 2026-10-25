@@ -1,0 +1,398 @@
+title: family4
+---
+<<if $charname == "Dr. h.c. Dr. med. Dr. iur. Dr. phil. Acula">>
+    <<sprite "drac">>
+    <<set $famname to "Prof. Dr. Dr. Dr. Dr. Dr. habil. Acula-Cullen">>
+    {$charname}: Hello.
+    {$charname}: I would like to introduce you to my mother.
+    {$charname}: {$famname}.
+    You: Nice to meet you, {$famname}.
+    {$famname}: Oh, you can just call me Laura, my dear.
+    You: Um, thank you, Laura.
+    {$famname}: So, what do you think of my daughter?
+    You: Umm...
+        -> be nice
+            <<set $drac to $drac + 1>>
+            You: She is sweet once you get to know her.
+            {$famname}: *cackles* If her being a stuck up bitch doesn't scare you away first.
+        -> lie
+            <<set $drac to $drac + 2>>
+            You: She is the friendliest person I have ever met!
+            {$famname}: Come on, you know that's not true.
+            You: Are you calling me a liar?
+            {$famname}: Well, I ain't calling you a truther.
+        -> be brutally honest
+            <<set $drac to $drac - 1>>
+            You: To be honest, at first I thought she was a stuck up bitch.
+            You: Now I know she is.
+            {$famname} cackles loudly.
+    {$charname}: Mom!
+    {$famname}: Come on, Renesmee, you know what you are like.
+    {$famname}: Have always been, even as a little bat.
+    {$charname} seems to be ... blushing?
+    That's new.
+    {$charname}: Do you always have to embarrass me?
+    {$famname}: Oh, deary, you are not 117 anymore.
+    {$famname}: It is time for you to accept yourself the way you are.
+    {$famname}: Just as I do.
+    Awwww.
+    {$famname}: Being a stuck up bitch is nothing to be ashamed of.
+    Not so awwww.
+    {$famname}: Isn't that right, Player?
+    You: Umm...
+        -> no
+            <<set $drac to $drac + 2>>
+            You: No, not really.
+            {$charname}: But...
+            {$charname}: I certainly have not the talent which some people possess of conversing easily with those I have never seen before. 
+            {$charname}: I cannot catch their tone of conversation, or appear interested in their concerns, as I often see done.
+            For plot-reasons you are now playing on a piano.
+            You: My fingers do not move over this instrument in the masterly manner which I see so many people's do. 
+            You: They have not the same force or rapidity, and do not produce the same expression.
+            You: But then I have always supposed it to be my own fault - because I would not take the trouble of practising.
+            You: It is not that I do not believe my fingers as capable as any other people's of superior execution.
+            {$charname} smiles.
+            {$charname}: You are perfectly right. 
+            {$charname}: You have employed your time much better. 
+            {$charname}: No one admitted to the privilege of hearing you, can think any thing wanting.
+            {$charname}: We neither of us perform to strangers.
+        -> maybe
+            <<set $drac to $drac + 1>>
+            You: Uuuuh... maybe?
+            {$charname}: So you think I should carefully analyze each situation I am in.
+            {$charname}: And then determine in a scientific manner if being a stuck up bitch is appropriate or not?
+            You: Uuuuu... sure?
+            {$charname}: Well I think that would be within my powers.
+            {$charname} smiles.
+        -> yes
+            <<set $drac to $drac - 1>>
+            You: I am a simple person.
+            You: I like hot women being mean to me.
+            {$famname} cackles.
+            {$charname} smiles.
+            {$charname}: Oh, you think I'm hot?
+            You: Anyone with at least one working eye can see that you are!
+            {$charname} grins.
+            {$charname}: I just didn't think I was your type.
+    {$famname}: Well look at you two.
+    {$famname}: You are so cute I could take a bite out of you.
+    {$famname}: I would wholeheartedly approve of your relationship.
+<<elseif $charname == "Bobo Blocksberg">>
+    <<sprite "witch">>
+    <<set $famname to "Detective Benoit Blocksberg">>
+    {$charname}: Um, hi.
+    {$charname}: This is my dad.
+    {$charname}: {$famname}.
+    {$famname} grabs your hand and shakes it enthusiastically.
+    You can almost feel your bones breaking.
+    Good thing you took some Calcium before breakfast.
+    He finally releases your hand.
+    {$famname}: So good to finally meet you, Player.
+    {$famname}: I only heard good things about you.
+    You quickly glance at {$charname} and arch an eyebrow.
+    {$charname} looks bewildered.
+    {$charname}: Dad, how...?
+    His eyes narrow.
+    {$charname}: You promised me no sleuthing this time!
+    {$charname}: It creeps people out!
+    You can very faintly hear him muttering "And then how am I gonna get laid?".
+    {$famname} has the decency to look at least half ashamed.
+    {$famname}: I am sorry, Bobo.
+    {$famname}: Being a world famous detective just leaves its mark on you.
+    {$famname}: And also I just want you to be safe.
+    {$famname}: Like remember the werewolf I had to rescue you from?
+    {$charname} now looks completely exasperated.
+    {$charname}: For the last time, dad, he was just a Furry!
+    {$charname}: Those teeth weren't real!
+    {$famname}: They looked real to me.
+    {$charname}: ARGH!
+    {$famname}: Anyways...
+    {$famname} turns to you.
+    {$famname}: I'm just gonna pretend I don't already know everything about you.
+    You: Umm... okay?
+    {$famname}: Now, how are you planning on keeping my babyboy safe?
+    You: Umm...
+        -> 007
+            <<set $witch to $witch + 1>>
+            You: If I told you that, I would have to kill you.
+            {$famname} laughs so hard that tears are running down his cheeks.
+            {$famname}: Bold of you to assume you could.
+        -> you don't
+            <<set $witch to $witch - 1>>
+            You: He is perfectly able to keep himself safe.
+            {$famname}: Do you really believe that?
+            {$famname}: I mean, have you seen him?
+            {$famname}: The stick legs.
+            {$famname}: The little spaghetti arms.
+        -> take out your gun
+            <<set $witch to $witch + 2>>
+            {$famname}: Do you have a licence for this thing?
+            You: Of course.
+            {$famname}: I am impressed.
+    {$charname}: Ugh, dad!
+    {$famname}: Well, anyways, how is your sexlife?
+    You: Umm...
+        -> yes
+            <<set $witch to $witch + 1>>
+            You: ...yes?
+            {$charname} snorts.
+            And rightly so.
+            That was a stupid answer.
+            ...
+            But somehow he seems charmed by it?
+            No doubt he's already imagining what "...yes?" encompasses.
+        -> maybe
+            <<set $witch to $witch + 2>>
+            You: I guess like most people's?
+            You: Just you know a regular sexlife?
+            That doesn't make any sense.
+            {$charname}: What even is a regular sexlife?
+            You: That seems to be a philosophical question.
+            {$charname}: Theoretical or practical philosophy?
+            You think.
+            You: Must be practical I think.
+            {$charname} eyes are twinkling.
+            {$charname}: I am nothing if not practical.
+            He winks at you.
+        -> no
+            <<set $witch to $witch - 1>>
+            You: Basically nonexistent.
+            {$charname}: Well, we could change that.
+            He grins at you.
+    {$famname}: Awww...
+    {$famname}: Well, now I am convinced that you two would make a fine couple!
+<<elseif $charname == "Mothperson">>
+    <<sprite "moth">>
+    <<set $famname to "Mothparent">>
+    {$charname}: Hello, this is my parent.
+    {$famname}: Hello, this is my child.
+    You: Hello, I am the Player.
+    {$famname}: Ah, Player, have you heard of the Great Lämp?
+    You: ...
+        -> idk
+            <<set $moth to $moth + 1>>
+            You: I... I don't remember.
+            {$famname}: Not a problem.
+            They give you a very detailed backstory.
+            They even made a powerpoint presentation.
+            And handouts.
+            But we don't have time for all of this.
+            So we are just gonna do a timeskip.
+            ~one eternity later~
+            {$famname}: Now you know everything there is to know.
+            You feel dazed.
+            Like you spend too much time looking into the sun.
+        -> no
+            <<set $moth to $moth + 1>>
+            You: No, I have not.
+            {$famname}: Not a problem.
+            They give you a very detailed backstory.
+            They even made a powerpoint presentation.
+            And handouts.
+            But we don't have time for all of this.
+            So we are just gonna do a timeskip.
+            ~one eternity later~
+            {$famname}: Now you know everything there is to know.
+            You feel dazed.
+            Like you spend too much time looking into the sun.
+        -> yes
+            <<set $moth to $moth - 1>>
+            You: Of course I have.
+            {$famname}: Of kós, of kós.
+        {$famname}: Now that we are on the same page...
+        {$famname}: Would you be willing to pledge yourself to the
+        {$famname}: Cult of The Great Lämp
+        {$famname}: ?
+        You: Umm...
+        {$famname}: There would obviously be a trial period first.
+        {$famname}: So you can see if the Cult suits you.
+        You: Umm...
+        {$famname}: I mean we call ourselves a Cult...
+        {$famname}: But really we are more like a very dedicated group.
+        {$famname}: You can of kós leave anytime.
+        {$famname}: But be warned.
+        You: Umm...
+        {$famname}: If you decide to join the Cult you will have to do everything in your power to be there for our biweekly meetings.
+        {$famname}: It really fucks up our D&D campaign if people are just there like half the time.
+        {$famname}: So, would you be interested?
+        You: ...
+        -> one condition
+            <<set $moth to $moth - 1>>
+            You: Yes, but I have one condition.
+            {$famname}: And that would be?
+            You: I want to play
+                -> An Half Elf Half Dragonborn Bard who also multiclasses as an Artificer.
+                    {$famname}: Well, at least you have read the rulebook.
+                -> A Human Fighter.
+                    {$famname}: Um, how... creative?
+                -> A Tiefling Rogue with a tragic backstory.
+                    {$famname}: What a unique character.
+        -> 100%
+            <<set $moth to $moth + 1>>
+            You: I would love to!
+            {$famname}: That's great!
+            You: And I really want to play
+                -> An Half Elf Half Dragonborn Bard who also multiclasses as an Artificer.
+                    {$famname}: Well, at least you have read the rulebook.
+                -> A Human Fighter.
+                    {$famname}: Um, how... creative?
+                -> A Tiefling Rogue with a tragic backstory.
+                    {$famname}: What a unique character.
+        -> prolly not
+            <<set $moth to $moth + 2>>
+            You: Probably not.
+            You: I already have two other D&D groups.
+            {$famname}: Are you sure?
+            You: ...
+            You: To be honest, we barely meet once a year anymore.
+            {$famname}: So, you would have time?
+            You: But only if I can play
+                -> An Half Elf Half Dragonborn Bard who also multiclasses as an Artificer.
+                    {$famname}: Well, at least you have read the rulebook.
+                -> A Human Fighter.
+                    {$famname}: Um, how... creative?
+                -> A Tiefling Rogue with a tragic backstory.
+                    {$famname}: What a unique character.
+        {$famname}: But anyways, it would be a pleasure to have you as part of our group.
+        {$famname}: Right now we only consist of Paladins of The Great Lämp.
+        {$charname}: And one Cleric!
+        {$charname}: ... of The Great Lämp.
+        {$famname}: Of kós.
+        {$famname}: In the name of The Great Lämp, I would give my blessing to you two.
+<<elseif $charname == "Fishy McFishface">>
+    <<sprite "fish">>
+    <<set $famname to "Daddy McFishface">>
+    {$charname}: There you are!
+    He grins at you and you almost giggle like a schoolgirl.
+    How does he keep doing this to you?
+    {$charname}: I have to warn you, though.
+    Uh oh?
+    {$charname}: My father sells street food 24/7.
+    {$charname}: So in order to talk to him, you have to order something.
+    That sounds easy.
+    {$charname}: Oh and also, he only speaks German.
+    You: Oh nein.
+    You try to scrape some german vocabulary out of the darkest corner of your brain.
+    You: Guten Tag.
+    You: Ich möchte...
+    You: Currywurst...
+    You: kaufen.
+    {$famname}: Moin, geht los, Chef. Du bist neu hier im Viertel, ne?
+    You: Ähhhh...
+        -> Is it just you or is this whole family ridiculously hot?
+            <<set $fish to $fish - 1>>
+            You: ...ja?
+        -> You have never eaten a Currywurst before.
+            <<set $fish to $fish + 1>>
+            You: ...ja?
+        -> Why is he German?
+            <<set $fish to $fish + 1>>
+            You: ...ja?
+    {$famname}: Studi oder Arbeit?
+    You: ...äääh...
+    {$famname}: Mensch, heute lassen sich die jungen Leute ja kaum noch blicken.
+    {$famname}: Hängen alle nur auf Tiktok rum und essen so veganes Ersatzzeug.
+    {$famname}: Dat hier is noch echtes Handwerk, ne? 
+    You: ...äääh...
+    {$famname}: Ich steh morgens um 5 auf der Matte beim Schlachter.
+    {$famname}: Guck dir die Wurst an, die hat noch Charakter! 
+    {$famname}: Da schnackt das Fleisch noch mit dir!
+    {$charname} snickers.
+    You: ...äääh...
+    {$famname}: Sach deinen Leuten Bescheid, beim nächsten Mal gibts ne extra Kelle Soße für dich.
+    You: Ähhhh...
+        -> No, seriously, why are they so hot?
+            <<set $fish to $fish + 1>>
+            You: ...ja?
+        -> You are a bit afraid of what a Currywurst is.
+            <<set $fish to $fish - 1>>
+            You: ...ja?
+        -> I being German even legal anymore?
+            <<set $fish to $fish + 1>>
+            You: ...ja?
+    {$famname}: Brauchst noch n kühles Helles oder ne Fritzkola zum nachspülen?
+    You: Ähhhh...
+        -> Or is the proper adjective wet?
+            <<set $fish to $fish + 1>>
+            You: ...ja?
+        -> Helles? Like hell?
+            <<set $fish to $fish + 1>>
+            You: ...ja?
+        -> His moustache is making you nervous.
+            <<set $fish to $fish - 1>>
+            You: ...ja?
+    {$famname}: Klar, sonst staubsts ja beim Kauen, wa? 
+    {$famname}: Mein Enkelkind, das rennt nur noch mit so nem Hafermilchmatchalatte rum.
+    {$famname}: Da kräuseln sich mir die Fußnägel! 
+    {$famname}: Aber ihr jungen Leute steht ja auf so'n Schickschnack.
+    {$famname}: Also, auf die Hand oder hier verhaften?
+    You: Ähhhh...
+        -> They are fishpeople after all.
+            <<set $fish to $fish - 1>>
+            You: ...how much?
+        -> The Currywurst seems to look... good?
+            <<set $fish to $fish + 1>>
+            You: ...how much?
+        -> You should have really paid more attention to your german lessons.
+            <<set $fish to $fish - 1>>
+            You: ...how much?
+    {$famname}: ...
+    {$famname}: ...
+    {$famname}: 15 Euro, please.
+    You: Okay, thank you.
+    You pay 15 Euro.
+    The Currywurst is really good.
+    {$charname}: That went well!
+    {$charname}: My father told me he really likes you and would love to see us two together.
+    He grins at you.
+    You almost choke on a piece of Currywurst.
+<<elseif $charname == "Muscle Mummy">>
+    <<sprite "mum">>
+    <<set $famname to "Grand-Mummy">>
+    {$charname}: I am so exited for you to meet my {$famname}!
+    Before you can even say hello, {$famname} pulls you in a hug that's somehow even more bonecrushing than {$charname}'s.
+    You may have broken a rib.
+    She released you and pats your back.
+    {$famname}: I have a few questions for you.
+    You: Okay...
+    {$famname}: In the photoshoots you do with Vogue Magazine and Cosmopolitan and Entertainment Weekly Time Magazine your hair changes dramatically from short to long.
+    {$famname}: Do you wear wigs?
+    You: Umm...
+        -> no
+            <<set $mum to $mum - 1>>
+            You: No, I do not.
+        -> yes
+            <<set $mum to $mum + 2>>
+            You: Yes, I do.
+        -> maybe
+            <<set $mum to $mum + 2>>
+            You: ...maybe?
+    {$famname}: Have you worn wigs?
+    You: Umm...
+        -> no
+            <<set $mum to $mum - 1>>
+            You: No, I have not.
+        -> yes
+            <<set $mum to $mum + 2>>
+            You: Yes, I have.
+        -> maybe
+            <<set $mum to $mum + 2>>
+            You: ... maybe?
+    {$famname}: Will you wear wigs?
+    You: Umm...
+        -> no
+            <<set $mum to $mum + 2>>
+            You: No, I will not.
+        -> yes
+            <<set $mum to $mum + 2>>
+            You: Yes, I will.
+        -> maybe
+            <<set $mum to $mum - 1>>
+            You: ... maybe?
+    {$famname}: When will you wear wigs?
+    You can't help it.
+    You burst out laughing.
+    {$charname} and {$famname} laugh with you.
+    {$famname}: Then I can give you two my blessing.
+<<endif>>
+===
