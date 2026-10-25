@@ -3,11 +3,11 @@ extends AudioStreamPlayer
 const THEME_FADE_DURATION_SECONDS = 0.5
 const MAIN_THEME = "res://audio/Themes/Boo_Main_Theme.wav"
 const CHARACTER_THEMES = {
-	"fish": "res://audio/Themes/Exorzist_Theme.wav",
-	"drac": "res://audio/Themes/Freitag13_Theme.wav",
-	"moth": "res://audio/Themes/Halloween_Theme.wav",
-	"mum": "res://audio/Themes/Jaws_Theme.wav",
-	"witch": "res://audio/Themes/NighmareOnElmStreet_Theme.wav",
+	"fish": "res://audio/Themes/Jaws_Theme.wav",
+	"moth": "res://audio/Themes/NighmareOnElmStreet_Theme.wav",
+	"mum": "res://audio/Themes/Freitag13_Theme.wav",
+	"drac": "res://audio/Themes/Halloween_Theme.wav",
+	"witch": "res://audio/Themes/Exorzist_Theme.wav",
 }
 
 # resource path -> loaded stream
