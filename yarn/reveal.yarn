@@ -7,21 +7,25 @@ Host: Here they are:
     <<reveal drac>>
     Host: Dr. h.c. Acula!
     Dr. h.c. Acula: Let's have a bloody good time.
-<<elseif $witch != 1000>>
+<<endif>>
+<<if $witch != 1000>>
     <<reveal witch>>
     Host: Bobo Blocksberg!
     Bobo Blocksberg: Magic is not the only thing I am wickedly talented at.
-<<elseif $moth != 1000>>
+<<endif>>
+<<if $moth != 1000>>
     <<reveal moth>>
     Host: Mothperson!
     Mothperson: Lämp.
-<<elseif $fish != 1000>>
+<<endif>>
+<<if $fish != 1000>>
     <<reveal fish>>
     Host: Fishy McFishface!
     Fishy McFishface: Yes, that is an eel in my pocket.
-<<elseif $mum != 1000>>
-    Host: Muscle Mummy!
+<<endif>>
+<<if $mum != 1000>>
     <<reveal mum>>
+    Host: Muscle Mummy!
     Muscle Mummy: I'll be your crush.
 <<endif>>
 Host: Aaaaaand...
