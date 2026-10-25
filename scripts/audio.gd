@@ -8,6 +8,7 @@ const CHARACTER_THEMES = {
 	"mum": "res://audio/Themes/Freitag13_Theme.wav",
 	"drac": "res://audio/Themes/Halloween_Theme.wav",
 	"witch": "res://audio/Themes/Exorzist_Theme.wav",
+	"fight": "res://audio/Themes/Boo_Main_Theme_8bit.wav"
 }
 
 # resource path -> loaded stream
