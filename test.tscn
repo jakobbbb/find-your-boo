@@ -213,6 +213,7 @@ position = Vector2(13.772392, 6.4865055)
 script = ExtResource("4_ppyta")
 
 [node name="MouseCursor" parent="." unique_id=2021655766 instance=ExtResource("22_pdf00")]
+z_index = 300
 position = Vector2(-2066, 1780)
 
 [connection signal="pressed" from="Camera2D/Arrow" to="Camera2D" method="_on_arrow_pressed"]
