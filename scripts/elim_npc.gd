@@ -1,6 +1,7 @@
 extends Node2D
 
 var revealed = false
+static var elimination_reset = false
 
 func _ready() -> void:
 	GameManager.reveal_char.connect(_on_reveal_char)
@@ -35,5 +36,10 @@ func _on_area_2d_mouse_entered() -> void:
 func _on_area_2d_mouse_exited() -> void:
 	GameManager.change_cursor.emit(Control.CURSOR_ARROW)
 
+static func _yarn_command_reset_immunity():
+	elimination_reset = true
+
 func is_immune() -> bool:
+	if elimination_reset:
+		return false
 	return get_meta("DialogueNode") == GameManager.immune

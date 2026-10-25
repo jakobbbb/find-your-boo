@@ -19,7 +19,6 @@ func _ready() -> void:
 	randomize_spawns()
 	set_affection.connect(_on_set_affection)
 
-
 static func _yarn_command_set_night():
 	GameManager.set_night.emit()
 	GameManager.randomize_spawns()

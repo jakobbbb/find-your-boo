@@ -75,6 +75,7 @@ func show_char_sprite(cname: String) -> void:
 	if cname.ends_with("_fight"):
 		sprites = $CharSpritesFight
 		cname.replace("_fight", "")
+		print("fight sprite", cname)
 	for c in sprites.get_children():
 		if c.name == cname:
 			c.show()
@@ -87,3 +88,4 @@ func show_char_sprite(cname: String) -> void:
 			c.hide()
 	if not found:
 		$Night.color.a = 0.0
+	print("sprite found", found)
