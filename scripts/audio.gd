@@ -12,11 +12,16 @@ const CHARACTER_THEMES = {
 
 # resource path -> loaded stream
 var themes = {}
+# theme name -> seconds
+var timestamps = {}
+
 var current_theme = "main"
 
 func _ready() -> void:
 	for theme in [MAIN_THEME] + CHARACTER_THEMES.values():
 		themes[theme] = load(theme)
+	for themename in ["main"] + CHARACTER_THEMES.keys():
+		timestamps[themename] = 0.0
 	
 	stream = themes[MAIN_THEME]
 	volume_linear = 0
@@ -35,6 +40,9 @@ func play_character_theme(cname: String) -> void:
 	
 	if current_theme == cname:
 		return  # dont re-start existing theme
+	
+	timestamps[current_theme] = get_playback_position()
+	
 	current_theme = cname
 	
 	var tween = fade(false, create_tween())
@@ -45,6 +53,6 @@ func play_character_theme(cname: String) -> void:
 		if cname != "main":
 			theme_path = CHARACTER_THEMES[cname]
 		stream = themes[theme_path]
-		play()
+		play(timestamps[cname])
 	tween.tween_callback(lambda)
 	fade(true, tween)
