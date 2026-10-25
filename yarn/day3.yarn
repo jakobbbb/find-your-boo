@@ -6,6 +6,7 @@ title: day3
 <<declare $horny = false>>
 <<declare $lamp = 0>>
 <<set $day = 3>>
+<<reset_immunity>>
 Host: Welcome back to
 FIND
 YOUR
