@@ -1,0 +1,14 @@
+[remap]
+
+importer="yarn_spinner.yarn_file"
+type="Resource"
+uid="uid://0iern0xdqq5j"
+path="res://.godot/imported/marry.yarn-58cda9719fa29d675d79e5c904536897.res"
+
+[deps]
+
+source_file="res://yarn/marry.yarn"
+dest_files=["res://.godot/imported/marry.yarn-58cda9719fa29d675d79e5c904536897.res"]
+
+[params]
+
