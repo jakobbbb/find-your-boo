@@ -3,8 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://hlgx3u53yqi1" path="res://assets/logo.png" id="1_fyqef"]
 [ext_resource type="Script" uid="uid://divtqwfnuffte" path="res://scripts/ui.gd" id="1_m6e0p"]
 [ext_resource type="Texture2D" uid="uid://cmdehcgx51nsu" path="res://assets/placeholder/characters/closeUps/Colored/fishy_color.png" id="3_ok7cu"]
-[ext_resource type="Texture2D" uid="uid://d16h1t1y8nfuu" path="res://assets/placeholder/characters/ghost_costume.png" id="4_irxef"]
-[ext_resource type="Texture2D" uid="uid://b417h6penn7qq" path="res://assets/placeholder/characters/literal ghost.png" id="5_e2l4f"]
+[ext_resource type="Texture2D" uid="uid://bjnvatb1aeedx" path="res://assets/placeholder/characters/closeUps/Colored/ghost_colored.png" id="4_waa4j"]
 [ext_resource type="Texture2D" uid="uid://dlgx6wij1baxj" path="res://assets/placeholder/characters/closeUps/Colored/mothperson_color.png" id="6_irxef"]
 [ext_resource type="Texture2D" uid="uid://bff3xa0rmr58j" path="res://assets/placeholder/characters/closeUps/Colored/mommy_color.png" id="7_e2l4f"]
 [ext_resource type="Texture2D" uid="uid://dofssarxvn1c2" path="res://assets/placeholder/characters/closeUps/Colored/bobo_color.png" id="8_n5rqp"]
@@ -98,6 +97,8 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_top = -23.0
+offset_bottom = -23.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
@@ -124,15 +125,15 @@ anchors_preset = 13
 anchor_left = 0.5
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -121.0
-offset_top = 22.999985
-offset_right = 564.0
-offset_bottom = 388.0
+offset_left = -329.0
+offset_top = -32.0
+offset_right = 1895.0
+offset_bottom = 988.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.35674, 0.35674)
 mouse_filter = 2
-texture = ExtResource("4_irxef")
+texture = ExtResource("4_waa4j")
 
 [node name="litghost" type="TextureRect" parent="CharSprites" unique_id=944239330]
 layout_mode = 1
@@ -140,15 +141,15 @@ anchors_preset = 13
 anchor_left = 0.5
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -121.0
-offset_top = 22.999985
-offset_right = 564.0
-offset_bottom = 388.0
+offset_left = -329.0
+offset_top = -32.0
+offset_right = 1895.0
+offset_bottom = 988.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.35674, 0.35674)
 mouse_filter = 2
-texture = ExtResource("5_e2l4f")
+texture = ExtResource("4_waa4j")
 
 [node name="moth" type="TextureRect" parent="CharSprites" unique_id=710653433]
 layout_mode = 1
