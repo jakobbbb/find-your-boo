@@ -30,8 +30,16 @@ scale = Vector2(4.736454, 4.860304)
 texture = ExtResource("2_uty7l")
 script = ExtResource("3_45l4g")
 
-[node name="Treees" type="Sprite2D" parent="." unique_id=2135154851]
-modulate = Color(0.85348755, 0.85348773, 0.8534877, 1)
+[node name="Treees hinten" type="Sprite2D" parent="." unique_id=536842141]
+modulate = Color(0.41981313, 0.41981313, 0.41981304, 1)
+z_index = -16
+position = Vector2(649, -977.00006)
+rotation = 3.1415927
+scale = Vector2(0.484, -0.484)
+texture = ExtResource("4_4uo0j")
+
+[node name="Treees vorn" type="Sprite2D" parent="." unique_id=2135154851]
+modulate = Color(0.6484885, 0.64848804, 0.6484881, 1)
 z_index = -15
 position = Vector2(563.00006, -557)
 scale = Vector2(0.563558, 0.56294996)
