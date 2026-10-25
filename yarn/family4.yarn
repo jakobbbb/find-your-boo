@@ -393,6 +393,6 @@ title: family4
     You can't help it.
     You burst out laughing.
     {$charname} and {$famname} laugh with you.
-    {$famname}: Then I can give you two my blessing.
+    {$famname}: Then I could give you two my blessing.
 <<endif>>
 ===
