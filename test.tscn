@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://k7yl21ee00ji" path="res://prefabs/yarn_dialogue_runner.tscn" id="3_6uqi0"]
 [ext_resource type="Script" uid="uid://q0fq5n0vh3q1" path="res://scripts/background.gd" id="3_45l4g"]
 [ext_resource type="Texture2D" uid="uid://qhkw7cqtw8vj" path="res://assets/placeholder/characters/dr_acula.png" id="4_0m0f1"]
+[ext_resource type="Texture2D" uid="uid://caunl45wpjfnd" path="res://assets/placeholder/background/treees.png" id="4_4uo0j"]
 [ext_resource type="Script" uid="uid://d1dcuekbom66u" path="res://scripts/cam.gd" id="4_ppyta"]
 [ext_resource type="Texture2D" uid="uid://12nc4dd5ytaq" path="res://assets/placeholder/characters/fishman.png" id="5_b0q6j"]
 [ext_resource type="PackedScene" uid="uid://bblklwajfea5g" path="res://prefabs/arrow.tscn" id="5_ykrsh"]
@@ -28,6 +29,12 @@ position = Vector2(721.66974, -37.4057)
 scale = Vector2(4.736454, 4.860304)
 texture = ExtResource("2_uty7l")
 script = ExtResource("3_45l4g")
+
+[node name="Treees" type="Sprite2D" parent="." unique_id=2135154851]
+z_index = -15
+position = Vector2(563.00006, -557)
+scale = Vector2(0.563558, 0.56294996)
+texture = ExtResource("4_4uo0j")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1392501608]
 
