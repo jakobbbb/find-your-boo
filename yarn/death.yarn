@@ -1,5 +1,16 @@
 title: death
 ---
+<<if $drac != 1000>>
+    <<set $charname to "Dr. h.c. Dr. med. Dr. iur. Dr. phil. Acula">>
+<<elseif $witch != 1000>>
+    <<set $charname to "Bobo Blocksberg">>
+<<elseif $moth != 1000>>
+    <<set $charname to "Mothperson">>
+<<elseif $fish != 1000>>
+    <<set $charname to "Fishy McFishface">>
+<<elseif $mum != 1000>>
+    <<set $charname to "Muscle Mummy">>
+<<endif>>
 <<if $charname == "Dr. h.c. Dr. med. Dr. iur. Dr. phil. Acula">>
     <<sprite "drac">>
     <<theme "drac">>
