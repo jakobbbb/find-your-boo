@@ -71,7 +71,11 @@ func _on_change_cursor(cur: Control.CursorShape) -> void:
 
 func show_char_sprite(cname: String) -> void:
 	var found = false
-	for c in $CharSprites.get_children():
+	var sprites = $CharSprites
+	if cname.ends_with("_fight"):
+		sprites = $CharSpritesFight
+		cname.replace("_fight", "")
+	for c in sprites.get_children():
 		if c.name == cname:
 			c.show()
 			$Night.color.a = 0.8
