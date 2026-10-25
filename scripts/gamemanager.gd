@@ -30,6 +30,7 @@ static func _yarn_command_reveal(cname: String):
 	GameManager.reveal_char.emit(cname)
 
 static func _yarn_command_sprite(cname: String):
+	print("got yarn command to change sprite to ", cname)
 	GameManager.show_char_sprite.emit(cname)
 
 static func _yarn_command_trigger_elim():

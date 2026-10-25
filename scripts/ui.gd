@@ -3,6 +3,7 @@ extends Control
 @onready var night = $Night/AnimationPlayer
 
 var skipping = false
+var last_sprite = null
 
 var last_day_ended = -1
 
@@ -70,17 +71,27 @@ func _on_change_cursor(cur: Control.CursorShape) -> void:
 	mouse_default_cursor_shape = cur
 
 func show_char_sprite(cname: String) -> void:
+	print("sprite for ", cname)
 	var found = false
+	var fight = false
 	var sprites = $CharSprites
-	if cname.ends_with("_fight"):
+	if cname.begins_with("fight_"):
 		sprites = $CharSpritesFight
-		cname.replace("_fight", "")
-		print("fight sprite", cname)
+		cname = cname.replace("fight_", "")
+		print("    fight sprite for ", cname)
+		fight = true
+		$Night.color.a = 0.8
+		if last_sprite == cname:
+			$"Player Character".show()
+			return
 	for c in sprites.get_children():
 		if c.name == cname:
 			c.show()
+			$"Fight Animator".play("ComeIn_Animation")
+			$"Player Character".show()
 			$Night.color.a = 0.8
 			found = true
+			last_sprite = cname
 		elif cname == "host":
 			$Night.color.a = 0.8
 			found = true
@@ -88,4 +99,7 @@ func show_char_sprite(cname: String) -> void:
 			c.hide()
 	if not found:
 		$Night.color.a = 0.0
-	print("sprite found", found)
+	if not fight:
+		$"Player Character".hide()
+	print("    sprite found? ", found)
+	print("    cname is ", cname)
