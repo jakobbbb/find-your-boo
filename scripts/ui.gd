@@ -75,23 +75,26 @@ func show_char_sprite(cname: String) -> void:
 	var found = false
 	var fight = false
 	var sprites = $CharSprites
+	var othersprites = $CharSpritesFight
 	if cname.begins_with("fight_"):
 		sprites = $CharSpritesFight
+		othersprites = $CharSprites
 		cname = cname.replace("fight_", "")
 		print("    fight sprite for ", cname)
 		fight = true
 		$Night.color.a = 0.8
-		if last_sprite == cname:
-			$"Player Character".show()
-			return
+	for c in othersprites.get_children():
+		c.hide()
 	for c in sprites.get_children():
 		if c.name == cname:
 			c.show()
-			$"Fight Animator".play("ComeIn_Animation")
+			if fight and last_sprite != cname:
+				$"Fight Animator".play("ComeIn_Animation")
 			$"Player Character".show()
 			$Night.color.a = 0.8
 			found = true
-			last_sprite = cname
+			if fight:
+				last_sprite = cname
 		elif cname == "host":
 			$Night.color.a = 0.8
 			found = true
