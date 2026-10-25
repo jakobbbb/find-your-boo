@@ -5,20 +5,16 @@ The Player appears! <<once if $charname == "Bobo Blocksberg">>
 The Player appears! <<once if $charname == "Mothperson">>
 The Player appears! <<once if $charname == "Fishy McFishface">>
 The Player appears! <<once if $charname == "Muscle Mummy">>
+<<theme "fight">>
 <<if $charname == "Dr. h.c. Dr. med. Dr. iur. Acula">>
-    <<theme "drac">>
     <<sprite "fight_drac">>
 <<elseif $charname == "Bobo Blocksberg">>
-    <<theme "witch">>
     <<sprite "fight_witch">>
 <<elseif $charname == "Mothperson">>
-    <<theme "moth">>
     <<sprite "fight_moth">>
 <<elseif $charname == "Fishy McFishface">>
-    <<theme "fish">>
     <<sprite "fight_fish">>
 <<elseif $charname == "Muscle Mummy">>
-    <<theme "mum">>
     <<sprite "fight_mum">>
 <<endif>>
 <<if $leave == false and $date < 100>>
