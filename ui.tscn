@@ -2,13 +2,13 @@
 
 [ext_resource type="Texture2D" uid="uid://hlgx3u53yqi1" path="res://assets/logo.png" id="1_fyqef"]
 [ext_resource type="Script" uid="uid://divtqwfnuffte" path="res://scripts/ui.gd" id="1_m6e0p"]
-[ext_resource type="Texture2D" uid="uid://qhkw7cqtw8vj" path="res://assets/placeholder/characters/dr_acula.png" id="2_27fn8"]
-[ext_resource type="Texture2D" uid="uid://12nc4dd5ytaq" path="res://assets/placeholder/characters/fishman.png" id="3_ok7cu"]
+[ext_resource type="Texture2D" uid="uid://cmdehcgx51nsu" path="res://assets/placeholder/characters/closeUps/Colored/fishy_color.png" id="3_ok7cu"]
 [ext_resource type="Texture2D" uid="uid://d16h1t1y8nfuu" path="res://assets/placeholder/characters/ghost_costume.png" id="4_irxef"]
 [ext_resource type="Texture2D" uid="uid://b417h6penn7qq" path="res://assets/placeholder/characters/literal ghost.png" id="5_e2l4f"]
-[ext_resource type="Texture2D" uid="uid://c1780e1r888om" path="res://assets/placeholder/characters/mothy.png" id="6_n5rqp"]
-[ext_resource type="Texture2D" uid="uid://d32kxpptp6air" path="res://assets/placeholder/characters/strong lesb.png" id="7_gs482"]
-[ext_resource type="Texture2D" uid="uid://d4cwpp2tq5dm7" path="res://assets/placeholder/characters/twinkch.png" id="8_cxd00"]
+[ext_resource type="Texture2D" uid="uid://dlgx6wij1baxj" path="res://assets/placeholder/characters/closeUps/Colored/mothperson_color.png" id="6_irxef"]
+[ext_resource type="Texture2D" uid="uid://bff3xa0rmr58j" path="res://assets/placeholder/characters/closeUps/Colored/mommy_color.png" id="7_e2l4f"]
+[ext_resource type="Texture2D" uid="uid://dofssarxvn1c2" path="res://assets/placeholder/characters/closeUps/Colored/bobo_color.png" id="8_n5rqp"]
+[ext_resource type="Texture2D" uid="uid://bvkv70bkp8gag" path="res://assets/placeholder/characters/closeUps/Colored/dr_ampire_color.png" id="9_gs482"]
 
 [sub_resource type="Animation" id="Animation_m6e0p"]
 length = 0.001
@@ -107,13 +107,13 @@ anchors_preset = 13
 anchor_left = 0.5
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -121.0
-offset_top = 22.999985
-offset_right = 564.0
-offset_bottom = 388.0
+offset_left = -314.99997
+offset_top = -64.0
+offset_right = 1909.0
+offset_bottom = 956.0
 grow_horizontal = 2
 grow_vertical = 2
-scale = Vector2(0.35674, 0.35674)
+scale = Vector2(0.38294032, 0.38294032)
 mouse_filter = 2
 texture = ExtResource("3_ok7cu")
 
@@ -155,15 +155,15 @@ anchors_preset = 13
 anchor_left = 0.5
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -121.0
-offset_top = 22.999985
-offset_right = 564.0
-offset_bottom = 388.0
+offset_left = -314.99997
+offset_top = -64.0
+offset_right = 1909.0
+offset_bottom = 956.0
 grow_horizontal = 2
 grow_vertical = 2
-scale = Vector2(0.35674, 0.35674)
+scale = Vector2(0.38294032, 0.38294032)
 mouse_filter = 2
-texture = ExtResource("6_n5rqp")
+texture = ExtResource("6_irxef")
 
 [node name="mum" type="TextureRect" parent="CharSprites" unique_id=1192381649]
 layout_mode = 1
@@ -171,15 +171,15 @@ anchors_preset = 13
 anchor_left = 0.5
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -121.0
-offset_top = 22.999985
-offset_right = 564.0
-offset_bottom = 388.0
+offset_left = -314.99997
+offset_top = -64.0
+offset_right = 1909.0
+offset_bottom = 956.0
 grow_horizontal = 2
 grow_vertical = 2
-scale = Vector2(0.35674, 0.35674)
+scale = Vector2(0.38294032, 0.38294032)
 mouse_filter = 2
-texture = ExtResource("7_gs482")
+texture = ExtResource("7_e2l4f")
 
 [node name="witch" type="TextureRect" parent="CharSprites" unique_id=570013840]
 layout_mode = 1
@@ -187,15 +187,15 @@ anchors_preset = 13
 anchor_left = 0.5
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -121.0
-offset_top = 22.999985
-offset_right = 564.0
-offset_bottom = 388.0
+offset_left = -314.99997
+offset_top = -64.0
+offset_right = 1909.0
+offset_bottom = 956.0
 grow_horizontal = 2
 grow_vertical = 2
-scale = Vector2(0.35674, 0.35674)
+scale = Vector2(0.38294032, 0.38294032)
 mouse_filter = 2
-texture = ExtResource("8_cxd00")
+texture = ExtResource("8_n5rqp")
 
 [node name="drac" type="TextureRect" parent="CharSprites" unique_id=74724193]
 layout_mode = 1
@@ -203,14 +203,14 @@ anchors_preset = 13
 anchor_left = 0.5
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -121.0
-offset_top = 22.999985
-offset_right = 564.0
-offset_bottom = 388.0
+offset_left = -314.99997
+offset_top = -64.0
+offset_right = 1909.0
+offset_bottom = 956.0
 grow_horizontal = 2
 grow_vertical = 2
-scale = Vector2(0.35674, 0.35674)
+scale = Vector2(0.38294032, 0.38294032)
 mouse_filter = 2
-texture = ExtResource("2_27fn8")
+texture = ExtResource("9_gs482")
 
 [connection signal="pressed" from="End Day Button" to="." method="_on_end_day_button_pressed"]
