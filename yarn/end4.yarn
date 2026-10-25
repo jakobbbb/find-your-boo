@@ -1,21 +1,26 @@
 title: end4
 ---
 <<cam EliminationCamera>>
-Host: Hello and welcome to our third elimination ceremony!
+Host: Hello and welcome to our very last elimination ceremony!
 Host: Who will have to leave the Villa tonight?
+Host: And who will get to be with our contestant till death do them part?
+Huh?
 Host: Let me remind you who's still in the game!
 Host: Dr. h.c. Dr. med. Dr. iur. Dr. phil. Acula! <<if $drac != 1000>>
 Host: Bobo Blocksberg! <<if $witch != 1000>>
 Host: Mothperson! <<if $moth != 1000>>
 Host: Fishy McFishface! <<if $fish != 1000>>
 Host: Muscle Mummy! <<if $mum != 1000>>
-Host: After this elimination ceremony we will be down to just two singles!
-Host: Which means tomorrow is the night we've all been waiting for.
-Host: The night where you, the contestant, will
+Host: Tonight you, the contestant, will
 FIND
 YOUR
 BOO!
-Host: Are you ready to make a decision?
-Not really, but also don't have a choice.
-Just get it over with.
+Host: And get legally married.
+Host: On live telvision.
+So that was what that till death do them part thing was about.
+That is totally new information for you.
+You wonder if they forgot to tell you about this part of the show or if you just weren't listening when they did tell you.
+Anyways...
+You're in to deep now.
+Let's hope you make a good decision.
 ===
