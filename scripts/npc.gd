@@ -45,10 +45,13 @@ func get_day() -> int:
 
 func set_ghost_visible(ghostly: bool) -> void:
 	var g = $"Sprite2D Ghost"
+	var n = $"Sprite2D"
 	if ghostly:
 		g.show()
+		n.hide()
 	else:
 		g.hide()
+		n.show()
 
 
 func _on_area_2d_mouse_entered() -> void:

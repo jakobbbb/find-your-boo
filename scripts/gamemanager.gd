@@ -34,7 +34,7 @@ static func _yarn_command_sprite(cname: String):
 
 static func _yarn_command_trigger_elim():
 	if GameManager.next_to_be_eliminated != "":
-		GameManager.eliminate_char.emit("ghost")
+		# GameManager.eliminate_char.emit("ghost")
 		GameManager.eliminate_char.emit(GameManager.next_to_be_eliminated)
 		GameManager.next_to_be_eliminated = ""
 
