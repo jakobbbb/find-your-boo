@@ -1,0 +1,14 @@
+[remap]
+
+importer="yarn_spinner.yarn_file"
+type="Resource"
+uid="uid://dqllyj4xvjjb"
+path="res://.godot/imported/noghost.yarn-2ab255c3f4377a7579d4951329d77819.res"
+
+[deps]
+
+source_file="res://yarn/noghost.yarn"
+dest_files=["res://.godot/imported/noghost.yarn-2ab255c3f4377a7579d4951329d77819.res"]
+
+[params]
+

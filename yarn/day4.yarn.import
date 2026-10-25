@@ -1,0 +1,14 @@
+[remap]
+
+importer="yarn_spinner.yarn_file"
+type="Resource"
+uid="uid://calt0n5jbjo00"
+path="res://.godot/imported/day4.yarn-e0154b1c4a48174aa8ac339d2597e921.res"
+
+[deps]
+
+source_file="res://yarn/day4.yarn"
+dest_files=["res://.godot/imported/day4.yarn-e0154b1c4a48174aa8ac339d2597e921.res"]
+
+[params]
+
