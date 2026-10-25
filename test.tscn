@@ -20,6 +20,7 @@
 [ext_resource type="PackedScene" uid="uid://b1hi3h3u2jjw3" path="res://prefabs/audio.tscn" id="15_mhym6"]
 [ext_resource type="AudioStream" uid="uid://bhnrbufu2s5mq" path="res://audio/Themes/Boo_Main_Theme.wav" id="16_a3se8"]
 [ext_resource type="Texture2D" uid="uid://yin5okkuti3c" path="res://assets/placeholder/background/graveyard.png" id="20_vxl6d"]
+[ext_resource type="Texture2D" uid="uid://bgjt46j65r8js" path="res://assets/placeholder/background/Youvebeenbaited screen.png" id="21_eski5"]
 
 [node name="Test" type="Node2D" unique_id=63273623]
 script = ExtResource("1_ykrsh")
@@ -195,6 +196,15 @@ stream = ExtResource("16_a3se8")
 [node name="Graveyard" type="Sprite2D" parent="." unique_id=237317887]
 position = Vector2(3163, -528)
 texture = ExtResource("20_vxl6d")
+
+[node name="YouvebeenbaitedScreen" type="Sprite2D" parent="." unique_id=1262799209]
+position = Vector2(-1748.5001, 1001)
+scale = Vector2(0.6171875, 0.6166667)
+texture = ExtResource("21_eski5")
+
+[node name="BaitCam" type="Camera2D" parent="YouvebeenbaitedScreen" unique_id=1598559890]
+position = Vector2(13.772392, 6.4865055)
+script = ExtResource("4_ppyta")
 
 [connection signal="pressed" from="Camera2D/Arrow" to="Camera2D" method="_on_arrow_pressed"]
 [connection signal="pressed" from="Camera2D2/Arrow" to="Camera2D2" method="_on_arrow_pressed"]

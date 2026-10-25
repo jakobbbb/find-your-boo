@@ -251,24 +251,6 @@
         }
       ],
       "yarnName": "theme"
-    },
-    {
-      "async": false,
-      "definitionName": "_yarn_command_reset_immunity",
-      "fileName": "elim_npc.gd",
-      "language": "gdscript",
-      "location": {
-        "end": {
-          "character": 25,
-          "line": 39
-        },
-        "start": {
-          "character": 0,
-          "line": 38
-        }
-      },
-      "parameters": [],
-      "yarnName": "reset_immunity"
     }
   ],
   "version": 2
