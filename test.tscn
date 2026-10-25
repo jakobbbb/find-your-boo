@@ -197,6 +197,11 @@ stream = ExtResource("16_a3se8")
 position = Vector2(3163, -528)
 texture = ExtResource("20_vxl6d")
 
+[node name="GraveCam" type="Camera2D" parent="Graveyard" unique_id=191435027]
+position = Vector2(-3, -3)
+zoom = Vector2(0.6, 0.6)
+script = ExtResource("4_ppyta")
+
 [node name="YouvebeenbaitedScreen" type="Sprite2D" parent="." unique_id=1262799209]
 position = Vector2(-1748.5001, 1001)
 scale = Vector2(0.6171875, 0.6166667)
