@@ -30,6 +30,7 @@ func _ready() -> void:
 	fade(true, create_tween())
 	
 	GameManager.play_theme.connect(play_character_theme)
+	self.finished.connect(restart)  # loop audio
 	
 
 func fade(fade_in: bool, tween) -> Tween:
@@ -57,3 +58,6 @@ func play_character_theme(cname: String) -> void:
 		play(timestamps[cname])
 	tween.tween_callback(lambda)
 	fade(true, tween)
+
+func restart():
+	play()
